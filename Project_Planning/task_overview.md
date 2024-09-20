@@ -121,12 +121,13 @@ Informationen zu 30 historischen Frauen (aktuell bei 28) zu sammeln, die durch b
 - [ ] Recherche und Sammlung von Porträtbildern und themenbezogenen Bildern
 - [ ] Verlinkung jeder Persönlichkeit zu ihrem entsprechenden Wikipedia-Eintrag bzw. alternative Webseite
 - [ ] Erstellung einer Datenbank mit den folgenden Spalten:
-      - Name, Vorname
-      - Geburtsdatum
-      - Todestag
-      - Beschreibung / Infotext
-      - Verlinkung zu Wikipedia/ alternative Webseite
-      - Tätigkeitsbereich (z. B. Medizin, Mathematik, Informatik)
+
+   - Name, Vorname
+   - Geburtsdatum
+   - Todestag
+   - Beschreibung / Infotext
+   - Verlinkung zu Wikipedia/ alternative Webseite
+   - Tätigkeitsbereich (z. B. Medizin, Mathematik, Informatik)
       
 ### Ressourcen:
 - Internet-Recherche-Tools (Wikipedia, Bilddatenbanken)
