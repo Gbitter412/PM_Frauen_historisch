@@ -145,10 +145,10 @@ Informationen zu 30 historischen Frauen (aktuell bei 28) zu sammeln, die durch b
 - [ ] Einpflegen der recherchierten Daten in die Datenbank und Verlinkung zu den entsprechenden Webseiten
 
 ### Zeitrahmen:
-Startdatum: 19. September 2024
-Enddatum: 21. September 2024
-Stundenaufwand: 5 Stunden
-Status: In Bearbeitung
+- **Startdatum:** 19. September 2024
+- **Enddatum:** 21. September 2024
+- **Stundenaufwand:** 5 Stunden
+- **Status:** In Bearbeitung
 
 ---
 
