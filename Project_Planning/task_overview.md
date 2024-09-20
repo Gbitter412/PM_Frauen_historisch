@@ -3,7 +3,8 @@
 > [!IMPORTANT]
 > - [ ] Abgeschlossen
 > - [x] in Bearbeitung
-
+<details>
+   
 ### Arbeitspaketbeschreibung:
 Dieses Arbeitspaket umfasst die technische Umsetzung des "Classic Puzzle"-Spielmodus. Es zielt darauf ab, die Spiellogik zu definieren, in Teilaufgaben zu zerlegen und eine Lösung für die Logik des Spiels zu entwickeln, die später in die Benutzeroberfläche integriert wird.
 
@@ -47,6 +48,7 @@ Der Classic Puzzle Spielmodus soll ein Bild in ein 4x4-Gitter zerteilen und die 
 - **Enddatum:** 25. September 2024
 - **Status:** In Bearbeitung
 
+</details>
 
 --- 
 
@@ -54,6 +56,8 @@ Der Classic Puzzle Spielmodus soll ein Bild in ein 4x4-Gitter zerteilen und die 
 > [!IMPORTANT]
 > - [ ] Abgeschlossen
 > - [x] in Bearbeitung
+
+<details>
 
 ### Arbeitspaketbeschreibung:
 Dieses Arbeitspaket konzentriert sich auf die Entwicklung der Benutzeroberfläche. Die Aufgaben umfassen das Erstellen von Prototypen, die schrittweise in HTML und CSS überführt werden, um eine funktionale Oberfläche zu entwickeln.
@@ -96,6 +100,7 @@ Zunächst werden Papierprototypen erstellt, gefolgt von einem digitalen Prototyp
 - **Enddatum:** 22. September 2024
 - **Status:** In Bearbeitung
 
+</details>
 
 --- 
 
@@ -104,6 +109,8 @@ Zunächst werden Papierprototypen erstellt, gefolgt von einem digitalen Prototyp
 > - [ ] Abgeschlossen
 > - [x] in Bearbeitung
 
+<details>
+   
 ### Arbeitspaketbeschreibung:
 In diesem Arbeitspaket geht es darum, Informationen zu 30 historischen Frauen zu sammeln. Zu jeder Frau soll ein Infotext von 150-200 Wörtern erstellt werden, ergänzt durch Porträtbilder sowie gegebenenfalls ein zweites, thematisch relevantes Bild. Zusätzlich sollen die Daten in einer Datenbank erfasst und mit einer Verlinkung zu einer entsprechenden Webseite versehen werden.
 
@@ -149,6 +156,8 @@ Informationen zu 30 historischen Frauen (aktuell bei 28) zu sammeln, die durch b
 - **Enddatum:** 21. September 2024
 - **Stundenaufwand:** 5 Stunden
 - **Status:** In Bearbeitung
+
+</details>
 
 ---
 
