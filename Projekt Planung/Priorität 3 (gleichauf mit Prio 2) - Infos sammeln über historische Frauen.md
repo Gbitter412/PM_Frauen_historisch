@@ -1,4 +1,4 @@
-# 🚀 Priorität 3 (gleichauf mit Priorität 2) - **Infos sammeln über historische Frauen** 
+## 🚀 Priorität 3 (gleichauf mit Priorität 2) - **Infos sammeln über historische Frauen** 
 > [!IMPORTANT]
 > - [ ] Abgeschlossen
 > - [x] in Bearbeitung
