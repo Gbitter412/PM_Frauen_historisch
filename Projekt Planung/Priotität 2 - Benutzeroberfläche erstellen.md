@@ -57,9 +57,12 @@ Zunächst werden Papierprototypen erstellt, gefolgt von einem digitalen Prototyp
 
 <details>
 
-Diese Tabelle dient als Grundlage für die spätere Einbindung in eine Datenbank
+### Prototyp der Benutzeroberfläche (Papierskizze)
+Um die Struktur der Benutzeroberfläche vor der eigentlichen Umsetzung zu visualisieren, haben wir eine **Papierskizze** erstellt. Diese Skizze dient als erster Entwurf für das Layout und hilft uns dabei, die Benutzerführung sowie die wichtigsten Komponenten der Oberfläche besser zu planen
 
-<img width="1429" alt="Screenshot 2024-09-21 at 16 47 37" src="https://github.com/user-attachments/assets/8453826a-1f66-488a-bbab-b6b3ca68adf6">
+Sie zeigt die Grundelemente, wie Menüs, Buttons und das Spielfeld
+
+![2024-09-19_1](https://github.com/user-attachments/assets/afb1abb5-7dd9-4f09-834e-bbc04e4cf05b)
 
 
 
