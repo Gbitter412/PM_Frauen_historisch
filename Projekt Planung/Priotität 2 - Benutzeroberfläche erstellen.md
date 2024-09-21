@@ -53,6 +53,16 @@ Zunächst werden Papierprototypen erstellt, gefolgt von einem digitalen Prototyp
 
 ---
 
+### Aktueller Stand: 
 
+<details>
+
+Diese Tabelle dient als Grundlage für die spätere Einbindung in eine Datenbank
+
+<img width="1429" alt="Screenshot 2024-09-21 at 16 47 37" src="https://github.com/user-attachments/assets/8453826a-1f66-488a-bbab-b6b3ca68adf6">
+
+
+
+</details>
 
 
