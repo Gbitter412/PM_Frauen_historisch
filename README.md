@@ -11,16 +11,16 @@ Für ein neues Feature soll ein neuer Branch angelegt werden.
 git checkout -b <feature_branch_name>
 ```
 
-Nach dem Arbeiten auf dem Branch Änderungen committen.
-
-```
-git commit -m "<commit_message>"
-```
-
 Damit der Branch nicht nur auf dem lokalen Repository verfügbar ist, muss dieser aufs Remote-Repository gepusht werden:
 
 ```
 git push -u origin <feature_branch_name>
+```
+
+Nach dem Arbeiten auf dem Branch Änderungen committen.
+
+```
+git commit -m "<commit_message>"
 ```
 
 Um sich auf den finalen Pull-Request vorzubereiten müssen alle Updates des **remote dev-Branches** auf den **lokalen Feature-Branch** gepullt werden.
