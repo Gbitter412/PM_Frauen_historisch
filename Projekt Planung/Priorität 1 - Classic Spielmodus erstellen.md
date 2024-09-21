@@ -52,3 +52,10 @@ Der Classic Puzzle Spielmodus soll ein Bild in ein 4x4-Gitter zerteilen und die 
 </details>
 
 ---
+
+### Aktueller Stand: 
+
+<details>
+
+
+</details>
