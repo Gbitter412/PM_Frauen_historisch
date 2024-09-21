@@ -3,14 +3,14 @@ const piecesCanvas = document.getElementById('piecesCanvas');
 const puzzleContext = puzzleCanvas.getContext('2d');
 const piecesContext = piecesCanvas.getContext('2d');
 
-const rows = 3;  // Adjust the number of rows for puzzle pieces
-const cols = 3;  // Adjust the number of columns for puzzle pieces
-const pieceWidth = 100; // Width of each puzzle piece
-const pieceHeight = 100; // Height of each puzzle piece
+const rows = 3;  // Anzahl der Reihen für die Puzzleteile
+const cols = 3;  // Anzahl der Spalten für die Puzzleteile
+const pieceWidth = 100; // Breite jedes Puzzleteils
+const pieceHeight = 100; // Höhe jedes Puzzleteils
 
-let pieces = []; // Array to hold puzzle pieces
-let puzzleBoard = Array(rows).fill().map(() => Array(cols).fill(null)); // 2D array to hold the puzzle state
-let selectedPiece = null; // Currently selected piece
+let pieces = []; // Array zur Speicherung der Puzzleteile
+let puzzleBoard = Array(rows).fill().map(() => Array(cols).fill(null)); // 2D-Array zur Speicherung des Puzzle-Zustands
+let selectedPiece = null; // Aktuell ausgewähltes Puzzleteil
 let img = new Image();
 
 img.onload = function () {
@@ -18,12 +18,13 @@ img.onload = function () {
     drawPuzzleBoard();
     drawPiecesBoard();
 };
-img.src = 'your-image-path.jpg'; // Replace with the path to your image
+img.src = 'your-image-path.jpg'; // Pfad zum Bild ersetzen
 
+// Erstellt die Puzzleteile und ordnet sie zufällig an
 function createPuzzlePieces() {
     for (let row = 0; row < rows; row++) {
         for (let col = 0; col < cols; col++) {
-            if (!(row === 2 && col === 2)) { // Exclude the bottom right corner for an 8-piece puzzle
+            if (!(row === 2 && col === 2)) { // Untere rechte Ecke für ein 8-teiliges Puzzle ausschließen
                 pieces.push({
                     row,
                     col,
@@ -36,54 +37,57 @@ function createPuzzlePieces() {
         }
     }
 
-    // Randomize pieces positions on the pieces canvas
+    // Zufällige Anordnung der Puzzleteile auf der Teile-Leinwand
     pieces = pieces.sort(() => Math.random() - 0.5);
 }
 
+// Zeichnet das Puzzle-Board und die platzierten Teile
 function drawPuzzleBoard() {
     puzzleContext.clearRect(0, 0, puzzleCanvas.width, puzzleCanvas.height);
-    // Draw placed pieces on the puzzle canvas
+    // Gelegte Teile auf der Puzzle-Leinwand zeichnen
     for (let row = 0; row < rows; row++) {
         for (let col = 0; col < cols; col++) {
             const piece = puzzleBoard[row][col];
             if (piece) {
                 drawPiece(puzzleContext, piece, col * pieceWidth, row * pieceHeight);
             } else if (!(row === 2 && col === 2)) {
-                // Draw placeholder for empty spaces except the bottom-right corner
+                // Platzhalter für leere Felder außer der unteren rechten Ecke zeichnen
                 puzzleContext.strokeRect(col * pieceWidth, row * pieceHeight, pieceWidth, pieceHeight);
             }
         }
     }
 }
 
+// Zeichnet die Teile-Leinwand mit den verfügbaren Puzzleteilen
 function drawPiecesBoard() {
     piecesContext.clearRect(0, 0, piecesCanvas.width, piecesCanvas.height);
     pieces.forEach((piece, index) => {
-        const x = (index % 2) * pieceWidth; // Arrange pieces in two columns on the right canvas
+        const x = (index % 2) * pieceWidth; // Teile in zwei Spalten auf der rechten Leinwand anordnen
         const y = Math.floor(index / 2) * pieceHeight;
         drawPiece(piecesContext, piece, x, y);
     });
 }
 
+// Zeichnet ein einzelnes Puzzleteil auf der angegebenen Leinwand
 function drawPiece(context, piece, x, y) {
     context.drawImage(
         img,
-        piece.x, piece.y, piece.width, piece.height,  // Source (image) coordinates
-        x, y, piece.width, piece.height               // Destination (canvas) coordinates
+        piece.x, piece.y, piece.width, piece.height,  // Quellkoordinaten (Bild)
+        x, y, piece.width, piece.height               // Zielkoordinaten (Leinwand)
     );
     context.strokeRect(x, y, piece.width, piece.height);
 }
 
-// Handle clicks on the puzzle canvas to place pieces
+// Behandelt Klicks auf die Puzzle-Leinwand, um Teile zu platzieren
 puzzleCanvas.addEventListener('click', (e) => {
     const x = e.offsetX;
     const y = e.offsetY;
     const col = Math.floor(x / pieceWidth);
     const row = Math.floor(y / pieceHeight);
 
-    if (selectedPiece && !puzzleBoard[row][col] && !(row === 2 && col === 2)) { // Place piece if cell is empty and not the excluded spot
+    if (selectedPiece && !puzzleBoard[row][col] && !(row === 2 && col === 2)) { // Teil platzieren, wenn das Feld leer ist und nicht die ausgeschlossene Stelle
         puzzleBoard[row][col] = selectedPiece;
-        pieces = pieces.filter(piece => piece !== selectedPiece); // Remove the piece from the pieces array
+        pieces = pieces.filter(piece => piece !== selectedPiece); // Teil aus dem Array entfernen
         selectedPiece = null;
         drawPuzzleBoard();
         drawPiecesBoard();
@@ -94,7 +98,7 @@ puzzleCanvas.addEventListener('click', (e) => {
     }
 });
 
-// Handle clicks on the pieces canvas to select a piece
+// Behandelt Klicks auf die Teile-Leinwand, um ein Teil auszuwählen
 piecesCanvas.addEventListener('click', (e) => {
     const x = e.offsetX;
     const y = e.offsetY;
@@ -108,8 +112,9 @@ piecesCanvas.addEventListener('click', (e) => {
     }
 });
 
+// Hebt das ausgewählte Puzzleteil hervor
 function highlightSelectedPiece(index) {
-    drawPiecesBoard(); // Redraw to remove previous highlight
+    drawPiecesBoard(); // Neu zeichnen, um vorherige Hervorhebung zu entfernen
     const piece = pieces[index];
     piecesContext.globalAlpha = 0.5;
     piecesContext.fillStyle = 'yellow';
@@ -118,8 +123,9 @@ function highlightSelectedPiece(index) {
     drawPiece(piecesContext, piece, (index % 2) * pieceWidth, Math.floor(index / 2) * pieceHeight);
 }
 
+// Überprüft, ob das Puzzle gelöst ist
 function isPuzzleSolved() {
-    // Check if all pieces are in the correct position
+    // Überprüfen, ob alle Teile an der richtigen Position sind
     for (let row = 0; row < rows; row++) {
         for (let col = 0; col < cols; col++) {
             const piece = puzzleBoard[row][col];
