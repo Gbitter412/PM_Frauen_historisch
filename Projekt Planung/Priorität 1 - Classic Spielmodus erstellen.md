@@ -83,7 +83,7 @@ canvas {
 
 Diese Stile sorgen dafür, dass die Spielinformationen zentriert angezeigt werden und der Container die enthaltenen Elemente ansprechend anordnet. Das Canvas-Element hat zudem eine klare Umrandung, die es hervorhebt.
 
-[Link zum CSS-Code](https://github.com/Gbitter412/PM_Frauen_historisch/blob/f06666ba35eba3bdd1c7993fc1d5cf49780b6354/site/css/styles.css)
+[Link zum aktuellen CSS-Code](https://github.com/Gbitter412/PM_Frauen_historisch/blob/f06666ba35eba3bdd1c7993fc1d5cf49780b6354/site/css/styles.css)
 
 
 </details>
