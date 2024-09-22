@@ -2,7 +2,7 @@ import { Puzzle } from './Puzzle.js';
 
 // Klasse für Schiebepuzzle
 export class SlidingPuzzle extends Puzzle {
-    constructor(image, canvas, rows = 4, cols = 4) { // 4x4 Raster
+    constructor(image, canvas, rows = 3, cols = 3) { // 3x3 Raster
         super(image, canvas);
         this.rows = rows;
         this.cols = cols;
