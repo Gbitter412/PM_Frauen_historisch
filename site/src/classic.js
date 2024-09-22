@@ -3,10 +3,10 @@ const piecesCanvas = document.getElementById('piecesCanvas');
 const puzzleContext = puzzleCanvas.getContext('2d');
 const piecesContext = piecesCanvas.getContext('2d');
 
-const rows = 3;  // Anzahl der Reihen für die Puzzleteile
-const cols = 3;  // Anzahl der Spalten für die Puzzleteile
-const pieceWidth = 100; // Breite jedes Puzzleteils
-const pieceHeight = 100; // Höhe jedes Puzzleteils
+const rows = 4;  // Anzahl der Reihen für die Puzzleteile
+const cols = 4;  // Anzahl der Spalten für die Puzzleteile
+const pieceWidth = puzzleCanvas.width / cols; // Breite jedes Puzzleteils
+const pieceHeight = puzzleCanvas.height / rows; // Höhe jedes Puzzleteils
 
 let pieces = []; // Array zur Speicherung der Puzzleteile
 let puzzleBoard = Array(rows).fill().map(() => Array(cols).fill(null)); // 2D-Array zur Speicherung des Puzzle-Zustands
@@ -24,7 +24,7 @@ img.src = 'your-image-path.jpg'; // Pfad zum Bild ersetzen
 function createPuzzlePieces() {
     for (let row = 0; row < rows; row++) {
         for (let col = 0; col < cols; col++) {
-            if (!(row === 2 && col === 2)) { // Untere rechte Ecke für ein 8-teiliges Puzzle ausschließen
+            if (!(row === rows - 1 && col === cols - 1)) { // Untere rechte Ecke für ein 15-teiliges Puzzle ausschließen
                 pieces.push({
                     row,
                     col,
@@ -50,7 +50,7 @@ function drawPuzzleBoard() {
             const piece = puzzleBoard[row][col];
             if (piece) {
                 drawPiece(puzzleContext, piece, col * pieceWidth, row * pieceHeight);
-            } else if (!(row === 2 && col === 2)) {
+            } else if (!(row === rows - 1 && col === cols - 1)) {
                 // Platzhalter für leere Felder außer der unteren rechten Ecke zeichnen
                 puzzleContext.strokeRect(col * pieceWidth, row * pieceHeight, pieceWidth, pieceHeight);
             }
@@ -85,7 +85,7 @@ puzzleCanvas.addEventListener('click', (e) => {
     const col = Math.floor(x / pieceWidth);
     const row = Math.floor(y / pieceHeight);
 
-    if (selectedPiece && !puzzleBoard[row][col] && !(row === 2 && col === 2)) { // Teil platzieren, wenn das Feld leer ist und nicht die ausgeschlossene Stelle
+    if (selectedPiece && !puzzleBoard[row][col] && !(row === rows - 1 && col === cols - 1)) { // Teil platzieren, wenn das Feld leer ist und nicht die ausgeschlossene Stelle
         puzzleBoard[row][col] = selectedPiece;
         pieces = pieces.filter(piece => piece !== selectedPiece); // Teil aus dem Array entfernen
         selectedPiece = null;

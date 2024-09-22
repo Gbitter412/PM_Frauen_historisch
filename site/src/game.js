@@ -1,3 +1,4 @@
+// Abstrakte Klasse für Puzzles
 class Puzzle {
     constructor(image, canvas) {
         if (this.constructor === Puzzle) {
@@ -9,10 +10,12 @@ class Puzzle {
         this.onCompleteCallback = null;
     }
 
+    // Methode zum Setzen des Callback für Puzzle-Vervollständigung
     onComplete(callback) {
         this.onCompleteCallback = callback;
     }
 
+    // Abstrakte Methoden, die in Unterklassen implementiert werden müssen
     init() {
         throw new Error("Method 'init()' must be implemented.");
     }
@@ -29,24 +32,32 @@ class Puzzle {
         throw new Error("Method 'checkCompletion()' must be implemented.");
     }
 
+    // Methode zum Abschließen des Puzzles
     completePuzzle() {
         if (this.onCompleteCallback) {
             this.onCompleteCallback();
         }
     }
+
+    // Abstrakte Methode zum Lösen des Puzzles
+    solvePuzzle() {
+        throw new Error("Method 'solvePuzzle()' must be implemented.");
+    }
 }
 
+// Klasse für Schiebepuzzle
 class SlidingPuzzle extends Puzzle {
-    constructor(image, canvas, rows = 3, cols = 3) {
+    constructor(image, canvas, rows = 4, cols = 4) { // 4x4 Raster
         super(image, canvas);
         this.rows = rows;
         this.cols = cols;
         this.tileWidth = this.canvas.width / this.cols;
         this.tileHeight = this.canvas.height / this.rows;
         this.tiles = [];
-        this.emptyTile = { row: this.rows - 1, col: this.cols - 1 }; // Bottom-right corner is initially empty
+        this.emptyTile = { row: this.rows - 1, col: this.cols - 1 }; // Untere rechte Ecke ist anfangs leer
     }
 
+    // Initialisierung des Schiebepuzzles
     init() {
         this.generateTiles();
         this.shuffleTiles();
@@ -54,6 +65,7 @@ class SlidingPuzzle extends Puzzle {
         this.canvas.addEventListener('click', (event) => this.handleUserInput(event));
     }
 
+    // Generierung der Puzzleteile
     generateTiles() {
         this.tiles = [];
         for (let row = 0; row < this.rows; row++) {
@@ -64,6 +76,7 @@ class SlidingPuzzle extends Puzzle {
         }
     }
 
+    // Zufälliges Mischen der Puzzleteile
     shuffleTiles() {
         for (let i = 0; i < 100; i++) {
             const neighbors = this.getMovableTiles();
@@ -72,24 +85,26 @@ class SlidingPuzzle extends Puzzle {
         }
     }
 
+    // Zeichnen des Puzzles
     draw() {
         this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
         this.tiles.forEach(tile => {
             const { row, col, originalRow, originalCol } = tile;
             this.context.drawImage(
                 this.image,
-                originalCol * this.tileWidth, // Source x
-                originalRow * this.tileHeight, // Source y
-                this.tileWidth,                // Source width
-                this.tileHeight,               // Source height
-                col * this.tileWidth,          // Destination x
-                row * this.tileHeight,         // Destination y
-                this.tileWidth,                // Destination width
-                this.tileHeight                // Destination height
+                originalCol * this.tileWidth, // Quell-x
+                originalRow * this.tileHeight, // Quell-y
+                this.tileWidth,                // Quellbreite
+                this.tileHeight,               // Quellhöhe
+                col * this.tileWidth,          // Ziel-x
+                row * this.tileHeight,         // Ziel-y
+                this.tileWidth,                // Zielbreite
+                this.tileHeight                // Zielhöhe
             );
         });
     }
 
+    // Behandlung der Benutzereingaben
     handleUserInput(event) {
         const { offsetX, offsetY } = event;
         const clickedCol = Math.floor(offsetX / this.tileWidth);
@@ -106,6 +121,7 @@ class SlidingPuzzle extends Puzzle {
         }
     }
 
+    // Tauschen von zwei Puzzleteilen
     swapTiles(tile1, tile2) {
         const temp = { row: tile1.row, col: tile1.col };
         tile1.row = tile2.row;
@@ -114,6 +130,7 @@ class SlidingPuzzle extends Puzzle {
         tile2.col = temp.col;
     }
 
+    // Überprüfen, ob ein Puzzleteil neben dem leeren Feld liegt
     isAdjacentToEmpty(tile) {
         const { row, col } = tile;
         const { row: emptyRow, col: emptyCol } = this.emptyTile;
@@ -124,15 +141,29 @@ class SlidingPuzzle extends Puzzle {
         return isAdjacent;
     }
 
+    // Erhalten der beweglichen Puzzleteile
     getMovableTiles() {
         return this.tiles.filter(tile => this.isAdjacentToEmpty(tile));
     }
 
+    // Überprüfen, ob das Puzzle gelöst ist
     checkCompletion() {
         return this.tiles.every(tile => tile.row === tile.originalRow && tile.col === tile.originalCol);
     }
+
+    // Lösen des Puzzles
+    solvePuzzle() {
+        this.tiles.forEach(tile => {
+            tile.row = tile.originalRow;
+            tile.col = tile.originalCol;
+        });
+        this.emptyTile = { row: this.rows - 1, col: this.cols - 1 };
+        this.draw();
+        this.completePuzzle();
+    }
 }
 
+// Klasse für Tauschpuzzle
 class SwappingPuzzle extends Puzzle {
     constructor(image, canvas, rows = 4, cols = 4) {
         super(image, canvas);
@@ -141,9 +172,10 @@ class SwappingPuzzle extends Puzzle {
         this.tileWidth = this.canvas.width / this.cols;
         this.tileHeight = this.canvas.height / this.rows;
         this.tiles = [];
-        this.selectedTile = null; // Tracks the currently selected tile for swapping
+        this.selectedTile = null; // Verfolgt das aktuell ausgewählte Puzzleteil zum Tauschen
     }
 
+    // Initialisierung des Tauschpuzzles
     init() {
         this.generateTiles();
         this.shuffleTiles();
@@ -151,6 +183,7 @@ class SwappingPuzzle extends Puzzle {
         this.canvas.addEventListener('click', (event) => this.handleUserInput(event));
     }
 
+    // Generierung der Puzzleteile
     generateTiles() {
         this.tiles = [];
         for (let row = 0; row < this.rows; row++) {
@@ -160,15 +193,16 @@ class SwappingPuzzle extends Puzzle {
         }
     }
 
+    // Zufälliges Mischen der Puzzleteile
     shuffleTiles() {
-        // Fisher-Yates shuffle to randomly rearrange the tiles
+        // Fisher-Yates Shuffle zum zufälligen Anordnen der Puzzleteile
         for (let i = this.tiles.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             
-            // Swap the positions in the array
+            // Positionen im Array tauschen
             [this.tiles[i], this.tiles[j]] = [this.tiles[j], this.tiles[i]];
             
-            // Swap the `row` and `col` properties of the swapped tiles to match their new positions
+            // `row` und `col` Eigenschaften der getauschten Puzzleteile an ihre neuen Positionen anpassen
             let tempRow = this.tiles[i].row;
             let tempCol = this.tiles[i].col;
             this.tiles[i].row = this.tiles[j].row;
@@ -178,23 +212,25 @@ class SwappingPuzzle extends Puzzle {
         }
     }
 
+    // Zeichnen des Puzzles
     draw() {
         this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
         this.tiles.forEach(tile => {
             const { row, col, originalRow, originalCol } = tile;
+            this.context.drawImage
             this.context.drawImage(
                 this.image,
-                originalCol * this.tileWidth, // Source x
-                originalRow * this.tileHeight, // Source y
-                this.tileWidth,                // Source width
-                this.tileHeight,               // Source height
-                col * this.tileWidth,          // Destination x
-                row * this.tileHeight,         // Destination y
-                this.tileWidth,                // Destination width
-                this.tileHeight                // Destination height
+                originalCol * this.tileWidth, // Quell-x
+                originalRow * this.tileHeight, // Quell-y
+                this.tileWidth,                // Quellbreite
+                this.tileHeight,               // Quellhöhe
+                col * this.tileWidth,          // Ziel-x
+                row * this.tileHeight,         // Ziel-y
+                this.tileWidth,                // Zielbreite
+                this.tileHeight                // Zielhöhe
             );
 
-            // Highlight the selected tile with a red border
+            // Hervorheben des ausgewählten Puzzleteils mit einem roten Rahmen
             if (this.selectedTile && this.selectedTile.row === row && this.selectedTile.col === col) {
                 this.context.strokeStyle = 'red';
                 this.context.lineWidth = 4;
@@ -208,6 +244,7 @@ class SwappingPuzzle extends Puzzle {
         });
     }
 
+    // Behandlung der Benutzereingaben
     handleUserInput(event) {
         const { offsetX, offsetY } = event;
         const clickedCol = Math.floor(offsetX / this.tileWidth);
@@ -217,19 +254,21 @@ class SwappingPuzzle extends Puzzle {
 
         if (tile) {
             if (!this.selectedTile) {
-                this.selectedTile = tile; // Select the first tile
+                this.selectedTile = tile; // Erstes Puzzleteil auswählen
             } else {
-                this.swapTiles(this.selectedTile, tile); // Swap with the second tile
-                this.selectedTile = null; // Deselect the tile after swapping
+                this.swapTiles(this.selectedTile, tile); // Mit dem zweiten Puzzleteil tauschen
+                this.selectedTile = null; // Auswahl nach dem Tauschen aufheben
                 this.draw();
                 if (this.checkCompletion()) {
                     this.completePuzzle();
                 }
             }
-            this.draw(); // Redraw the canvas to show the selected tile highlight
+
+            this.draw(); // Canvas neu zeichnen, um die Hervorhebung des ausgewählten Puzzleteils anzuzeigen
         }
     }
 
+    // Tauschen von zwei Puzzleteilen
     swapTiles(tile1, tile2) {
         const temp = { row: tile1.row, col: tile1.col };
         tile1.row = tile2.row;
@@ -238,30 +277,47 @@ class SwappingPuzzle extends Puzzle {
         tile2.col = temp.col;
     }
 
+    // Überprüfen, ob das Puzzle gelöst ist
     checkCompletion() {
         return this.tiles.every(tile => tile.row === tile.originalRow && tile.col === tile.originalCol);
     }
+
+    // Lösen des Puzzles
+    solvePuzzle() {
+        this.tiles.forEach(tile => {
+            tile.row = tile.originalRow;
+            tile.col = tile.originalCol;
+        });
+        this.draw();
+        this.completePuzzle();
+    }
 }
 
+// Klasse für klassische Puzzles
 class ClassicPuzzle extends Puzzle {
-    // Implement the classic puzzle specific logic
+    // Implementierung der spezifischen Logik für klassische Puzzles
     init() {
-        // Initialize classic puzzle
+        // Initialisierung des klassischen Puzzles
     }
 
     draw() {
-        // Draw the puzzle
+        // Zeichnen des klassischen Puzzles
     }
 
     handleUserInput(event) {
-        // Handle user interaction
+        // Behandlung der Benutzereingaben für das klassische Puzzle
     }
 
     checkCompletion() {
-        // Check if puzzle is solved
+        // Überprüfen, ob das klassische Puzzle gelöst ist
+    }
+
+    solvePuzzle() {
+        // Lösen des klassischen Puzzles
     }
 }
 
+// Fabrikklasse zur Erstellung von Puzzles
 class PuzzleFactory {
     static createPuzzle(type, image, canvas, options = {}) {
         switch (type) {
@@ -277,6 +333,7 @@ class PuzzleFactory {
     }
 }
 
+// Timer-Klasse zur Verwaltung der Zeit
 class Timer {
     constructor(duration, onTick, onComplete) {
         this.duration = duration;
@@ -286,6 +343,7 @@ class Timer {
         this.onComplete = onComplete;
     }
 
+    // Starten des Timers
     start() {
         this.timeLeft = this.duration;
         this.interval = setInterval(() => {
@@ -296,23 +354,26 @@ class Timer {
                 this.stop();
                 this.onComplete();
             }
-        }, 1000); // 1 second interval
+        }, 1000); // 1-Sekunden-Intervall
     }
 
+    // Stoppen des Timers
     stop() {
         clearInterval(this.interval);
     }
 
+    // Zurücksetzen des Timers
     reset() {
         this.timeLeft = this.duration;
         this.stop();
     }
 }
 
+// Spielmanager-Klasse zur Verwaltung des Spiels
 class GameManager {
     constructor(canvas, puzzleSequence, totalTimePerPuzzle) {
         this.canvas = canvas;
-        this.puzzleSequence = puzzleSequence; // An array of objects with puzzle type and image path
+        this.puzzleSequence = puzzleSequence; // Ein Array von Objekten mit Puzzle-Typ und Bildpfad
         this.currentPuzzleIndex = 0;
         this.totalTimePerPuzzle = totalTimePerPuzzle;
         this.totalScore = 0;
@@ -320,6 +381,7 @@ class GameManager {
         this.puzzle = null;
     }
 
+    // Starten des nächsten Puzzles
     startNextPuzzle() {
         if (this.currentPuzzleIndex >= this.puzzleSequence.length) {
             this.endGame();
@@ -328,7 +390,7 @@ class GameManager {
 
         const { type, imagePath } = this.puzzleSequence[this.currentPuzzleIndex];
         
-        // Load the image for the current puzzle
+        // Laden des Bildes für das aktuelle Puzzle
         const image = new Image();
         image.src = imagePath;
         image.onload = () => {
@@ -336,7 +398,7 @@ class GameManager {
             this.puzzle.init();
             this.puzzle.draw();
     
-            // Initialize and start the timer
+            // Initialisieren und Starten des Timers
             this.timer = new Timer(
                 this.totalTimePerPuzzle,
                 (timeLeft) => this.updateTimeUI(timeLeft),
@@ -344,58 +406,57 @@ class GameManager {
             );
             this.timer.start();
     
-            // Handle puzzle completion
+            // Behandlung der Puzzle-Vervollständigung
             this.puzzle.onComplete(() => this.handlePuzzleComplete());
         };
     }
 
+    // Behandlung der Puzzle-Vervollständigung
     handlePuzzleComplete() {
         this.timer.stop();
-        const scoreForThisPuzzle = this.timer.timeLeft * 10; // Example scoring logic
+        const scoreForThisPuzzle = this.timer.timeLeft * 10; // Beispiel für eine Punktelogik
         this.totalScore += scoreForThisPuzzle;
         this.updateScoreUI();
         this.currentPuzzleIndex++;
         this.startNextPuzzle();
     }
 
+    // Behandlung des Zeitablaufs für ein Puzzle
     handlePuzzleTimeout() {
         console.log("Time's up!");
         this.currentPuzzleIndex++;
         this.startNextPuzzle();
     }
 
+    // Aktualisieren der Zeit-UI
     updateTimeUI(timeLeft) {
         document.getElementById('timeLeft').innerText = timeLeft;
     }
 
+    // Aktualisieren der Punkte-UI
     updateScoreUI() {
         document.getElementById('totalScore').innerText = this.totalScore;
     }
 
+    // Beenden des Spiels
     endGame() {
         console.log("Game Over! Final Score: " + this.totalScore);
         alert("Game Over! Final Score: " + this.totalScore);
     }
 }
 
-// Usage
+// Verwendung des Spielmanagers
 const canvas = document.getElementById('puzzleCanvas');
-/*const puzzleSequence = [
-    { type: 'sliding', imagePath: 'path/to/image1.jpg' },
-    { type: 'classic', imagePath: 'path/to/image2.jpg' },
-    { type: 'sliding', imagePath: 'path/to/image3.jpg' },
-    { type: 'classic', imagePath: 'path/to/image4.jpg' },
-    { type: 'sliding', imagePath: 'path/to/image5.jpg' },
-    { type: 'classic', imagePath: 'path/to/image6.jpg' },
-    { type: 'sliding', imagePath: 'path/to/image7.jpg' },
-    { type: 'classic', imagePath: 'path/to/image8.jpg' },
-    { type: 'sliding', imagePath: 'path/to/image9.jpg' },
-    { type: 'classic', imagePath: 'path/to/image10.jpg' }
-];*/
-// TEST SINGLE PUZZLE - 'sliding', 'swapping', 'classic'
 const puzzleSequence = [
     { type: 'swapping', imagePath: './assets/test_img.jpg' }
 ];
-const totalTimePerPuzzle = 60; // 60 seconds for each puzzle
+const totalTimePerPuzzle = 60; // 60 Sekunden pro Puzzle
 const gameManager = new GameManager(canvas, puzzleSequence, totalTimePerPuzzle);
 gameManager.startNextPuzzle();
+
+// Hinzufügen der Funktionalität für die "Solve Puzzle"-Schaltfläche
+document.getElementById('solveButton').addEventListener('click', () => {
+    if (gameManager.puzzle) {
+        gameManager.puzzle.solvePuzzle();
+    }
+});
