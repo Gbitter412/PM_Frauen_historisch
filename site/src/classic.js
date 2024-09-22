@@ -1,3 +1,9 @@
+/*
+//////////////////////////////////////////////////////////
+THIS HAS TO BE ADAPTED AND IMPLEMENTED IN ClassicPuzzle.js
+//////////////////////////////////////////////////////////
+*/
+
 const puzzleCanvas = document.getElementById('puzzleCanvas');
 const piecesCanvas = document.getElementById('piecesCanvas');
 const puzzleContext = puzzleCanvas.getContext('2d');
