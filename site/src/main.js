@@ -1,7 +1,8 @@
 import { GameManager } from './GameManager.js';
 
 // Generation of random puzzle types
-const puzzleTypes = ['sliding', 'swapping']; // add puzzle types here
+//const puzzleTypes = ['sliding', 'swapping']; // add puzzle types here
+const puzzleTypes = ['swapping']; // add puzzle types here
 const randomPuzzles = ((puzzles, length) => {
     const result = [];
     for (let i = 0; i < length; i++) {
