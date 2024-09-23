@@ -56,8 +56,11 @@ Zunächst werden Papierprototypen erstellt, gefolgt von einem digitalen Prototyp
 ### Aktueller Stand: 
 
 <details>
+<summary>Prototyp der Benutzeroberfläche (Papierskizze)</summary>
+  
+  <br>
+  
 
-### Prototyp der Benutzeroberfläche (Papierskizze)
 Um die Struktur der Benutzeroberfläche vor der eigentlichen Umsetzung zu visualisieren, haben wir eine **Papierskizze** erstellt. Diese Skizze dient als erster Entwurf für das Layout und hilft uns dabei, die Benutzerführung sowie die wichtigsten Komponenten der Oberfläche besser zu planen
 
 Sie zeigt die Grundelemente, wie Menüs, Buttons und das Spielfeld
@@ -68,4 +71,36 @@ Sie zeigt die Grundelemente, wie Menüs, Buttons und das Spielfeld
 
 </details>
 
+<details>
+   
+<summary>Wichtige CSS-Stile</summary>
+   <br>
+   
+Beispiel zu **CSS-Style** um das Design für unsere Anwendung zu verbessern:
+   
+```css
+#game-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+canvas {
+    border: 1px solid #000;
+}
+```
+
+Diese Stile sorgen dafür, dass die Spielinformationen zentriert angezeigt werden und der Container die enthaltenen Elemente ansprechend anordnet. Das Canvas-Element hat zudem eine klare Umrandung, die es hervorhebt.
+
+[Link zum aktuellen Code](https://github.com/Gbitter412/PM_Frauen_historisch/blob/f06666ba35eba3bdd1c7993fc1d5cf49780b6354/site/css/styles.css)
+
+
+</details>
 
