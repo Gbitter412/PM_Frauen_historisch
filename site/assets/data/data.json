@@ -1,0 +1,24 @@
+{
+  "entries": [
+    {
+      "ID": 1,
+      "name": "Ada",
+      "surname": "Lovelace",
+      "birth_year": 1815,
+      "death_year": 1852,
+      "origin": "London, England",
+      "info": "Ada Lovelace war eine Pionierin der Informatik, die durch ihre Zusammenarbeit mit Charles Babbage und ihre Arbeit an der 'analytischen Maschine' Geschichte schrieb. Sie erkannte das Potenzial dieser Maschine, weit über einfache Berechnungen hinauszugehen. Lovelace entwickelte das erste formale Computerprogramm zur Berechnung der Bernoulli-Zahlen und legte damit den Grundstein für die moderne Programmierung. Ihre visionären Ideen zur Nutzung von Computern für komplexe Aufgaben wie Musikkomposition und Textverarbeitung waren ihrer Zeit weit voraus. Lovelaces Beiträge zur Rechnerarchitektur und Programmierung wurden erst in den 1980er Jahren wiederentdeckt und sind heute von unschätzbarem Wert.",
+      "image_path": ""
+    },
+    {
+      "ID": 2,
+      "name": "Mary",
+      "surname": "Anning",
+      "birth_year": 1799,
+      "death_year": 1847,
+      "origin": "Lymet Regis, Dorset, England",
+      "info": "Mary Anning war eine herausragende Paläontologin, die durch ihre bedeutenden Fossilienfunde die Wissenschaft revolutionierte. Ihre Entdeckungen, darunter der erste vollständige Plesiosaurus, lieferten wichtige Beweise für das Aussterben von Arten und unterstützten die Theorien von Georges Cuvier. Trotz fehlender wissenschaftlicher Ausbildung zeichnete und beschrieb sie ihre Funde präzise. Ihr Leben lang suchte sie an der Jurassic Coast nach Fossilien und trug wesentlich zur Entwicklung der Paläontologie bei. Ihre Arbeit legte den Grundstein für das Verständnis früherer geologischer Zeitalter und machte die Jurassic Coast zu einer weltberühmten Fundstelle.",
+      "image_path": ""
+    }
+  ]
+}
