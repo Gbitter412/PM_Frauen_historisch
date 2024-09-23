@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mini-Games</title>
+    <title>Game</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/variables.css" />
     <link
@@ -17,9 +17,9 @@
     <header>
       <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="../index.html">
             <img
-              src="./assets/img/logo.jpg"
+              src="../assets/img/logo.jpg"
               alt="Logo"
               width="30"
               height="24"
@@ -31,15 +31,22 @@
       </nav>
     </header>
 
-    <div class="container-test">
-      <h1>Wusstest du das...?</h1>
-      <p id="randomInfo"></p>
+    <!--
+    <div id="game-info">
+        <div>Time Left: <span id="timeLeft">0</span> seconds</div>
+        <div>Total Score: <span id="totalScore">0</span></div>
+    </div>
+    -->
+
+    
+    <div id="puzzleWrapper">
+      <div id="container1">
+        <canvas id="puzzleCanvas" width="450" height="450"></canvas>
+      </div>
+      <button id="solveButton">Solve Puzzle</button>
     </div>
 
-    <div class="buttons">
-      <a href="./pages/game.html" class="button1" role="button">Play</a>
-      <a href="./pages/help.html" class="button1" role="button">Help</a>
-    </div>
+    <script type="module" src="../src/main.js"></script>
 
     <!-- Bootstrap -->
     <script
@@ -47,6 +54,5 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="./src/RandomInfo.js"></script>
   </body>
 </html>

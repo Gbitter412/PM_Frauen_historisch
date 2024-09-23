@@ -70,7 +70,7 @@ export class SwappingPuzzle extends Puzzle {
             // Hervorheben des ausgewählten Puzzleteils mit einem roten Rahmen
             if (this.selectedTile && this.selectedTile.row === row && this.selectedTile.col === col) {
                 this.context.strokeStyle = 'red';
-                this.context.lineWidth = 4;
+                this.context.lineWidth = 2;
                 this.context.strokeRect(
                     col * this.tileWidth,
                     row * this.tileHeight,
