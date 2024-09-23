@@ -55,7 +55,43 @@ Der Classic Puzzle Spielmodus soll ein Bild in ein 4x4-Gitter zerteilen und die 
 
 ### Aktueller Stand: 
 
-<details>
 
+<details>
+<summary>Implementierung des klassischen Puzzles</summary>
+<br>
+
+In dieser Implementierung haben wir die grundlegende Logik für ein klassisches Puzzle entwickelt. Der Code kümmert sich um die Darstellung der Puzzlestücke, die Auswahl von Teilen und das Überprüfen, ob das Puzzle gelöst ist.
+
+**Code-Ausschnitt:**
+
+```javascript
+const puzzleCanvas = document.getElementById('puzzleCanvas');
+const piecesCanvas = document.getElementById('piecesCanvas');
+const puzzleContext = puzzleCanvas.getContext('2d');
+const piecesContext = piecesCanvas.getContext('2d');
+
+// Erstellt die Puzzleteile und ordnet sie zufällig an
+function createPuzzlePieces() {
+    // ... (Logik zum Erstellen der Puzzlestücke)
+}
+
+// Zeichnet das Puzzle-Board und die platzierten Teile
+function drawPuzzleBoard() {
+    // ... (Logik zum Zeichnen des Puzzle-Boards)
+}
+
+// Behandelt Klicks auf die Puzzle-Leinwand, um Teile zu platzieren
+puzzleCanvas.addEventListener('click', (e) => {
+    // ... (Logik zur Behandlung von Klicks)
+});
+
+// Überprüft, ob das Puzzle gelöst ist
+function isPuzzleSolved() {
+    // ... (Logik zur Überprüfung der Puzzle-Vervollständigung)
+}
+
+```
+
+[Link zum aktuellen Code](https://github.com/Gbitter412/PM_Frauen_historisch/blob/f06666ba35eba3bdd1c7993fc1d5cf49780b6354/site/src/classic.js)
 
 </details>

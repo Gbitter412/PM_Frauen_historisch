@@ -2,7 +2,7 @@
 Unser Projekt ist ein Puzzle-Spiel, bei dem Sie die Möglichkeit haben, auf spielerische Weise mehr über bedeutende historische Frauenfiguren zu lernen. Das Ziel ist es, ein 4x4 Puzzle korrekt zusammenzusetzen. Nach dem erfolgreichen Lösen des Puzzles wird ein informativer Text freigeschaltet, der das Leben und Wirken der jeweiligen historischen Persönlichkeit kurz beschreibt. So erhalten Sie auf unterhaltsame Weise spannende Einblicke in die Geschichte herausragender Frauen.
 
 
-
+----
 ## Git Workflow
 
 Für ein neues Feature soll ein neuer Branch angelegt werden.
