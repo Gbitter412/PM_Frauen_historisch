@@ -9,6 +9,7 @@ const selectedPuzzleType = puzzleTypes[Math.floor(Math.random() * puzzleTypes.le
 // Erstelle eine Liste mit 10 Puzzles vom gleichen Typ
 const randomPuzzles = Array(10).fill(selectedPuzzleType); // ändere hier die Länge des Spiels
 
+
 // Generiere die Sequenz der Puzzles
 const puzzleSequence = (() => {
     const result = [];
