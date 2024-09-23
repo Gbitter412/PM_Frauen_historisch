@@ -19,7 +19,7 @@ export class Timer {
                 this.stop();
                 this.onComplete();
             }
-        }, 1000); // 1-Sekunden-Intervall
+        }, 100); // 0.1s Intervall
     }
 
     // Stoppen des Timers
