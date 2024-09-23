@@ -55,9 +55,6 @@ export class GameManager {
 
     // Behandlung des Zeitablaufs für ein Puzzle
     handlePuzzleTimeout() {
-        console.log("Time's up!");
-        this.currentPuzzleIndex++;
-        this.startNextPuzzle();
     }
 
     // Aktualisieren der Zeit-UI
