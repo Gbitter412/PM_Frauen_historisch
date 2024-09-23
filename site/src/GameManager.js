@@ -33,7 +33,7 @@ export class GameManager {
             // Initialisieren und Starten des Timers
             this.timer = new Timer(
                 this.totalTimePerPuzzle,
-                (timeLeft) => this.updateTimeUI(timeLeft),
+                (timeLeft) => this.updateTimeUI(timeLeft / 10),
                 () => this.handlePuzzleTimeout()
             );
             this.timer.start();

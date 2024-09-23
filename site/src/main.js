@@ -20,7 +20,7 @@ const puzzleSequence = (() => {
     return result;
 }) ();
 
-const totalTimePerPuzzle = 60; // 60 Sekunden pro Puzzle
+const totalTimePerPuzzle = 60 * 10; // 60 Sekunden pro Puzzle
 const canvas = document.getElementById('puzzleCanvas');
 const gameManager = new GameManager(canvas, puzzleSequence, totalTimePerPuzzle);
 gameManager.startNextPuzzle();
