@@ -2,19 +2,9 @@ body {
   font-family: "Roboto", system-ui;
 }
 
-.puzzleWrapper {
+#container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  padding: 0;
-  margin: 0;
-}
-
-.container1 {
-  display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
@@ -25,12 +15,54 @@ canvas {
   border: 1px solid #000;
 }
 
+#solveButton {
+  margin-top: 20px;
+}
+
+.btn-test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  background: #333;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid #333;
+  transition: all 0.35s;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transition: all 0.35s;
+}
+
+.btn-test:hover {
+  width: 200px;
+  border: 3px solid #2ecc71;
+  background: transparent;
+  color: #2ecc71;
+}
+
 .container-test {
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   padding-top: 50px;
+  padding-bottom: 200px;
 }
 
 .container-test p {
@@ -57,34 +89,34 @@ canvas {
 
 footer {
   background-color: #333;
-  padding: 20px;
+  padding: 5px;
   text-align: center;
   position: relative;
 }
 
 .image-slider {
   overflow: hidden;
-  width: 100%; /* Nimmt die gesamte Breite des Footers */
+  width: 100%;
 }
 
 .slider-track {
   display: flex;
-  justify-content: flex-start; /* Bilder horizontal anordnen */
-  flex-wrap: nowrap; /* Verhindert das Umwickeln der Bilder */
-  animation: scroll 60s linear infinite; /* Die Animation bewegt die Bilder unendlich */
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  animation: scroll 60s linear infinite;
 }
 
 .slide {
-  flex: 0 0 auto; /* Verhindert das Schrumpfen der Bilder */
-  width: 200px; /* Feste Breite für die Bilder */
-  height: 150px; /* Feste Höhe für die Bilder */
-  margin-right: 10px; /* Optional: Abstand zwischen den Bildern */
+  flex: 0 0 auto;
+  width: 300px;
+  height: 300px;
+  margin-right: 20px;
 }
 
 .slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Bild auf die Boxgröße zuschneiden, ohne Verzerrung */
+  object-fit: cover;
   display: block;
 }
 
