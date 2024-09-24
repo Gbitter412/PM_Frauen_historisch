@@ -127,3 +127,79 @@ footer {
     transform: translateX(-100%);
   }
 }
+
+#gameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#riddleSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#riddleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+#codeCanvas {
+  border: 1px solid #000;
+  width: 450px;
+  height: 450px;
+}
+
+#userAnswer {
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  text-align: center;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#result {
+  margin-top: 15px;
+  font-size: 18px;
+  color: green;
+}
+
+#adaContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+#hintBox {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  width: 200px;
+  text-align: center;
+  font-style: italic;
+}
+
+#hintText {
+  color: #333;
+}
+
+#hintText {
+  font-style: italic;
+}

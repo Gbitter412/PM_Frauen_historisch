@@ -46,25 +46,26 @@
     </header>
 
 
-
-    <div id="riddleContainer">
-        <pre id="codeRiddle"></pre>
-        <input type="text" id="userAnswer" placeholder="Type your answer here...">
-        <button onclick="checkAnswer()">Submit</button>
-        <p id="result"></p>
-    </div>
-    <div id="adaContainer">
-        <img src="../assets/img/1.jpg" alt="Ada Lovelace" width="200">
-        <button onclick="toggleHint()">Ask Ada</button>
-        <div id="hintBox">
-            <p id="hintText"></p>
+    <div id="gameContainer">
+        <div id="riddleSection">
+            <div id="riddleContainer">
+                <canvas id="codeCanvas" width="450" height="450"></canvas>
+                <input type="text" id="userAnswer" placeholder="Type your answer here...">
+                <button class="btn-test" onclick="checkAnswer()">Submit</button>
+                <p id="result"></p>
+            </div>
+            <div id="adaContainer">
+                <img src="../assets/img/1.jpg" alt="Ada Lovelace" width="200">
+                <button class="btn-test" onclick="toggleHint()">Ask Ada</button>
+                <div id="hintBox">
+                    <p id="hintText"></p>
+                </div>
+            </div>
         </div>
     </div>
 
 
     <script type="module" src="../src/codeCracker.js"></script>
-
-
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
