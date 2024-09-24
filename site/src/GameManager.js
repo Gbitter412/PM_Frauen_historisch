@@ -11,6 +11,8 @@ export class GameManager {
         this.totalScore = 0;
         this.timer = null;
         this.puzzle = null;
+        this.solveButton = document.getElementById('solveButton');
+        this.solveButton.addEventListener('click', () => this.handleSolveButtonClick());
     }
 
     // Starten des nächsten Puzzles
@@ -41,16 +43,32 @@ export class GameManager {
             // Behandlung der Puzzle-Vervollständigung
             this.puzzle.onComplete(() => this.handlePuzzleComplete());
         };
+
+        // Update button text and disable to avoid premature solving
+        this.solveButton.textContent = 'Solve Puzzle';
+        this.solveButton.disabled = false; // Enable button when puzzle is ready
     }
 
-    // Behandlung der Puzzle-Vervollständigung
+    // Handle puzzle completion
     handlePuzzleComplete() {
         this.timer.stop();
-        const scoreForThisPuzzle = this.timer.timeLeft * 10; // Beispiel für eine Punktelogik
+        const scoreForThisPuzzle = this.timer.timeLeft * 10; // Example scoring logic
         this.totalScore += scoreForThisPuzzle;
         this.updateScoreUI();
-        this.currentPuzzleIndex++;
-        this.startNextPuzzle();
+        
+        // Update button text and enable it for the next puzzle
+        this.solveButton.textContent = 'Next Puzzle';
+        this.solveButton.disabled = false; // Enable button for the next puzzle
+    }
+
+    // Handle "Solve Puzzle" or "Next Puzzle" button click
+    handleSolveButtonClick() {
+        if (this.solveButton.textContent === 'Next Puzzle') {
+            this.currentPuzzleIndex++;
+            this.startNextPuzzle();
+        } else if (this.puzzle) {
+            this.puzzle.solvePuzzle();
+        }
     }
 
     // Behandlung des Zeitablaufs für ein Puzzle
@@ -71,5 +89,6 @@ export class GameManager {
     endGame() {
         console.log("Game Over! Final Score: " + this.totalScore);
         alert("Game Over! Final Score: " + this.totalScore);
+        this.solveButton.disabled = true; // Disable the button after the game ends
     }
 }

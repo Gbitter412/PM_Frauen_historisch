@@ -1,16 +1,98 @@
-#game-info {
-    text-align: center;
-    margin-bottom: 20px;
+body {
+  font-family: "Roboto", system-ui;
 }
 
-#container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
+.puzzleWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
 }
 
 canvas {
-    border: 1px solid #000;
+  border: 1px solid #000;
+}
+
+.container-test {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.container-test p {
+  padding-top: 30px;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+.logo {
+  transition: transform 0.2s ease;
+}
+
+.brand-text {
+  transition: transform 0.2s ease;
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+footer {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.image-slider {
+  overflow: hidden;
+  width: 100%; /* Nimmt die gesamte Breite des Footers */
+}
+
+.slider-track {
+  display: flex;
+  justify-content: flex-start; /* Bilder horizontal anordnen */
+  flex-wrap: nowrap; /* Verhindert das Umwickeln der Bilder */
+  animation: scroll 60s linear infinite; /* Die Animation bewegt die Bilder unendlich */
+}
+
+.slide {
+  flex: 0 0 auto; /* Verhindert das Schrumpfen der Bilder */
+  width: 200px; /* Feste Breite für die Bilder */
+  height: 150px; /* Feste Höhe für die Bilder */
+  margin-right: 10px; /* Optional: Abstand zwischen den Bildern */
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Bild auf die Boxgröße zuschneiden, ohne Verzerrung */
+  display: block;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }

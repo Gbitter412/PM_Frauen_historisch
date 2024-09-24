@@ -10,7 +10,6 @@ const selectedPuzzleType = puzzleTypes[Math.floor(Math.random() * puzzleTypes.le
 // Erstelle eine Liste mit 10 Puzzles vom gleichen Typ
 const randomPuzzles = Array(10).fill(selectedPuzzleType); // ändere hier die Länge des Spiels
 
-
 // Generiere die Sequenz der Puzzles
 const puzzleSequence = (() => {
     const result = [];
@@ -59,6 +58,7 @@ const puzzleSequence = (() => {
 
 
     for (let index = 0; index < randomPuzzles.length; index++) {
+
         const imagePath = getRandomImage();
         result.push({ type: randomPuzzles[index], imagePath: imagePath });
     }
@@ -70,10 +70,3 @@ const totalTimePerPuzzle = 60 * 10; // 60 Sekunden pro Puzzle
 const canvas = document.getElementById('puzzleCanvas');
 const gameManager = new GameManager(canvas, puzzleSequence, totalTimePerPuzzle);
 gameManager.startNextPuzzle();
-
-// Hinzufügen der Funktionalität für die "Puzzle lösen"-Schaltfläche
-document.getElementById('solveButton').addEventListener('click', () => {
-    if (gameManager.puzzle) {
-        gameManager.puzzle.solvePuzzle();
-    }
-});
