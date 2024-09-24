@@ -59,14 +59,29 @@ export class GameManager {
         // Update button text and enable it for the next puzzle
         this.solveButton.textContent = 'Next Puzzle';
         this.solveButton.disabled = false; // Enable button for the next puzzle
-
-            // Hole die Informationen für das aktuelle Puzzle
-    const currentEntry = this.puzzleData[this.currentPuzzleIndex];
-    if (currentEntry) {
-        this.showPuzzleInfo(currentEntry); // Zeige die Informationen an
+    
+        const currentEntry = this.puzzleData[this.currentPuzzleIndex];
+        
+        if (currentEntry) {
+            this.showPuzzleInfo(currentEntry); // Zeige die Informationen an
+        }
     }
 
-    }
+    // Funktion zur Anzeige der Puzzle-Informationen
+showPuzzleInfo(puzzle) {
+    const infoContainer = document.getElementById('infoContent'); // Container für die Info
+    infoContainer.innerHTML = `
+        <h2>${puzzle.name} ${puzzle.surname}</h2>
+        <p>Geboren: ${puzzle.birth_year}</p>
+        <p>Gestorben: ${puzzle.death_year}</p>
+        <p>Herkunft: ${puzzle.origin}</p>
+        <p>${puzzle.info}</p>
+        <img src="${puzzle.image_path}" alt="${puzzle.name} ${puzzle.surname}" style="max-width: 100%; height: auto;" />
+    `;
+
+    const infoContainerDiv = document.getElementById('infoContainer');
+    infoContainerDiv.style.display = 'block'; // Zeige den Info-Container an
+}
 
     // Handle "Solve Puzzle" or "Next Puzzle" button click
     handleSolveButtonClick() {
