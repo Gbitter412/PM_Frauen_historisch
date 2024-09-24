@@ -18,12 +18,19 @@ const puzzleSequence = (() => {
     const imagePaths = [
         '../assets/img/1.jpg',
         '../assets/img/2.jpg',
+        '../assets/img/3.jpg',
+        '../assets/img/4.jpg',
+        '../assets/img/5.jpg',
+        '../assets/img/6.jpg',
+        '../assets/img/7.jpg',
+        '../assets/img/8.jpg',
+        '../assets/img/9.jpg',
         '../assets/img/10.jpg',
         '../assets/img/11.jpg',
         '../assets/img/12.jpg',
         '../assets/img/13.jpg',
-        '../assets/img/14.jpg.jpg',
-        '../assets/img/15.png',
+        '../assets/img/14.jpg',
+        '../assets/img/15.jpg',
         '../assets/img/16.jpg',
         '../assets/img/17.jpg',
         '../assets/img/18.jpg',
@@ -34,7 +41,11 @@ const puzzleSequence = (() => {
         '../assets/img/23.jpg',
         '../assets/img/24.jpg',
         '../assets/img/25.jpg',
-
+        '../assets/img/26.jpg',
+        '../assets/img/27.jpg',
+        '../assets/img/28.jpg',
+        '../assets/img/29.jpg',
+        '../assets/img/30.jpg',
     ];
 
     //nach 18 mal spielen, wird erst wieder das erste Random Bild wiederholt
