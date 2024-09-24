@@ -13,7 +13,7 @@ const randomPuzzles = Array(10).fill(selectedPuzzleType); // Ã¤ndere hier die LÃ
 const puzzleSequence = (() => {
     const result = [];
     for (let index = 0; index < randomPuzzles.length; index++) {
-        result.push({ type: randomPuzzles[index], imagePath: './assets/img/test_img.jpg' });
+        result.push({ type: randomPuzzles[index], imagePath: '../assets/img/test_img.jpg' });
     }
     return result;
 }) ();
