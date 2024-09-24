@@ -31,6 +31,7 @@ canvas {
   margin-right: auto;
   text-align: center;
   padding-top: 50px;
+  padding-bottom: 200px;
 }
 
 .container-test p {
@@ -57,34 +58,34 @@ canvas {
 
 footer {
   background-color: #333;
-  padding: 20px;
+  padding: 5px;
   text-align: center;
   position: relative;
 }
 
 .image-slider {
   overflow: hidden;
-  width: 100%; /* Nimmt die gesamte Breite des Footers */
+  width: 100%;
 }
 
 .slider-track {
   display: flex;
-  justify-content: flex-start; /* Bilder horizontal anordnen */
-  flex-wrap: nowrap; /* Verhindert das Umwickeln der Bilder */
-  animation: scroll 60s linear infinite; /* Die Animation bewegt die Bilder unendlich */
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  animation: scroll 60s linear infinite;
 }
 
 .slide {
-  flex: 0 0 auto; /* Verhindert das Schrumpfen der Bilder */
-  width: 200px; /* Feste Breite für die Bilder */
-  height: 150px; /* Feste Höhe für die Bilder */
-  margin-right: 10px; /* Optional: Abstand zwischen den Bildern */
+  flex: 0 0 auto;
+  width: 300px;
+  height: 300px;
+  margin-right: 20px;
 }
 
 .slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Bild auf die Boxgröße zuschneiden, ohne Verzerrung */
+  object-fit: cover;
   display: block;
 }
 

@@ -8,6 +8,7 @@
       "death_year": 1852,
       "origin": "London, England",
       "info": "Ada Lovelace war eine Pionierin der Informatik, die durch ihre Zusammenarbeit mit Charles Babbage und ihre Arbeit an der 'analytischen Maschine' Geschichte schrieb. Sie erkannte das Potenzial dieser Maschine, weit über einfache Berechnungen hinauszugehen. Lovelace entwickelte das erste formale Computerprogramm zur Berechnung der Bernoulli-Zahlen und legte damit den Grundstein für die moderne Programmierung. Ihre visionären Ideen zur Nutzung von Computern für komplexe Aufgaben wie Musikkomposition und Textverarbeitung waren ihrer Zeit weit voraus. Lovelaces Beiträge zur Rechnerarchitektur und Programmierung wurden erst in den 1980er Jahren wiederentdeckt und sind heute von unschätzbarem Wert.",
+      "info_homepage": "Ada Lovelace das erste Computerprogramm schrieb? Bereits im 19. Jahrhundert entwickelte sie Algorithmen für eine mechanische Rechenmaschine, lange bevor Computer erfunden wurden.",
       "image_path": "../img/1.jpg"
     },
     {
@@ -18,6 +19,7 @@
       "death_year": 1847,
       "origin": "Lymet Regis, Dorset, England",
       "info": "Mary Anning war eine herausragende Paläontologin, die durch ihre bedeutenden Fossilienfunde die Wissenschaft revolutionierte. Ihre Entdeckungen, darunter der erste vollständige Plesiosaurus, lieferten wichtige Beweise für das Aussterben von Arten und unterstützten die Theorien von Georges Cuvier. Trotz fehlender wissenschaftlicher Ausbildung zeichnete und beschrieb sie ihre Funde präzise. Ihr Leben lang suchte sie an der Jurassic Coast nach Fossilien und trug wesentlich zur Entwicklung der Paläontologie bei. Ihre Arbeit legte den Grundstein für das Verständnis früherer geologischer Zeitalter und machte die Jurassic Coast zu einer weltberühmten Fundstelle.",
+      "info_homepage": "Mary Anning eine der bedeutendsten Fossilienforscherinnen war? Im 19. Jahrhundert entdeckte sie die ersten vollständigen Skelette von Meeressauriern, was die Wissenschaft maßgeblich voranbrachte.",
       "image_path": "../img/2.jpg"
     },
     {
@@ -28,6 +30,7 @@
       "death_year": 2014,
       "origin": "New Kensington, Pennsylvania, USA",
       "info": "Stephanie Kwolek war eine bahnbrechende Chemikerin, die durch ihre Entdeckung der Kunstfaser Kevlar die Welt veränderte. Ursprünglich wollte sie Ärztin werden, doch ihre Arbeit bei DuPont führte 1964 zur Entwicklung von Kevlar, einer extrem starken und leichten Faser. Diese Erfindung fand vielfältige Anwendungen, von kugelsicheren Westen bis hin zu Schutzkleidung und industriellen Materialien. Obwohl Kwolek nicht am wirtschaftlichen Erfolg beteiligt war, revolutionierte ihre Entdeckung zahlreiche Branchen und rettete unzählige Leben. Ihre Arbeit zeigt, wie wissenschaftliche Neugier und Durchhaltevermögen zu bedeutenden Durchbrüchen führen können.",
+      "info_homepage": "Stephanie Kwolek das superstarke Material Kevlar erfunden hat? Es wird heute in kugelsicheren Westen und vielen anderen schützenden Ausrüstungen verwendet.",
       "image_path": "../img/3.TIF.jpg"
     },
     {
@@ -38,6 +41,7 @@
       "death_year": 1992,
       "origin": "New York City, New York, USA",
       "info": "Grace Hopper revolutionierte die Informatik, indem sie Ende der 1940er Jahre die Idee entwickelte, Computerprogramme in verständlicher Sprache zu schreiben. Sie war maßgeblich an den Projekten Mark I, Mark II und UNIVAC I beteiligt und entwickelte 1952 den ersten Compiler (A-0). Ihre Arbeit an der Programmiersprache FLOW-MATIC legte den Grundstein für COBOL, eine der ersten Hochsprachen. Hopper prägte auch den Begriff 'debugging', als eine Motte 1947 einen Computerfehler verursachte. Ihre Innovationen machten Computerprogrammierung zugänglicher und legten den Grundstein für moderne Softwareentwicklung, was ihr den Spitznamen 'Grandma COBOL' einbrachte.",
+      "info_homepage": "Grace Hopper den ersten Compiler für Programmiersprachen entwickelte? Sie prägte den Begriff 'Debugging' und legte den Grundstein für moderne Computertechnologie.",
       "image_path": "../img/4.jpg"
     },
     {
@@ -48,6 +52,7 @@
       "death_year": 1950,
       "origin": "New York City, New York, USA",
       "info": "Grace Hopper revolutionierte die Informatik, indem sie Ende der 1940er Jahre die Idee entwickelte, Computerprogramme in verständlicher Sprache zu schreiben. Sie war maßgeblich an den Projekten Mark I, Mark II und UNIVAC I beteiligt und entwickelte 1952 den ersten Compiler (A-0). Ihre Arbeit an der Programmiersprache FLOW-MATIC legte den Grundstein für COBOL, eine der ersten Hochsprachen. Hopper prägte auch den Begriff 'debugging', als eine Motte 1947 einen Computerfehler verursachte. Ihre Innovationen machten Computerprogrammierung zugänglicher und legten den Grundstein für moderne Softwareentwicklung, was ihr den Spitznamen 'Grandma COBOL' einbrachte.",
+      "info_homepage": "Melitta Bentz den Kaffeefilter erfunden hat? Ihre Erfindung aus einem Löschblatt revolutionierte 1908 das Kaffeebrühen und wird bis heute weltweit genutzt.",
       "image_path": "../img/5.jpg"
     },
     {
@@ -58,6 +63,7 @@
       "death_year": 1913,
       "origin": "Shelbyville, Illinois, USA",
       "info": "Josephine Cochrane revolutionierte die Hausarbeit, indem sie 1886 den ersten praktischen Geschirrspüler patentierte. Als wohlhabende Frau, die oft Partys veranstaltete, ärgerte sie sich über beschädigtes Geschirr und entwickelte daher eine Maschine, die das Spülen übernahm. Ihre Erfindung bestand aus einem wasserdichten Kupferkessel mit Drahtkörben, die das Geschirr hielten und durch Seifenlauge gereinigt wurden. Auf der Weltausstellung 1893 erhielt sie einen Preis für ihre Konstruktion. Cochrane gründete die Firma Cochran’s Crescent Washing Machine Company, die später in Hobart aufging. Ihre Innovation erleichterte die Hausarbeit weltweit und legte den Grundstein für moderne Geschirrspüler.",
+      "info_homepage": "Josephine Cochrane die erste automatische Spülmaschine erfunden hat? 1886 entwickelte sie die Maschine, um zerbrechliches Geschirr schneller und sicherer zu reinigen.",
       "image_path": "../img/6.jpg"
     },
     {
@@ -68,6 +74,7 @@
       "death_year": 2000,
       "origin": "Wien, Österreich",
       "info": "Hedy Lamarr war nicht nur eine gefeierte Hollywood-Schauspielerin, sondern auch eine brillante Erfinderin. Während des Zweiten Weltkriegs entwickelte sie zusammen mit George Antheil das Frequenzsprungverfahren, eine Technologie zur sicheren Kommunikation, die als Grundlage für moderne Technologien wie WLAN und Bluetooth dient³. Trotz ihrer bahnbrechenden Erfindung wurde ihre Arbeit erst viele Jahre später anerkannt. Lamarrs Beitrag zur Technik hat die Art und Weise, wie wir heute kommunizieren, revolutioniert und zeigt, dass Innovation oft aus den unerwartetsten Quellen kommt. Ihre Geschichte inspiriert bis heute und verbindet Glamour mit technischer Genialität.",
+      "info_homepage": "Hedy Lamarr nicht nur Schauspielerin, sondern auch Erfinderin war? Sie entwickelte eine Funktechnologie, die später die Basis für WLAN und Bluetooth bildete.",
       "image_path": "../img/7.jpg"
     },
     {
@@ -78,6 +85,7 @@
       "death_year": 1956,
       "origin": "Paris, Frankreich",
       "info": "Irène Joliot-Curie war eine bedeutende Physikerin und Chemikerin, die zusammen mit ihrem Ehemann Frédéric Joliot-Curie die künstliche Radioaktivität entdeckte. Diese bahnbrechende Entdeckung, für die sie 1935 den Nobelpreis für Chemie erhielten, ermöglichte die Herstellung radioaktiver Isotope, die in Medizin und Forschung weitreichende Anwendungen fanden. Ihre Arbeit legte den Grundstein für moderne Nukleartechnologie und die Nutzung radioaktiver Isotope in der Biologie und Medizin. Trotz der Herausforderungen des Zweiten Weltkriegs und gesundheitlicher Probleme trug Irène Joliot-Curie maßgeblich zur Weiterentwicklung der Wissenschaft bei und setzte das Erbe ihrer berühmten Eltern, Marie und Pierre Curie, fort.",
+      "info_homepage": "Irène Curie-Joliot die erste Frau war, die einen Nobelpreis für Chemie erhielt? Sie erhielt 1935 den Preis für ihre Forschung zur künstlichen Radioaktivität.",
       "image_path": "../img/8.jpg"
     },
     {
@@ -88,6 +96,7 @@
       "death_year": 1871,
       "origin": "Juillac, Frankreich",
       "info": "Jeanne Villepreux-Power war eine Pionierin der Meeresbiologie und die Erfinderin des Aquariums. Sie entwickelte mehrere Arten von Aquarien, die es ermöglichten, Wasserorganismen zu beobachten und zu erforschen. Ihr Schwerpunkt lag auf der Untersuchung von Mollusken, und sie entdeckte, dass der Argonauta-Krake seine Schale selbst erzeugt. Villepreux-Power war Mitglied vieler wissenschaftlicher Gesellschaften und wurde für ihre Arbeit hoch anerkannt. Ein Tiefseefisch und ein Venuskrater wurden nach ihr benannt¹². Ihre Innovationen legten den Grundstein für moderne aquatische Forschung und erweiterten unser Verständnis der Meeresbiologie erheblich.",
+      "info_homepage": "Jeanne Villepreux-Power als Pionierin der Meeresbiologie gilt? Sie erfand das erste Aquarienmodell und trug entscheidend zur Erforschung der Unterwasserwelt bei.",
       "image_path": "../img/9.jpg"
     },
     {
@@ -98,6 +107,7 @@
       "death_year": 1914,
       "origin": "York, Maine, USA",
       "info": "Margaret E. Knight, auch bekannt als die 'Mutter der Einkaufstüte', revolutionierte die Verpackungsindustrie, indem sie 1868 eine Maschine zur Herstellung von Papiertüten mit flachem Boden erfand. Diese Erfindung machte das Verpacken von Waren wesentlich praktischer. Trotz eines Patentstreits, den sie gewann, erhielt sie 1871 das Patent und gründete die Eastern Paper Bag Company¹. Bereits im Alter von 12 Jahren erfand sie einen Notstop für Maschinen, um Unfälle in der Baumwollspinnerei zu verhindern. Knight erhielt im Laufe ihres Lebens rund 26 Patente und gilt als eine der bedeutendsten Erfinderinnen ihrer Zeit.",
+      "info_homepage": "Margaret E. Knight die Erfinderin der Papiertütenmaschine ist? 1871 entwickelte sie eine Maschine, die gefaltete Papiertüten herstellte, und sicherte sich damit ein Patent.",
       "image_path": "../img/10.jpg"
     },
     {
@@ -108,6 +118,7 @@
       "death_year": 1179,
       "origin": "Bermersheim vor der Höhe, Rheinland-Pfalz",
       "info": "Hildegard von Bingen wurde früh der geistlichen Erziehung anvertraut und wurde 1136 zur Äbtissin des Frauenkonvents auf dem Disibodenberg gewählt. 1147 gründete sie das Kloster Rupertsberg, bekannt für seine innovative Bauweise. Hildegard ist berühmt für ihre visionären Schriften, darunter das zentrale Werk „Liber Scivias“, das Kosmologie und Theologie verknüpft. Ihre Predigtreisen (1160-1170) brachten ihr Anerkennung als „Prophetin Teutonica“ ein. Sie kritisierte die gesellschaftlichen Missstände ihrer Zeit, einschließlich der Klerus und Häresien. Trotz ihrer umfassenden Werke und Einflussnahme blieb eine offizielle Kanonisation aus. Hildegard starb 1179 und wurde später als Heilige verehrt. Ihre Schriften, die religiöse, politische und naturphilosophische Themen behandeln, erfuhren in den letzten Jahrzehnten eine Wiederentdeckung.",
+      "info_homepage": "Hildegard von Bingen eine der ersten Komponistinnen der westlichen Musikgeschichte war? Im 12. Jahrhundert schuf sie zahlreiche geistliche Gesänge und schrieb über Naturheilkunde und Theologie.",
       "image_path": "../img/11.jpg"
     },
     {
@@ -118,6 +129,7 @@
       "death_year": 1677,
       "origin": "Venedig, Italien",
       "info": "Barbara Strozzi war eine herausragende Komponistin des Barock, bekannt für ihre acht Sammlungen mit über 125 Werken, darunter Arien und Kantaten. Als Tochter des Librettisten Giulio Strozzi erhielt sie eine exzellente musikalische Ausbildung und präsentierte ihre Kompositionen in der „Accademia degli Unisoni“. Trotz ihrer Bemühungen, eine Hofanstellung zu erlangen, blieb ihr diese verwehrt. Strozzi's Werke zeichnen sich durch Raffinesse und Ausdrucksintensität aus und erleben seit etwa 30 Jahren eine Wiederentdeckung in der Alten Musik.",
+      "info_homepage": "Barbara Strozzi eine der bedeutendsten Komponistinnen des Barockzeitalters war? Im 17. Jahrhundert veröffentlichte sie mehrere Sammlungen von Vokalwerken und galt als Meisterin der Madrigal- und Arienkomposition.",
       "image_path": "../img/12.jpg"
     },
     {
@@ -128,6 +140,7 @@
       "death_year": 1847,
       "origin": "Hamburg",
       "info": "Fanny Hensel war eine herausragende Komponistin und Pianistin des 19. Jahrhunderts und die ältere Schwester von Felix Mendelssohn. Aufgewachsen in einer musisch geprägten Familie, erhielt sie eine erstklassige Ausbildung und war früh für ihr Klavierspiel bekannt. Trotz gesellschaftlicher Einschränkungen, die sie daran hinderten, ihre Werke unter eigenem Namen zu veröffentlichen, führte sie ab 1823 die „Sonntagsmusiken“ in ihrem Haus in Berlin ein, bei denen sie eigene Kompositionen aufführte. Ihr bedeutendstes Werk ist der Klavierzyklus „Das Jahr“ (1841). Am 14. Mai 1847 starb sie während einer Probe an einem Gehirnschlag. Ihr Erbe wird heute als prägend für die Musikgeschichte angesehen.",
+      "info_homepage": "Fanny Mendelssohn eine talentierte Komponistin und Pianistin war? Sie veröffentlichte über 400 Werke, darunter Lieder und Klaviermusik, und war eine wichtige Figur der romantischen Musik.",
       "image_path": "../img/13.jpg"
     },
     {
@@ -138,6 +151,7 @@
       "death_year": 1896,
       "origin": "Leipzig",
       "info": "Clara Wieck war eine bedeutende Pianistin und Komponistin. Ihr talentierter Vater förderte sie intensiv, und sie debütierte 1828 im Gewandhaus. 1840 heiratete sie Robert Schumann, mit dem sie eine künstlerische Partnerschaft pflegte. Nach seinem Tod 1856 setzte sie ihre Konzerttätigkeit fort und wurde 1878 erste Klavierlehrerin am Hoch'schen Konservatorium in Frankfurt. Clara war bis zu ihrem Tod 1896 als gefragte Künstlerin aktiv und widmete sich auch der Herausgabe von Robert Schumanns Werken. Sie hinterließ ein bedeutendes musikalisches Erbe und prägte das Klavierspiel nachhaltig.",
+      "info_homepage": "Clara Schumann eine der herausragendsten Pianistinnen und Komponistinnen des 19. Jahrhunderts war? Sie war eine Virtuosin am Klavier und veröffentlichte zahlreiche Werke, darunter Lieder und Klavierstücke.",
       "image_path": "../img/14.jpg.jpg"
     },
     {
@@ -148,6 +162,7 @@
       "death_year": 1912,
       "origin": "USA",
       "info": "Margaret A. Wilcox gilt als Erfinderin der Autoheizung. Ihr Patent aus dem Jahr 1893 revolutionierte die Automobilindustrie, indem es ein System zur Beheizung des Fahrgastraums einführte. Mit einer Brennkammer und einem Rohrsystem leitete ihre Erfindung warmes Wasser unter den Innenraum, wodurch Scheiben beschlagfrei blieben und der Komfort bei kühlen Bedingungen erheblich gesteigert wurde. Wilcox' innovative Lösung verbesserte nicht nur das Fahrerlebnis, sondern trug auch zur Sicherheit im Straßenverkehr bei und ebnete den Weg für moderne Klimatisierungssysteme in Fahrzeugen.",
+      "info_homepage": "Margaret A. Wilcox die erste Frau war, die ein Heizsystem für Automobile entwickelte? Ihr Patent aus dem Jahr 1893 revolutionierte die Nutzung von Autos in kalten Klimazonen.",
       "image_path": "../img/15.png"
     },
     {
@@ -158,6 +173,7 @@
       "death_year": 1953,
       "origin": "Greene County, Alabama, USA",
       "info": "Mary Anderson bemerkte 1902 während einer Straßenbahnfahrt in New York, dass der Fahrer bei Eisregen mit geöffneter Windschutzscheibe fahren musste, um freie Sicht zu behalten. Zurück in Birmingham entwickelte sie ein handbetriebenes Scheibenwischersystem, das aus einem Hebel und einem schwingenden Arm mit Gummilippe bestand. Der Hebel ermöglichte es, den Wischer von innen zu bedienen. 1903 erhielt sie dafür ein Patent. 1905 versuchte sie, die Rechte an ein kanadisches Unternehmen zu verkaufen, das jedoch den kommerziellen Wert der Erfindung anzweifelte. Nach Ablauf des Patents 1920 wurden Scheibenwischer nach ihrem Design serienmäßig in Autos eingebaut.",
+      "info_homepage": "Mary Anderson die Erfinderin des Scheibenwischers ist? 1903 erhielt sie ein Patent für ihre innovative Vorrichtung, die die Sicht bei Regen verbesserte und heute in jedem Auto zu finden ist.",
       "image_path": "../img/16.jpg"
     },
     {
@@ -168,6 +184,7 @@
       "death_year": 1994,
       "origin": "Kairo, Ägypten",
       "info": "Dorothy Crowfoot Hodgkin war eine britische Biochemikerin und Pionierin der Röntgenkristallografie. Sie entschlüsselte die Strukturen wichtiger biologischer Moleküle wie Penicillin, Vitamin B12 und Insulin, wofür sie 1964 den Nobelpreis für Chemie erhielt. Hodgkin studierte in Oxford und Cambridge und lehrte von 1960 bis 1977 an der Universität Oxford. Ihre Forschungen revolutionierten das Verständnis von Molekülstrukturen, insbesondere durch die Entwicklung dreidimensionaler Modelle. Trotz schwerer Gelenkrheumatismus blieb sie wissenschaftlich aktiv und erhielt zahlreiche Ehrungen, darunter die Royal Medal und den Order of Merit. Sie war auch in der Friedensbewegung aktiv und Präsidentin der Pugwash-Konferenz. Hodgkin starb 1994 in Shipston-on-Stour.",
+      "info_homepage": "Dorothy Hodgkin die erste britische Frau war, die einen Nobelpreis für Chemie erhielt? 1964 wurde sie für ihre Pionierarbeit in der Röntgenkristallographie ausgezeichnet, die zur Aufklärung der Struktur von Vitamin B12 und Penicillin führte.",
       "image_path": "../img/17.jpg"
     },
     {
@@ -178,6 +195,7 @@
       "death_year": 1912,
       "origin": "Hastings, UK",
       "info": "Sophia Jex-Blake war eine Pionierin der Frauen in der Medizin. Trotz Widerständen setzte sie sich für die Ausbildung von Frauen in diesem Bereich ein. 1869 bewarb sie sich erfolgreich an der Universität Edinburgh und gründete mit den 'Edinburgh Seven' eine Gruppe von Frauen, die als erste an einer britischen Universität Medizin studierten. Doch ihnen wurden die Abschlüsse verweigert. Daraufhin gründete Jex-Blake 1874 die London School of Medicine for Women und später die Edinburgh School of Medicine for Women. Sie half indischen Frauen durch Stipendien, Medizin zu studieren. Trotz vieler Hürden erlangte sie ihren Abschluss in der Schweiz und widmete ihr Leben der Förderung von Frauen in der Medizin. Jex-Blake lebte mit Margaret Todd, ihrer engen Lebensgefährtin, zusammen bis zu ihrem Tod 1912. Todd schrieb eine Biografie über sie, und beide sind gemeinsam in Sussex begraben.",
+      "info_homepage": "Sophia Jex-Blake eine der ersten Frauen war, die in Großbritannien Medizin studierten? Sie setzte sich im 19. Jahrhundert für die Zulassung von Frauen an medizinischen Fakultäten ein und gründete 1874 die erste medizinische Schule für Frauen in Edinburgh.",
       "image_path": "../img/18.jpg"
     },
     {
@@ -188,6 +206,7 @@
       "death_year": 2020,
       "origin": "White Sulphur Springs, West Virginia, USA",
       "info": "Katherine G. Johnson war eine bahnbrechende afroamerikanische Mathematikerin bei der NASA, bekannt für ihre Berechnungen, die die US-Raumfahrt entscheidend voranbrachten. Nach einem Studium in Mathematik und Französisch begann sie 1953 beim NACA, dem Vorgänger der NASA. Ihre mathematischen Fähigkeiten halfen 1961 bei der ersten bemannten US-Raumfahrt mit Alan Shepard (Mission „Freedom 7“). 1962 überprüfte sie die Umlaufbahnberechnungen für John Glenns Erdumrundung, was maßgeblich zum Erfolg der Mission „Mercury Atlas 6“ beitrug. Sie berechnete auch die Flugbahn der Apollo-11-Mission und half bei der Rettung von Apollo 13. Für ihre Beiträge erhielt sie 2015 die Freiheits-Medaille des Präsidenten und mehrere NASA-Einrichtungen wurden nach ihr benannt. Katherine Johnson starb 2020 im Alter von 101 Jahren und gilt als Pionierin der Raumfahrt.",
+      "info_homepage": "Katherine G. Johnson eine entscheidende Rolle in der NASA spielte? Ihre Berechnungen für die Raumfahrtmissionen in den 1960er Jahren trugen maßgeblich zum Erfolg der ersten bemannten Flüge bei und machten sie zu einer Pionierin in der Mathematik.",
       "image_path": "../img/19.jpg"
     },
     {
@@ -198,6 +217,7 @@
       "death_year": 1979,
       "origin": "Cambridge, Massachusetts, USA",
       "info": "Cecilia Payne-Gaposchkin war eine Astrophysikerin, die entdeckte, dass Sterne hauptsächlich aus Wasserstoff und Helium bestehen. Diese Erkenntnis revolutionierte die Astrophysik, wurde jedoch anfangs von führenden männlichen Wissenschaftlern, insbesondere Henry Norris Russell, abgelehnt. Aufgrund seines Einflusses relativierte Payne ihre Ergebnisse in ihrer Dissertation von 1925, die dennoch als eine der brillantesten der Astrophysik gilt. Erst Jahre später bestätigte Russell ihre Arbeit, ohne ihren ursprünglichen Beitrag voll anzuerkennen. Trotz dieser Hürden erlangte sie schließlich internationale Anerkennung, wurde 1956 zur ersten weiblichen Professorin in Harvard und leitete später das Harvard College Observatory. Payne hinterließ über 140 wissenschaftliche Arbeiten und gilt als eine der bedeutendsten Frauen der modernen Astronomie.",
+      "info_homepage": "Cecilia Payne-Gaposchkin die Entstehung der modernen Astrophysik revolutionierte? 1925 entdeckte sie, dass Sterne hauptsächlich aus Wasserstoff und Helium bestehen, eine Erkenntnis, die die Astronomie maßgeblich beeinflusste.",
       "image_path": "../img/20.jpg"
     },
     {
@@ -208,6 +228,7 @@
       "death_year": 1993,
       "origin": "Kopenhagen, Dänemark",
       "info": "Inge Lehmann war eine dänische Seismologin, die 1936 eine bahnbrechende Entdeckung über den inneren Aufbau der Erde machte. Durch die Analyse seismischer Wellen stellte sie fest, dass die Erde nicht, wie zuvor angenommen, einen komplett flüssigen Erdkern besitzt, sondern einen festen inneren Kern, der von einem flüssigen äußeren Kern umgeben ist. Diese Entdeckung revolutionierte das Verständnis der Geophysik und führte zu wichtigen Fortschritten in der Erforschung der Erdstruktur. Trotz der Bedeutung ihrer Arbeit erhielt Lehmann lange Zeit nicht die Anerkennung, die ihr zustand. Erst in den späteren Jahren ihrer Karriere wurde sie für ihre außergewöhnlichen Beiträge zur Seismologie geehrt.",
+      "info_homepage": "Inge Lehmann die innere Erdkernstruktur entdeckte? 1936 identifizierte sie durch ihre seismologischen Forschungen den festen inneren Kern der Erde, was unser Verständnis des Planeten revolutionierte.",
       "image_path": "../img/21.jpg"
     },
     {
@@ -218,6 +239,7 @@
       "death_year": 1848,
       "origin": "Hannover, Deutschland",
       "info": "Caroline Herschel war eine deutsche Astronomin, die als erste Frau einen Kometen entdeckte und dadurch die Astronomie maßgeblich prägte. Ursprünglich als Sängerin ausgebildet, begann sie an der Seite ihres Bruders, des berühmten Astronomen William Herschel, den Himmel zu erforschen. Sie führte detaillierte Beobachtungen durch und entdeckte insgesamt acht Kometen. Darüber hinaus erstellte sie einen Katalog mit nebelartigen Objekten, der später als Grundlage für das New General Catalogue diente. Ihre Arbeiten wurden von der Royal Astronomical Society gewürdigt, die ihr als eine der ersten Frauen eine Medaille verlieh. Herschels wissenschaftliche Beiträge waren wegweisend und inspirierend für nachfolgende Generationen.",
+      "info_homepage": "Caroline Herschel die erste weibliche Astronomin war, die einen Lohn erhielt? Im 18. Jahrhundert entdeckte sie mehrere Kometen und wurde für ihre bedeutenden Beiträge zur Astronomie anerkannt.",
       "image_path": "../img/22.jpg"
     },
     {
@@ -228,6 +250,7 @@
       "death_year": "N/A",
       "origin": "Bol'shoe Maslennikovo, Russland",
       "info": "Valentina Tereshkova war die erste Frau im Weltraum und eine Pionierin der Raumfahrt. Am 16. Juni 1963 startete sie an Bord der Wostok 6 und umkreiste die Erde 48 Mal während eines dreitägigen Raumfluges. Vor ihrer Karriere als Kosmonautin arbeitete Tereshkova in einer Textilfabrik und war leidenschaftliche Fallschirmspringerin, was ihre Auswahl für das Raumfahrtprogramm beeinflusste. Ihr Flug war nicht nur ein Triumph für die Sowjetunion im Weltraumrennen, sondern auch ein bedeutender Schritt für Frauen in der Wissenschaft und Technik. Nach ihrem Raumflug setzte sich Tereshkova für die Förderung der Raumfahrt und der Frauenrechte ein. Ihre Errungenschaften sind bis heute ein Symbol für Mut und Durchsetzungsvermögen.",
+      "info_homepage": "Valentina Tereshkova die erste Frau im All war? 1963 flog sie an Bord der Vostok 6 und umrundete die Erde 48 Mal, was sie zu einer Pionierin der Raumfahrt machte.",
       "image_path": "../img/23.jpg"
     },
     {
@@ -238,6 +261,7 @@
       "death_year": 2016,
       "origin": "Miharu, Fukushima, Japan",
       "info": "Junko Tabei war eine japanische Bergsteigerin, die als erste Frau den Gipfel des Mount Everest erreichte. Am 16. Mai 1975 stand sie auf dem höchsten Punkt der Erde und schrieb damit Geschichte. Tabei zeigte früh Interesse am Bergsteigen und gründete 1969 den ersten Frauen-Bergsteigerclub in Japan. Trotz finanzieller und gesellschaftlicher Hindernisse setzte sie sich durch und führte Expeditionen in einige der schwierigsten Gebirge der Welt. Neben dem Everest bestieg sie auch die 'Seven Summits', die höchsten Gipfel aller Kontinente. Tabei setzte sich zudem leidenschaftlich für den Umweltschutz ein und förderte die Erhaltung von Bergregionen. Ihr Leben war geprägt von Entschlossenheit, Disziplin und dem Streben nach neuen Herausforderungen.",
+      "info_homepage": "Junko Tabei die erste Frau war, die den Mount Everest bestieg? 1975 erreichte sie den Gipfel und setzte sich für die Rechte von Frauen im Bergsteigen sowie für den Umweltschutz ein.",
       "image_path": "../img/24.jpg"
     },
     {
@@ -248,6 +272,7 @@
       "death_year": 1937,
       "origin": "Atchison, Kansas, USA",
       "info": "Amelia Earhart war eine amerikanische Flugpionierin, die als erste Frau im Alleinflug den Atlantik überquerte. Am 20. Mai 1932 startete sie in Neufundland und landete nach knapp 15 Stunden in Irland, was ihr internationale Anerkennung einbrachte. Earhart setzte sich leidenschaftlich für die Gleichberechtigung von Frauen in der Luftfahrt ein und half bei der Gründung der Organisation 'Ninety-Nines', die weibliche Pilotinnen unterstützte. Ihre Versuche, die Welt im Flugzeug zu umrunden, endeten tragisch, als ihr Flugzeug 1937 über dem Pazifik verschwand. Bis heute bleibt ihr Schicksal ein Rätsel, doch ihr Mut und ihre Leistungen machten sie zu einer Ikone der Luftfahrtgeschichte.",
+      "info_homepage": "Amelia Earhart die erste Frau war, die allein über den Atlantik flog? 1932 überquerte sie den Ozean in einem Flugzeug und wurde damit zu einer Ikone der Luftfahrt und der Frauenbewegung.",
       "image_path": "../img/25.jpg"
     },
     {
@@ -258,6 +283,7 @@
       "death_year": 1954,
       "origin": "Coyoacán, Mexico City, Mexico",
       "info": "Frida Kahlo war eine ikonische mexikanische Künstlerin, die für ihre eindringlichen Selbstporträts und ihren unverwechselbaren Stil bekannt ist. Geboren am 6. Juli 1907 in Coyoacán, litt Kahlo zeitlebens unter gesundheitlichen Problemen, die ihre Kunst stark beeinflussten. Ihre Werke sind oft von persönlichen Erfahrungen, Schmerz und Identität geprägt, und sie verband Elemente der mexikanischen Folklore mit surrealistischen Techniken. Kahlo setzte sich auch für feministische Themen und die mexikanische Kultur ein. Ihr einzigartiger Look, einschließlich ihrer markanten Augenbrauen und traditionellen Kleidung, machte sie zu einem Symbol für Individualität und Stärke. Kahlo starb am 13. Juli 1954, hinterließ jedoch ein beeindruckendes Erbe und inspiriert bis heute Künstlerinnen weltweit.",
+      "info_homepage": "Frida Kahlo eine der bekanntesten Malerinnen des 20. Jahrhunderts war? Ihre lebhaften und autobiografischen Werke erforschen Themen wie Identität, Schmerz und die weibliche Erfahrung.",
       "image_path": "../img/26.jpeg"
     },
     {
@@ -268,6 +294,7 @@
       "death_year": 1653,
       "origin": "Rom, Italien",
       "info": "Artemisia Gentileschi war eine herausragende italienische Malerin des Barock, bekannt für ihre kraftvollen und emotionalen Werke. Geboren um 1593 in Rom, war sie die Tochter des Malers Orazio Gentileschi und erhielt eine fundierte Ausbildung in der Kunst. Gentileschi trat in einer von Männern dominierten Welt hervor, indem sie eindrucksvolle Gemälde schuf, die oft starke Frauen aus der Mythologie und Bibel darstellten, wie Judith und Holofernes. Ihre Werke reflektieren nicht nur technisches Können, sondern auch persönliche Erfahrungen, insbesondere ihr eigenes Trauma. Gentileschi wurde zur ersten weiblichen Mitglied der Accademia di Arte del Disegno in Florenz und gilt heute als eine der bedeutendsten Malerinnen ihrer Zeit, die den Weg für zukünftige Künstlerinnen ebnete.",
+      "info_homepage": "Artemisia Gentileschi eine der ersten weiblichen Barockmalerinnen war? Im 17. Jahrhundert schuf sie kraftvolle und ausdrucksstarke Werke, die oft Frauen in starken, heroischen Positionen darstellten.",
       "image_path": "../img/27.jpg"
     },
     {
@@ -278,6 +305,7 @@
       "death_year": "N/A",
       "origin": "Portsmouth, Virginia, USA",
       "info": "Radia Perlman ist eine wegweisende Informatikerin und Ingenieurin, die oft als 'Mutter des Internets' bezeichnet wird. Geboren am 1. Mai 1951 in Portsmouth, Virginia, entwickelte sie das Spanning Tree Protocol (STP), eine Schlüsseltechnologie, die das Routing und die Datenübertragung in Computernetzwerken revolutionierte. Perlman erhielt ihren Doktortitel am Massachusetts Institute of Technology (MIT) und hat über 100 Patente auf ihrem Namen. Sie setzt sich auch für Diversität in der Technik ein und hat zahlreiche Preise für ihre Beiträge zur Informatik erhalten. Ihre Arbeit hat nicht nur das Internet, wie wir es heute kennen, ermöglicht, sondern inspiriert auch zukünftige Generationen von Technikern und Ingenieuren, insbesondere Frauen in der Informatik.",
+      "info_homepage": "Radia Perlman als 'Mutter des Internets' gilt? Sie erfand das Spanning Tree Protocol, das für die Funktionsweise moderner Netzwerke entscheidend ist und das Internet sicherer und effizienter macht.",
       "image_path": "../img/28.jpg"
     },
     {
@@ -288,6 +316,7 @@
       "death_year": 1968,
       "origin": "Wien, Österreich",
       "info": "Lise Meitner war eine österreichische Physikerin, die als Pionierin in der Kernphysik gilt. Geboren am 7. November 1878 in Wien, war sie die erste Frau, die an der Universität Wien Physik studierte. Meitner arbeitete eng mit Otto Hahn zusammen und war maßgeblich an der Entdeckung der Kernspaltung beteiligt. Ihre Forschung legte den Grundstein für die Entwicklung der Kernenergie. Trotz ihrer herausragenden Beiträge wurde Meitner während der Naziherrschaft aus Deutschland vertrieben und emigrierte nach Schweden. 1944 erhielt Otto Hahn den Nobelpreis für Chemie, jedoch wurde Meitner, die entscheidende Erkenntnisse geliefert hatte, übersehen. Später wurde sie für ihre Leistungen gewürdigt, und ihr Erbe inspiriert bis heute Wissenschaftlerinnen und Wissenschaftler weltweit.",
+      "info_homepage": "Lise Meitner eine entscheidende Rolle bei der Entdeckung der Kernspaltung spielte? Zusammen mit Otto Hahn identifizierte sie die Reaktionen, die zur Atomenergie führten, und war eine Pionierin in der Physik.",
       "image_path": "../img/29.jpg"
     },
     {
@@ -298,6 +327,7 @@
       "death_year": 1999,
       "origin": "New York, New York, USA",
       "info": "Gertrude B. Elion war eine bahnbrechende amerikanische Biochemikerin und Pharmakologin, die für ihre revolutionären Beiträge zur Arzneimittelentwicklung bekannt ist. Geboren am 23. Januar 1918 in New York City, erhielt sie ihren Abschluss am Hunter College und promovierte an der Duke University. Elion arbeitete an der Entwicklung wichtiger Medikamente zur Behandlung von Krankheiten wie Leukämie und AIDS. Ihr innovativer Ansatz, der auf der gezielten Beeinflussung biochemischer Prozesse beruhte, führte zur Schaffung mehrerer lebensrettender Therapien. 1988 wurde sie gemeinsam mit George H. Hitchings und Sir James Black mit dem Nobelpreis für Physiologie oder Medizin ausgezeichnet. Gertrude Elion wird nicht nur für ihre wissenschaftlichen Errungenschaften geschätzt, sondern auch als Vorbild für Frauen in der Wissenschaft.",
+      "info_homepage": "Gertrude B. Elion für ihre bahnbrechenden Arbeiten in der Pharmakologie den Nobelpreis für Medizin erhielt? Sie entwickelte lebensrettende Medikamente, darunter Therapien gegen Leukämie und Aids, und war eine Pionierin der biochemischen Forschung.",
       "image_path": "../img/30.jpg"
     }
   ]

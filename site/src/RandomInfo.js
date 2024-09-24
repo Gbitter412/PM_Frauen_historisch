@@ -11,7 +11,7 @@ async function loadJson() {
 function getRandomInfo(data) {
   const entries = data.entries;
   const randomIndex = Math.floor(Math.random() * entries.length);  //random info holen
-  return entries[randomIndex].info;
+  return entries[randomIndex].info_homepage;
 }
 
 async function insertRandomInfo() {
