@@ -1,52 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mini-Games</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/variables.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img
-              src="./assets/img/logo.jpg"
-              alt="Logo"
-              width="30"
-              height="24"
-              class="d-inline-block align-text-top"
-            />
-            HiddenHeroes
-          </a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini-Games</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/variables.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/img/logo.jpg" alt="Logo" width="30" height="24"
+            class="d-inline-block align-text-top logo" />
+          <span class="brand-text">HiddenHeroes</span>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle ms-2 me-2" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Play
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./pages/game.html">Puzzle</a></li>
+                <li><a class="dropdown-item" href="#">MarieCurie</a></li>
+                <li><a class="dropdown-item" href="#">AvaLovelance</a></li>
+              </ul>
+            <li class="nav-item">
+              <a class="nav-link me-2" href="./pages/help.html">Help</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Infos</a>
+            </li>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
-    <div class="container-test">
-      <h1>Wusstest du das...?</h1>
-      <p id="randomInfo"></p>
+  <div class="container-test">
+    <h1>Wusstest du das...?</h1>
+    <p id="randomInfo"></p>
+  </div>
+
+  <footer>
+    <div class="image-slider">
+      <div class="slider-track" id="slider-track">
+        <div class="slide">
+          <img src="./assets/img/1.jpg" alt="Image 1" />
+        </div>
+        <div class="slider-track" id="slider-track">
+          <div class="slide">
+            <img src="./assets/img/2.jpg" alt="Image 2" />
+          </div>
+        </div>
+        <div class="slider-track" id="slider-track">
+          <div class="slide">
+            <img src="./assets/img/3.TIF.jpg" alt="Image 3" />
+          </div>
+        </div>
+        <div class="slider-track" id="slider-track">
+          <div class="slide">
+            <img src="./assets/img/4.jpg" alt="Image 4" />
+          </div>
+        </div>
+        <div class="slider-track" id="slider-track">
+          <div class="slide">
+            <img src="./assets/img/5.jpg" alt="Image 5" />
+          </div>
+        </div>
+        <div class="slider-track" id="slider-track">
+          <div class="slide">
+            <img src="./assets/img/6.jpg" alt="Image 6" />
+          </div>
+        </div>
+        <div class="slider-track" id="slider-track">
+          <div class="slide">
+            <img src="./assets/img/7.jpg" alt="Image 7" />
+          </div>
+        </div>
+        <div class="slider-track" id="slider-track">
+          <div class="slide">
+            <img src="./assets/img/8.jpg" alt="Image 8" />
+          </div>
+        </div>
+        <div class="slider-track" id="slider-track">
+          <div class="slide">
+            <img src="./assets/img/9.jpg" alt="Image 9" />
+          </div>
+        </div>
+        <div class="slider-track" id="slider-track">
+          <div class="slide">
+            <img src="./assets/img/10.jpg" alt="Image 10" />
+          </div>
+        </div>
+        <div class="slider-track" id="slider-track">
+          <div class="slide">
+            <img src="./assets/img/11.jpg" alt="Image 11" />
+          </div>
+        </div>
+        <div class="slider-track" id="slider-track">
+          <div class="slide">
+            <img src="./assets/img/12.jpg" alt="Image 12" />
+          </div>
+        </div>
+        <div class="slider-track" id="slider-track">
+          <div class="slide">
+            <img src="./assets/img/13.jpg" alt="Image 13" />
+          </div>
+        </div>
+        <div class="slider-track" id="slider-track">
+          <div class="slide">
+            <img src="./assets/img/14.jpg.jpg" alt="Image 14" />
+          </div>
+        </div>
+        <div class="slider-track" id="slider-track">
+          <div class="slide">
+            <img src="./assets/img/15.jpg" alt="Image 15" />
+          </div>
+        </div>
+        <div class="slider-track" id="slider-track">
+          <div class="slide">
+            <img src="./assets/img/16.jpg" alt="Image 16" />
+          </div>
+        </div>
+        <div class="slider-track" id="slider-track">
+          <div class="slide">
+            <img src="./assets/img/17.jpg" alt="Image 17" />
+          </div>
+        </div>
+        <div class="slider-track" id="slider-track">
+          <div class="slide">
+            <img src="./assets/img/18.jpg" alt="Image 18" />
+          </div>
+        </div>
+        <div class="slider-track" id="slider-track">
+          <div class="slide">
+            <img src="./assets/img/19.jpg" alt="Image 19" />
+          </div>
+        </div>
+        <div class="slider-track" id="slider-track">
+          <div class="slide">
+            <img src="./assets/img/20.jpg" alt="Image 20" />
+          </div>
+        </div>
+        <div class="slider-track" id="slider-track">
+          <div class="slide">
+            <img src="./assets/img/21.jpg" alt="Image 21" />
+          </div>
+        </div>
+        <div class="slider-track" id="slider-track">
+          <div class="slide">
+            <img src="./assets/img/22.jpg" alt="Image 22" />
+          </div>
+        </div>
+        <div class="slider-track" id="slider-track">
+          <div class="slide">
+            <img src="./assets/img/23.jpg" alt="Image 23" />
+          </div>
+        </div>
+        <div class="slider-track" id="slider-track">
+          <div class="slide">
+            <img src="./assets/img/24.jpg" alt="Image 24" />
+          </div>
+        </div>
+        <div class="slider-track" id="slider-track">
+          <div class="slide">
+            <img src="./assets/img/25.jpg" alt="Image 25" />
+          </div>
+        </div>
+        <div class="slider-track" id="slider-track">
+          <div class="slide">
+            <img src="./assets/img/26.jpeg" alt="Image 26" />
+          </div>
+        </div>
+        <div class="slider-track" id="slider-track">
+          <div class="slide">
+            <img src="./assets/img/27.jpg" alt="Image 27" />
+          </div>
+        </div>
+        <div class="slider-track" id="slider-track">
+          <div class="slide">
+            <img src="./assets/img/28.jpg" alt="Image 28" />
+          </div>
+        </div>
+        <div class="slider-track" id="slider-track">
+          <div class="slide">
+            <img src="./assets/img/29.jpg" alt="Image 29" />
+          </div>
+        </div>
+        <div class="slider-track" id="slider-track">
+          <div class="slide">
+            <img src="./assets/img/30.jpg" alt="Image 30" />
+          </div>
+        </div>
+      </div>
     </div>
+  </footer>
 
-    <div class="buttons">
-      <a href="./pages/game.html" class="button1" role="button">Play</a>
-      <a href="./pages/help.html" class="button1" role="button">Help</a>
-    </div>
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="./src/RandomInfo.js"></script>
+</body>
 
-    <!-- Bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./src/RandomInfo.js"></script>
-  </body>
 </html>
