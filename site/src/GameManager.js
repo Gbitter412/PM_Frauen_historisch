@@ -32,12 +32,7 @@ export class GameManager {
             this.puzzle.init();
             this.puzzle.draw();
     
-            // Initialisieren und Starten des Timers
-            this.timer = new Timer(
-                this.totalTimePerPuzzle,
-                (timeLeft) => this.updateTimeUI(timeLeft / 10),
-                () => this.handlePuzzleTimeout()
-            );
+
             this.timer.start();
     
             // Behandlung der Puzzle-Vervollständigung
@@ -71,19 +66,7 @@ export class GameManager {
         }
     }
 
-    // Behandlung des Zeitablaufs für ein Puzzle
-    handlePuzzleTimeout() {
-    }
 
-    // Aktualisieren der Zeit-UI
-    updateTimeUI(timeLeft) {
-        document.getElementById('timeLeft').innerText = timeLeft;
-    }
-
-    // Aktualisieren der Punkte-UI
-    updateScoreUI() {
-        document.getElementById('totalScore').innerText = this.totalScore;
-    }
 
     // Beenden des Spiels
     endGame() {
