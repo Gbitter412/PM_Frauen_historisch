@@ -51,15 +51,16 @@
       <button class="btn-test d-inline-block me-2" id="solveButton">Solve Puzzle</button>
       <button class="btn-test d-inline-block" id="homeButton" onclick="location.href='../index.html'">Home</button>
     </div>
+
+    <div id="puzzleInfo" style="display:none;">
+      <h2 id="infoName"></h2>
+      <p id="infoLife"></p>
+      <p id="infoOrigin"></p>
+      <p id="infoDetails"></p>
   </div>
 
-  <div id="container" style="display: flex;">
-    <canvas id="puzzleCanvas" width="450" height="450"></canvas>
-    <div id="infoContainer" class="container mt-4" style="display: none; margin-left: 20px;">
-        <h2>Puzzle Information</h2>
-        <div id="infoContent"></div> <!-- Hier werden die Informationen über das Puzzle angezeigt -->
-    </div>
-</div>
+
+  
   <script type="module" src="../src/main.js"></script>
 
   <!-- Bootstrap -->
