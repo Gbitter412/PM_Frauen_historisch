@@ -45,27 +45,13 @@
     </nav>
   </header>
 
-  <!--
-    <div id="game-info">
-        <div>Time Left: <span id="timeLeft">0</span> seconds</div>
-        <div>Total Score: <span id="totalScore">0</span></div>
-    </div>
-    -->
-
-  <!--
-  <div id="puzzleWrapper">
-    <div id="container1">
-      <canvas id="puzzleCanvas" width="450" height="450"></canvas>
-    </div>
-    <button id="solveButton">Solve Puzzle</button>
-  </div>
-  -->
-
   <div id="container">
     <canvas id="puzzleCanvas" width="450" height="450"></canvas>
-    <button class="btn-test" id="solveButton">Solve Puzzle</button>
+    <div class="button-group">
+      <button class="btn-test d-inline-block me-2" id="solveButton">Solve Puzzle</button>
+      <button class="btn-test d-inline-block" id="homeButton" onclick="location.href='../index.html'">Home</button>
+    </div>
   </div>
-
 
   <script type="module" src="../src/main.js"></script>
 
