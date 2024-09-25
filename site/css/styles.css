@@ -186,9 +186,11 @@ footer {
 }
 
 #codeCanvas {
-  border: 1px solid #000;
-  width: 450px;
-  height: 450px;
+  border: 2px solid #484747;
+  width: 500px;
+  height: 200px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
 }
 
 #userAnswer {
