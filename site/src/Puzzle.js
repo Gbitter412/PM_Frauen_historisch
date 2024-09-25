@@ -32,15 +32,19 @@ export class Puzzle {
         throw new Error("Method 'checkCompletion()' must be implemented.");
     }
 
+    solvePuzzle() {
+        throw new Error("Method 'solvePuzzle()' must be implemented.");
+    }
+
+    // Neue abstrakte Methode zum Überprüfen, ob das Puzzle gelöst ist
+    isSolved() {
+        throw new Error("Method 'isSolved()' must be implemented.");
+    }
+
     // Methode zum Abschließen des Puzzles
     completePuzzle() {
         if (this.onCompleteCallback) {
             this.onCompleteCallback();
         }
-    }
-
-    // Abstrakte Methode zum Lösen des Puzzles
-    solvePuzzle() {
-        throw new Error("Method 'solvePuzzle()' must be implemented.");
     }
 }
