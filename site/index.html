@@ -28,7 +28,7 @@
                 Play
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="./pages/puzzle.html">Tactical Puzzle</a></li>
+                <li><a id="tactical_puzzle" class="dropdown-item" href="./pages/puzzle.html">Tactical Puzzle</a></li>
                 <li><a class="dropdown-item" href="./pages/marieCurie.html">Marie Curie's Game</a></li>
                 <li><a class="dropdown-item" href="./pages/codeCracker.html">Code Cracker</a></li>
               </ul>
@@ -210,6 +210,20 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script src="./src/RandomInfo.js"></script>
+  <script>
+
+    const varImageIndex = Math.floor(Math.random() * 29);
+
+    const navLink = document.getElementById("tactical_puzzle");
+    // Add an event listener to the button
+    navLink.addEventListener("click", function(event) {
+      event.preventDefault(); // Prevent the default anchor behavior
+      sessionStorage.setItem('varImageIndex', varImageIndex); // Store the variable
+      window.location.href = './pages/puzzle.html'; // Redirect to another page
+    }); 
+
+
+  </script>
 </body>
 
 </html>
