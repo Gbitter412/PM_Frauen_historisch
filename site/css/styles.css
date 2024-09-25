@@ -11,6 +11,11 @@ body {
   padding: 20px;
 }
 
+#textContainer {
+  font-size: 1.25rem;
+  padding: 20px;
+}
+
 canvas {
   border: 1px solid #000;
 }
@@ -117,6 +122,35 @@ footer {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+.clickable-word {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.clickable-word:hover {
+  background-color: #e0e0e0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.glow-green {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  box-shadow: 0 0 15px rgba(40, 167, 69, 0.5);
+}
+
+.glow-red {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  box-shadow: 0 0 30px rgba(220, 53, 69, 0.8), 0 0 15px rgba(220, 53, 69, 0.5);
+  transition: all 0.3s ease;
 }
 
 @keyframes scroll {
