@@ -54,7 +54,6 @@ export class SwappingPuzzle extends Puzzle {
         this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
         this.tiles.forEach(tile => {
             const { row, col, originalRow, originalCol } = tile;
-            this.context.drawImage
             this.context.drawImage(
                 this.image,
                 originalCol * this.tileWidth, // Quell-x
@@ -96,7 +95,7 @@ export class SwappingPuzzle extends Puzzle {
                 this.swapTiles(this.selectedTile, tile); // Mit dem zweiten Puzzleteil tauschen
                 this.selectedTile = null; // Auswahl nach dem Tauschen aufheben
                 this.draw();
-                if (this.checkCompletion()) {
+                if (this.isSolved()) { // Verwende hier isSolved
                     this.completePuzzle();
                 }
             }
@@ -114,8 +113,8 @@ export class SwappingPuzzle extends Puzzle {
         tile2.col = temp.col;
     }
 
-    // Überprüfen, ob das Puzzle gelöst ist
-    checkCompletion() {
+    // Umbenennung der Methode checkCompletion zu isSolved
+    isSolved() {
         return this.tiles.every(tile => tile.row === tile.originalRow && tile.col === tile.originalCol);
     }
 
