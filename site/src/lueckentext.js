@@ -24,7 +24,6 @@ function generateTextWithBlanks(text, correctAnswers) {
 // ATTENTION!! correctAnswers need to be ordered in JSON after their order in sentence
 function createClickableWords(correctAnswers, blanks) {
     const wordsContainer = document.getElementById('wordsContainer'); // contains our buttons
-    // wordsContainer.innerHTML = ''; // clear previous words
 
     // run over correctAnswers and create button for each
     correctAnswers.forEach((word, index) => {
@@ -42,7 +41,7 @@ function createClickableWords(correctAnswers, blanks) {
             }, 500);
 
             if (isPuzzleSolved()) {
-                location.reload();
+                // Entfernt den location.reload Aufruf, sodass nichts passiert
             }
 
             wordsContainer.removeChild(wordElement); // remove word from word container
