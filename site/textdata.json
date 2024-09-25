@@ -1,0 +1,25 @@
+{
+    "entries": [
+        {
+            "ID": 1,
+            "Text": "BLANK ipsum dolor sit BLANK, consectetur adipiscing BLANK. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "correctAnswers": ["Lorem", "amet", "elit"],
+            "blanks": ["consectetur", "eiusmod", "labore"],
+            "solved": false
+        },
+        {
+            "ID": 2,
+            "Text": "Ut enim ad BLANK BLANK, quis nostrud exercitation BLANK laboris nisi ut aliquip ex ea commodo consequat.",
+            "correctAnswers": ["minim", "veniam", "ullamco"],
+            "blanks": ["exercitation", "laboris", "commodo"],
+            "solved": true
+        },
+        {
+            "ID": 3,
+            "Text": "Duis BLANK irure dolor in BLANK in voluptate BLANK esse cillum dolore eu fugiat nulla pariatur.",
+            "correctAnswers": ["aute", "reprehenderit", "velit"],
+            "blanks": ["dolore", "fugiat", "pariatur"],
+            "solved": false
+        }
+    ] 
+}
