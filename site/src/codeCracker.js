@@ -14,9 +14,22 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let currentRiddleIndex = 0;
     function loadRiddle() {
         const riddle = riddles[currentRiddleIndex];
-        document.getElementById("codeRiddle").textContent = riddle.code;
+        const canvas = document.getElementById("codeCanvas");
+        const ctx = canvas.getContext("2d");
+    
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
+        ctx.font = "32px Roboto";
+        ctx.fillStyle = "black";
+    
+        const codeLines = riddle.code.split('\n');
+        for (let i = 0; i < codeLines.length; i++) {
+            ctx.fillText(codeLines[i], 10, 30 + i * 20);
+        }
+    
         return riddle.answer;
     }
+    
     function loadNextRiddle(){
         currentRiddleIndex = (currentRiddleIndex +1)% riddles.length;
         correctAnswer = loadRiddle();
