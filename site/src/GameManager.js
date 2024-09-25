@@ -2,10 +2,10 @@ import { PuzzleFactory } from './PuzzleFactory.js';  // Importiere die PuzzleFac
 
 // Spielmanager-Klasse zur Verwaltung des Spiels
 export class GameManager {
-    constructor(canvas, puzzleSequence) {
+    constructor(canvas, puzzleSequence, imageIndex) {
         this.canvas = canvas;  // Das Canvas-Element, auf dem das Puzzle gezeichnet wird
         this.puzzleSequence = puzzleSequence;  // Die Sequenz der Puzzles, die im Spiel verwendet werden
-        this.currentPuzzleIndex = 0;  // Der Index des aktuellen Puzzles in der Sequenz
+        this.currentPuzzleIndex = imageIndex;  // Der Index des aktuellen Puzzles in der Sequenz
         this.puzzle = null;  // Das aktuelle Puzzle-Objekt
         this.solveButton = document.getElementById('solveButton');  // Der Button zum Lösen des Puzzles
         this.solveButton.addEventListener('click', () => this.handleSolveButtonClick());  // Event-Listener für den Button

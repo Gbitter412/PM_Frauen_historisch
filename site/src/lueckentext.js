@@ -5,18 +5,22 @@ function generateTextWithBlanks(text, correctAnswers) {
     const blankSize = 7;
     let match;
     let answerIndex = 0;
-
+  
     // search for matches and set dropzones
     while ((match = regex.exec(text)) !== null) {
-        const start = match.index;
-        // write everything between lastIndex and match into result
-        result.push(text.substring(lastIndex, start));
-        // add dropzone with index to determine if solved
-        result.push(`<span class="drop-zone" data-correct-answer="${correctAnswers[answerIndex]}">${'_'.repeat(blankSize)}</span>`);
-        lastIndex = regex.lastIndex;
-        answerIndex++;
+      const start = match.index;
+      // write everything between lastIndex and match into result
+      result.push(text.substring(lastIndex, start));
+      // add dropzone with index to determine if solved
+      result.push(
+        `<span class="drop-zone" data-correct-answer="${
+          correctAnswers[answerIndex]
+        }">${"_".repeat(blankSize)}</span>`
+      );
+      lastIndex = regex.lastIndex;
+      answerIndex++;
     }
-
+  
     result.push(text.substring(lastIndex)); // add remaining text
     return result.join('');
 }
@@ -96,7 +100,7 @@ function createClickableWords(answers, blanks) { // possible arguments
     }
 
     // shuffle word container
-    const words = Array.from(wordsContainer.children); 
+    const words = Array.from(wordsContainer.children);
     const shuffled = shuffleArray(words);
     wordsContainer.innerHTML = ''; // clear previous content
     shuffled.forEach(word => wordsContainer.appendChild(word));
@@ -104,26 +108,26 @@ function createClickableWords(answers, blanks) { // possible arguments
 
 function isPuzzleSolved() {
     // get all dropzones and check if solved
-    const dropZones = document.querySelectorAll('.drop-zone');
+    const dropZones = document.querySelectorAll(".drop-zone");
     for (const dropZone of dropZones) {
-        const correctAnswer = dropZone.getAttribute('data-correct-answer');
-        if (dropZone.textContent.trim() !== correctAnswer) {
-            return false;
-        }
+      const correctAnswer = dropZone.getAttribute("data-correct-answer");
+      if (dropZone.textContent.trim() !== correctAnswer) {
+        return false;
+      }
     }
     return true;
-}
-
-function shuffleArray(array) {
+  }
+  
+  function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
     }
     return array;
-}
-
-// dreist von caner gestohlen
-async function loadJson() {
+  }
+  
+  // dreist von caner gestohlen
+  async function loadJson() {
     try {
       const response = await fetch("../quizdata.json"); //json einlesen
       const data = await response.json();
@@ -131,12 +135,12 @@ async function loadJson() {
     } catch (error) {
       console.error("Fehler beim Laden der JSON-Datei:", error);
     }
-}
-
-async function getRandomEntry() {
+  }
+  
+  async function getRandomEntry() {
     const data = await loadJson();
     const entries = data.entries;
-    const randomIndex = Math.floor(Math.random() * entries.length)
+    const randomIndex = sessionStorage.getItem("varImageIndex");
     return entries[randomIndex];
 }
 
