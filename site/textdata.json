@@ -1,214 +1,459 @@
 {
-    "entries": [
-      {
-        "ID": 1,
-        "Text": "Ada Lovelace, geboren in BLANK, BLANK, gilt als Pionierin der Informatik. Sie entwickelte den ersten BLANK.",
-        "correctAnswers": ["London", "England", "Algorithmus"],
-        "blanks": ["London", "England", "Algorithmus"],
-        "solved": false
-      },
-      {
-        "ID": 2,
-        "Text": "Mary Anning, geboren 1799 in BLANK, BLANK, machte bedeutende BLANK-Funde, die die Wissenschaft revolutionierten.",
-        "correctAnswers": ["Lymet Regis", "Dorset", "Fossilien"],
-        "blanks": ["Lymet Regis", "Dorset", "Fossilien"],
-        "solved": false
-      },
-      {
-        "ID": 3,
-        "Text": "Stephanie Kwolek, geboren in BLANK, BLANK, erfand die Kunstfaser BLANK, die heute in kugelsicheren Westen verwendet wird.",
-        "correctAnswers": ["New Kensington", "Pennsylvania", "Kevlar"],
-        "blanks": ["New Kensington", "Pennsylvania", "Kevlar"],
-        "solved": false
-      },
-      {
-        "ID": 4,
-        "Text": "Grace Hopper, geboren in BLANK, BLANK, entwickelte den ersten BLANK für Computerprogramme.",
-        "correctAnswers": ["New York City", "New York", "Compiler"],
-        "blanks": ["New York City", "New York", "Compiler"],
-        "solved": false
-      },
-      {
-        "ID": 5,
-        "Text": "Melitta Bentz, die 1873 in BLANK, BLANK, geboren wurde, erfand den BLANK-Filter, der die Kaffeezubereitung revolutionierte.",
-        "correctAnswers": ["Dresden", "Deutschland", "Kaffee"],
-        "blanks": ["Dresden", "Deutschland", "Kaffee"],
-        "solved": false
-      },
-      {
-        "ID": 6,
-        "Text": "Josephine Cochrane, geboren in BLANK, BLANK, erfand den ersten automatischen BLANK.",
-        "correctAnswers": ["Shelbyville", "Illinois", "Geschirrspüler"],
-        "blanks": ["Shelbyville", "Illinois", "Geschirrspüler"],
-        "solved": false
-      },
-      {
-        "ID": 7,
-        "Text": "Hedy Lamarr, eine Schauspielerin und Erfinderin, wurde 1914 in BLANK, BLANK, geboren und entwickelte die BLANK-Technologie.",
-        "correctAnswers": ["Wien", "Österreich", "Frequenzsprung"],
-        "blanks": ["Wien", "Österreich", "Frequenzsprung"],
-        "solved": false
-      },
-      {
-        "ID": 8,
-        "Text": "Irène Curie-Joliot, geboren in BLANK, BLANK, entdeckte gemeinsam mit ihrem Ehemann die BLANK-Radioaktivität.",
-        "correctAnswers": ["Paris", "Frankreich", "künstliche"],
-        "blanks": ["Paris", "Frankreich", "künstliche"],
-        "solved": false
-      },
-      {
-        "ID": 9,
-        "Text": "Jeanne Villepreux-Power, geboren 1794 in BLANK, BLANK, war die Erfinderin des ersten BLANK zur Erforschung von Meereslebewesen.",
-        "correctAnswers": ["Juillac", "Frankreich", "Aquariums"],
-        "blanks": ["Juillac", "Frankreich", "Aquariums"],
-        "solved": false
-      },
-      {
-        "ID": 10,
-        "Text": "Margaret E. Knight, geboren in BLANK, BLANK, entwickelte die erste Maschine zur Herstellung von BLANK-Tüten.",
-        "correctAnswers": ["York", "Maine", "Papier"],
-        "blanks": ["York", "Maine", "Papier"],
-        "solved": false
-      },
-      {
-        "ID": 11,
-        "Text": "Hildegard von Bingen, geboren 1098 in BLANK, BLANK, war eine berühmte Schriftstellerin und BLANK.",
-        "correctAnswers": ["Bermersheim", "Rheinland-Pfalz", "Äbtissin"],
-        "blanks": ["Bermersheim", "Rheinland-Pfalz", "Äbtissin"],
-        "solved": false
-      },
-      {
-        "ID": 12,
-        "Text": "Barbara Strozzi, eine Komponistin des Barock, wurde 1619 in BLANK, BLANK, geboren und ist bekannt für ihre BLANK.",
-        "correctAnswers": ["Venedig", "Italien", "Arien"],
-        "blanks": ["Venedig", "Italien", "Arien"],
-        "solved": false
-      },
-      {
-        "ID": 13,
-        "Text": "Fanny Mendelssohn, geboren in BLANK, BLANK, war eine talentierte BLANK und Komponistin.",
-        "correctAnswers": ["Hamburg", "Deutschland", "Pianistin"],
-        "blanks": ["Hamburg", "Deutschland", "Pianistin"],
-        "solved": false
-      },
-      {
-        "ID": 14,
-        "Text": "Clara Schumann, geboren 1819 in BLANK, BLANK, wurde als eine der größten BLANK ihrer Zeit gefeiert.",
-        "correctAnswers": ["Leipzig", "Deutschland", "Pianistinnen"],
-        "blanks": ["Leipzig", "Deutschland", "Pianistinnen"],
-        "solved": false
-      },
-      {
-        "ID": 15,
-        "Text": "Margaret A. Wilcox, geboren in BLANK, BLANK, erfand 1893 die erste BLANK für Automobile.",
-        "correctAnswers": ["USA", "USA", "Heizung"],
-        "blanks": ["USA", "USA", "Heizung"],
-        "solved": false
-      },
-      {
-        "ID": 16,
-        "Text": "Mary Anderson, geboren 1866 in BLANK, BLANK, entwickelte den ersten funktionalen BLANK-Wischer.",
-        "correctAnswers": ["Greene County", "Alabama", "Scheiben"],
-        "blanks": ["Greene County", "Alabama", "Scheiben"],
-        "solved": false
-      },
-      {
-        "ID": 17,
-        "Text": "Dorothy Hodgkin, geboren 1910 in BLANK, BLANK, erhielt 1964 den Nobelpreis für ihre Arbeit in der BLANK.",
-        "correctAnswers": ["Kairo", "Ägypten", "Chemie"],
-        "blanks": ["Kairo", "Ägypten", "Chemie"],
-        "solved": false
-      },
-      {
-        "ID": 18,
-        "Text": "Sophia Jex-Blake, geboren 1840 in BLANK, BLANK, kämpfte für die Zulassung von Frauen zum BLANK-Studium.",
-        "correctAnswers": ["Hastings", "Großbritannien", "Medizin"],
-        "blanks": ["Hastings", "Großbritannien", "Medizin"],
-        "solved": false
-      },
-      {
-        "ID": 19,
-        "Text": "Katherine Johnson, geboren in BLANK, BLANK, war eine wegweisende Mathematikerin bei der BLANK.",
-        "correctAnswers": ["White Sulphur Springs", "West Virginia", "NASA"],
-        "blanks": ["White Sulphur Springs", "West Virginia", "NASA"],
-        "solved": false
-      },
-      {
-        "ID": 20,
-        "Text": "Cecilia Payne-Gaposchkin, geboren 1900 in BLANK, BLANK, revolutionierte die Astronomie durch ihre Entdeckung, dass Sterne hauptsächlich aus BLANK bestehen.",
-        "correctAnswers": ["Cambridge", "Massachusetts", "Wasserstoff"],
-        "blanks": ["Cambridge", "Massachusetts", "Wasserstoff"],
-        "solved": false
-      },
-      {
-        "ID": 21,
-        "Text": "Inge Lehmann, geboren 1888 in BLANK, BLANK, entdeckte den festen BLANK im Inneren der Erde.",
-        "correctAnswers": ["Kopenhagen", "Dänemark", "Kern"],
-        "blanks": ["Kopenhagen", "Dänemark", "Kern"],
-        "solved": false
-      },
-      {
-        "ID": 22,
-        "Text": "Caroline Herschel, geboren 1750 in BLANK, BLANK, war die erste Frau, die einen BLANK entdeckte.",
-        "correctAnswers": ["Hannover", "Deutschland", "Kometen"],
-        "blanks": ["Hannover", "Deutschland", "Kometen"],
-        "solved": false
-      },
-      {
-        "ID": 23,
-        "Text": "Valentina Tereshkova, geboren 1937 in BLANK, BLANK, war die erste Frau im BLANK.",
-        "correctAnswers": ["Bol'shoe Maslennikovo", "Russland", "Weltraum"],
-        "blanks": ["Bol'shoe Maslennikovo", "Russland", "Weltraum"],
-        "solved": false
-      },
-      {
-        "ID": 24,
-        "Text": "Junko Tabei, geboren 1939 in BLANK, BLANK, war die erste Frau, die den BLANK Everest bestieg.",
-        "correctAnswers": ["Miharu", "Fukushima", "Mount"],
-        "blanks": ["Miharu", "Fukushima", "Mount"],
-        "solved": false
-      },
-      {
-        "ID": 25,
-        "Text": "Amelia Earhart, geboren 1897 in BLANK, BLANK, war die erste Frau, die alleine über den BLANK flog.",
-        "correctAnswers": ["Atchison", "Kansas", "Atlantik"],
-        "blanks": ["Atchison", "Kansas", "Atlantik"],
-        "solved": false
-      },
-      {
-        "ID": 26,
-        "Text": "Frida Kahlo, geboren 1907 in BLANK, BLANK, ist bekannt für ihre einzigartigen BLANK.",
-        "correctAnswers": ["Coyoacán", "Mexiko-Stadt", "Selbstporträts"],
-        "blanks": ["Coyoacán", "Mexiko-Stadt", "Selbstporträts"],
-        "solved": false
-      },
-      {
-        "ID": 27,
-        "Text": "Artemisia Gentileschi, geboren 1593 in BLANK, BLANK, war eine der ersten weiblichen BLANK-Malerinnen.",
-        "correctAnswers": ["Rom", "Italien", "Barock"],
-        "blanks": ["Rom", "Italien", "Barock"],
-        "solved": false
-      },
-      {
-        "ID": 28,
-        "Text": "Radia Perlman, geboren 1951 in BLANK, BLANK, ist als die „Mutter des BLANK“ bekannt.",
-        "correctAnswers": ["Portsmouth", "Virginia", "Internets"],
-        "blanks": ["Portsmouth", "Virginia", "Internets"],
-        "solved": false
-      },
-      {
-        "ID": 29,
-        "Text": "Lise Meitner, geboren 1878 in BLANK, BLANK, spielte eine entscheidende Rolle bei der Entdeckung der BLANK.",
-        "correctAnswers": ["Wien", "Österreich", "Kernspaltung"],
-        "blanks": ["Wien", "Österreich", "Kernspaltung"],
-        "solved": false
-      },
-      {
-        "ID": 30,
-        "Text": "Gertrude Elion, geboren 1918 in BLANK, BLANK, entwickelte bahnbrechende BLANK zur Behandlung von Krankheiten.",
-        "correctAnswers": ["New York", "New York", "Medikamente"],
-        "blanks": ["New York", "New York", "Medikamente"],
-        "solved": false
-      }
-    ]
-  }  
+  "entries": [
+    {
+      "ID": 1,
+      "Text": "Ada Lovelace, eine Pionierin der Informatik, entwickelte das erste formale BLANK zur BLANK und legte damit den Grundstein für die moderne Programmierung.",
+      "correctAnswers": [
+        "Computerprogramm",
+        "Berechnung der Bernoulli-Zahlen"
+      ],
+      "blanks": [
+        "Schaltkreisdesign",
+        "Verschlüsselung von Nachrichten",
+        "Algorithmusdiagram",
+        "Virtualisierung von Abläufen"
+      ],
+      "solved": true
+    },
+    {
+      "ID": 2,
+      "Text": "Mary Anning, eine bedeutende BLANK, revolutionierte die Wissenschaft durch ihre Entdeckung des ersten vollständigen BLANK und andere wichtige Funde an der Jurassic Coast.",
+      "correctAnswers": [
+        "Paläontologin",
+        "Plesiosaurus"
+      ],
+      "blanks": [
+        "Geologin",
+        "Archäologin",
+        "Tyrannosaurus",
+        "Mammuts"
+      ],
+      "solved": true
+    },
+    {
+      "ID": 3,
+      "Text": "Stephanie Kwolek, eine bahnbrechende BLANK, entwickelte 1964 die Kunstfaser BLANK, welche aufgrund ihrer Stärke und Leichtigkeit vielfältige Anwendungen fand.",
+      "correctAnswers": [
+        "Kevlar",
+        "Chemikerin"
+      ],
+      "blanks": [
+        "Textildesignerin",
+        "Nylon",
+        "Lycra/Elasthan",
+        "Ingenieurin"
+      ],
+      "solved": true
+    },
+    {
+      "ID": 4,
+      "Text": "Als Pionierin der frühen Computertechnologie erschuf Grace Hopper nicht nur den ersten BLANK, sondern legte auch den Grundstein für die Entwicklung benutzerfreundlicher Programmiersprachen wie BLANK.",
+      "correctAnswers": [
+        "Compiler ",
+        "COBOL"
+      ],
+      "blanks": [
+        "Internetbrowser",
+        "FORTRAN",
+        "Quantencomputer",
+        "BASIC"
+      ],
+      "solved": true
+    },
+    {
+      "ID": 5,
+      "Text": "Melitta Bentz revolutionierte 1908 die Kaffeezubereitung durch die Erfindung des ersten BLANK, den sie aus BLANK und einer durchlöcherten Konservendose entwickelte.",
+      "correctAnswers": [
+        "Kaffeefilters ",
+        "Löschpapier"
+      ],
+      "blanks": [
+        "Espressokochers",
+        "Baumwolle",
+        "Kaffeemühle",
+        "Seidenstoff"
+      ],
+      "solved": true
+    },
+    {
+      "ID": 6,
+      "Text": "BlANK erfand 1886 den ersten praktischen BLANK, der aus einem wasserdichten BLANK mit Drahtkörben bestand und mit hilfe einer Seifenlauge reinigte.",
+      "correctAnswers": [
+        "Josephine Cochrane",
+        "Geschirrspüler",
+        "Kupferkessel"
+      ],
+      "blanks": [
+        "Wäschereiniger",
+        "Eliza Tinsley",
+        "Holzfass",
+        "Sarah Boone"
+      ],
+      "solved": true
+    },
+    {
+      "ID": 7,
+      "Text": "Hedy Lamarr war eine erfolgreiche Schauspielerin und Erfinderin. Zusammen mit George Antheil entwickelte sie das BLANK, das als Grundlage für moderne Technologien wie BLANK dient.",
+      "correctAnswers": [
+        "Frequenzsprungverfahren ",
+        "WLAN"
+      ],
+      "blanks": [
+        "Kommunikationsnetzwerk",
+        "Mobilfunk",
+        "Verschlüsselungssystem",
+        "GPS"
+      ],
+      "solved": true
+    },
+    {
+      "ID": 8,
+      "Text": "BLANK eine Physikerin und Chemikerin, die zusammen mit ihrem Ehemann die BLANK entdeckte. Diese Entdeckung ermöglichte die Herstellung BLANK, die in Medizin und Forschung weitreichend genutzt werden.",
+      "correctAnswers": [
+        "Irène Joliot-Curie",
+        "künstliche Radioaktivität",
+        "radioaktiver Isotope"
+      ],
+      "blanks": [
+        "Kernspaltung",
+        "Lise Meitner",
+        "Atomenergie",
+        "nuklearer Waffen"
+      ],
+      "solved": true
+    },
+    {
+      "ID": 9,
+      "Text": "Jeanne Villepreux-Power war eine Pionierin der Meeresbiologie und entwickelte das BLANK. Diese Innovation ermöglichte die Beobachtung von BLANK und legte den Grundstein für die moderne Meeresforschung.",
+      "correctAnswers": [
+        "Aquarium ",
+        "Wasserorganismen "
+      ],
+      "blanks": [
+        "Sonar",
+        "Tiefseefische",
+        "Korallenriffe",
+        "Echolot"
+      ],
+      "solved": true
+    },
+    {
+      "ID": 10,
+      "Text": "Margaret E. Knight revolutionierte die Verpackungsindustrie, indem sie 1868 eine BLANK  zur Herstellung von BLANK erfand. Trotz eines Patentstreits erhielt sie 1871 das Patent  und gründete die BLANK.",
+      "correctAnswers": [
+        "Maschine  ",
+        "Papiertüten mit flachem Boden",
+        "Eastern Paper Bag Company"
+      ],
+      "blanks": [
+        "Presse",
+        "Baumwolltaschen",
+        "Western Storage Company",
+        "Plastikverpackungen"
+      ],
+      "solved": true
+    },
+    {
+      "ID": 11,
+      "Text": "BLANK wurde 1136 zur BLANK des Frauenkonvents auf dem Disibodenberg gewählt und gründete später das Kloster Rupertsberg . Sie ist berühmt für ihre Schriften wie „BLANK“, das Kosmologie und Theologie verknüpft.",
+      "correctAnswers": [
+        "Hildegard von Bingen",
+        "Äbtissin",
+        "Liber Scivias"
+      ],
+      "blanks": [
+        "De Natura Rerum",
+        "Diakonin",
+        "Summa Theologica",
+        "Marianne von Waldenburg"
+      ],
+      "solved": true
+    },
+    {
+      "ID": 12,
+      "Text": "Als herausragende Komponistin des Barock ist BLANK bekannt für ihre acht Sammlungen mit über 125 Werken, darunter Arien und Kantaten. Trotz ihrer Bemühungen blieb ihr eine BLANK verwehrt.",
+      "correctAnswers": [
+        "Barbara Strozzi",
+        "Hofanstellung"
+      ],
+      "blanks": [
+        "Professur",
+        "königliche Einladung",
+        "Francesca Caccini",
+        "Isabella Leonarda"
+      ],
+      "solved": true
+    },
+    {
+      "ID": 13,
+      "Text": "Fanny Hensel war eine herausragende Komponistin und Pianistin des 19. Jahrhunderts und die ältere Schwester von BLANK. Trotz gesellschaftlicher Einschränkungen führte sie ab 1823 die „BLANK“ in ihrem Haus in Berlin ein, bei denen sie eigene Kompositionen aufführte.",
+      "correctAnswers": [
+        "Felix Mendelssohn",
+        "Sonntagsmusiken"
+      ],
+      "blanks": [
+        "Kammermusikabende",
+        "Johannes Brahms",
+        "Konzertabende",
+        "Robert Schumann"
+      ],
+      "solved": true
+    },
+    {
+      "ID": 14,
+      "Text": "Clara Wieck, eine bedeutende BLANK und Komponistin, debütierte 1828 im Gewandhaus und wurde 1878 die erste BLANK am Hoch'schen Konservatorium in Frankfurt.",
+      "correctAnswers": [
+        "Pianistin",
+        "Klavierlehrerin"
+      ],
+      "blanks": [
+        "Orchesterleiterin",
+        "Musiktheoretikerin",
+        "Konzertabende",
+        "Violinistin"
+      ],
+      "solved": true
+    },
+    {
+      "ID": 15,
+      "Text": "BLANK gilt als Erfinderin der BLANK. Ihr Patent von 1893 führte ein System ein, das BLANK unter den Innenraum leitete, um den Fahrgastraum zu beheizen.",
+      "correctAnswers": [
+        "Margaret A. Wilcox  ",
+        "Autoheizung",
+        "warmes Wasser"
+      ],
+      "blanks": [
+        "spezielles Öl",
+        "Sitzheizung",
+        "heiße Luft",
+        "Bertha Benz"
+      ],
+      "solved": true
+    },
+    {
+      "ID": 16,
+      "Text": "Mary Anderson entwickelte ein BLANK und erhielt 1903 ein Patent. Ihre Erfindung wurde 1920 Serienmässig in BLANK eingebaut. ",
+      "correctAnswers": [
+        "handbetriebenes Scheibenwischersystem",
+        "Autos"
+      ],
+      "blanks": [
+        "automatisches Bremssystem",
+        "elektrischer Fensterheber",
+        "Fahrräder",
+        "Flugzeuge"
+      ],
+      "solved": true
+    },
+    {
+      "ID": 17,
+      "Text": "Dorothy Crowfoot Hodgkin war eine britische BLANK, die mit der Röntgenkristallografie die Strukturen von BLANK, Vitamin B12 und Insulin entschlüsselte.",
+      "correctAnswers": [
+        "Biochemikerin",
+        "Penicillin"
+      ],
+      "blanks": [
+        "Medizinerin",
+        " Natrium",
+        "Vitamin D",
+        " Mathematikerin"
+      ],
+      "solved": true
+    },
+    {
+      "ID": 18,
+      "Text": "Sophia Jex-Blake gründete 1874 die BLANK um Frauen den Zugang zur BLANK zu ermöglichen.",
+      "correctAnswers": [
+        "London School of Medicine for Women",
+        "Medizin"
+      ],
+      "blanks": [
+        "London School of Modern arts",
+        " Oxford School of Languages and Translation",
+        "Kunstwissenschaft",
+        "Sprachwissenschaft"
+      ],
+      "solved": true
+    },
+    {
+      "ID": 19,
+      "Text": "Katherine G. Johnson war eine afroamerikanische BLANK bei der NASA, bekannt für ihre BLANK, die wichtige Raumfahrtmissionen wie John Glenns Erdumrundung und die Apollo-11-Mission ermöglichten.",
+      "correctAnswers": [
+        "Mathematikerin",
+        " Berechnungen"
+      ],
+      "blanks": [
+        "Physikerin",
+        "Astronautin",
+        "Schätzmethoden",
+        "Prognosen"
+      ],
+      "solved": true
+    },
+    {
+      "ID": 20,
+      "Text": "Cecilia Payne-Gaposchkin war eine Astrophysikerin, die entdeckte, dass Sterne hauptsächlich aus BLANK und BLANK bestehen, was die Astrophysik revolutionierte.",
+      "correctAnswers": [
+        "Wasserstoff ",
+        "Helium"
+      ],
+      "blanks": [
+        "Eisen",
+        "Gold",
+        "Kohlenstoff",
+        "Neon"
+      ],
+      "solved": true
+    },
+    {
+      "ID": 21,
+      "Text": "Inge Lehmann war eine dänische Seismologin, die 1936 entdeckte, dass die Erde einen BLANK inneren Kern hat, was das Verständnis der Geophysik revolutionierte.",
+      "correctAnswers": [
+        "festen"
+      ],
+      "blanks": [
+        "flüssigen",
+        "porösen",
+        " gasförmigen ",
+        "instabilen",
+        "kompakten"
+      ],
+      "solved": true
+    },
+    {
+      "ID": 22,
+      "Text": "Caroline Herschel war die erste Frau, die einen BLANK entdeckte.",
+      "correctAnswers": [
+        "Kometen"
+      ],
+      "blanks": [
+        "Planeten",
+        "Sternenhaufen",
+        "Asteroiden",
+        "Satelliten",
+        "Atomkern"
+      ],
+      "solved": true
+    },
+    {
+      "ID": 23,
+      "Text": "Valentina Tereshkova war die erste Frau im BLANK, nachdem sie zuvor als leidenschaftliche Sportlerin und BLANK gearbeitet hatte",
+      "correctAnswers": [
+        "Weltraum",
+        "Fallschirmspringerin"
+      ],
+      "blanks": [
+        "Unterwasserlabor",
+        "Taucherin",
+        "Lehrerin",
+        "Rettungsdienst"
+      ],
+      "solved": true
+    },
+    {
+      "ID": 24,
+      "Text": "Junko Tabei war eine japanische Bergsteigerin, die als erste Frau den Gipfel des BLANK erreichte und am 16. Mai 1975 Geschichte schrieb.",
+      "correctAnswers": [
+        "Mount Everest"
+      ],
+      "blanks": [
+        "K2 ",
+        "Kilimandscharo",
+        " Mont Blanc ",
+        " Denali ",
+        " Aconcagua "
+      ],
+      "solved": true
+    },
+    {
+      "ID": 25,
+      "Text": " Amelia Earhart war eine amerikanische Pionierin, die als erste Frau mit dem BLANK den Atlantik überquerte. Diese historische Leistung machte sie weltweit berühmt und inspirierte viele Frauen, in die BLANK einzusteigen ",
+      "correctAnswers": [
+        "Flugzeug",
+        " Luftfahrt "
+      ],
+      "blanks": [
+        "Segelboot",
+        "Fahrrad",
+        "NASA",
+        "Armee"
+      ],
+      "solved": true
+    },
+    {
+      "ID": 26,
+      "Text": "Frida Kahlo war eine mexikanische Künstlerin, besonders bekannt für ihre BLANK. ",
+      "correctAnswers": [
+        "Selbstporträts"
+      ],
+      "blanks": [
+        "Landschaftsgemälde",
+        "Skulpturen",
+        "Fotografien",
+        "Stillleben",
+        "Wandmalereien"
+      ],
+      "solved": true
+    },
+    {
+      "ID": 27,
+      "Text": "Artemisia Gentileschi war eine bedeutende italienische BLANK, bekannt für ihre Darstellungen starker BLANK aus Mythologie und Bibel, wie Judith und Holofernes. ",
+      "correctAnswers": [
+        "Barockmalerin",
+        "Frauen"
+      ],
+      "blanks": [
+        "Fotografin",
+        "Stillleben",
+        "Blumen",
+        "Männer"
+      ],
+      "solved": true
+    },
+    {
+      "ID": 28,
+      "Text": " Radia Perlman entwickelte das BLANK das das BLANK in Netzwerken revolutionierte. ",
+      "correctAnswers": [
+        "Spanning Tree Protocol",
+        "Routing"
+      ],
+      "blanks": [
+        "Internet Protocol",
+        "Datenverschlüsseln",
+        "Transmission Control Protocol",
+        "Bandbreitenmanagement"
+      ],
+      "solved": true
+    },
+    {
+      "ID": 29,
+      "Text": "Lise Meitner war die erste Frau, die an der Universität Wien BLANK studierte. Sie war maßgeblich an der Entdeckung der BLANK beteiligt.",
+      "correctAnswers": [
+        "Physik",
+        "Kernspaltung"
+      ],
+      "blanks": [
+        "Mathematik",
+        "Radioaktivität",
+        "Magnetfeldtheorie",
+        "Chemie"
+      ],
+      "solved": true
+    },
+    {
+      "ID": 30,
+      "Text": " Gertrude B. Elion war eine amerikanische Biochemikerin, die bedeutende Medikamente gegen Krankheiten wie BLANK und BLANK entwickelte. ",
+      "correctAnswers": [
+        "Leukämie",
+        "AIDS"
+      ],
+      "blanks": [
+        "Krebs",
+        "Parkinson",
+        "Multiple Sclerose",
+        "Diabetes"
+      ],
+      "solved": true
+    }
+  ]
+}
