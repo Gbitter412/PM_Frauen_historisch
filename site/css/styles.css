@@ -1,5 +1,9 @@
+html,
 body {
   font-family: "Roboto", system-ui;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 #container {
@@ -49,21 +53,49 @@ canvas {
 }
 
 .container-test {
-  max-width: 500px;
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   padding-top: 50px;
-  padding-bottom: 200px;
+}
+
+.container-test h1 {
+  font-size: 64px;
+  font-weight: 600;
+  color: #333;
+  position: relative;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container-test h1::after {
+  content: "";
+  width: 300px;
+  height: 3px;
+  background-color: #333;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.container-test h1:hover {
+  color: #555;
+  transition: color 0.3s ease;
 }
 
 .container-test p {
-  padding-top: 30px;
+  padding-top: 20px;
+  font-size: 24px;
 }
 
-.navbar-brand:hover {
-  transform: scale(1.1);
+/* navbar styling ANFANG */
+.navbar-brand {
+  display: inline-block;
+  padding: 10px 15px;
   transition: transform 0.2s ease;
+  transform-origin: center;
 }
 
 .logo {
@@ -74,16 +106,34 @@ canvas {
   transition: transform 0.2s ease;
 }
 
-.nav-link:hover {
-  transform: scale(1.1);
+.nav-link {
+  display: inline-block;
+  padding: 10px 15px;
   transition: transform 0.2s ease;
+  transform-origin: center;
 }
 
-footer {
+.nav-link:hover,
+.navbar-brand:hover {
+  transform: scale(1.05);
+}
+
+.navbar-collapse.show .nav-link:hover,
+.navbar-collapse.show .navbar-brand:hover {
+  transform: none;
+}
+
+/* navbar styling ENDE */
+
+/* footer styling ANFANG */
+.sticky-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background-color: #333;
   padding: 5px;
   text-align: center;
-  position: relative;
+  z-index: 10;
 }
 
 .image-slider {
@@ -111,6 +161,7 @@ footer {
   object-fit: cover;
   display: block;
 }
+/* footer styling ENDE*/
 
 .clickable-word {
   margin: 5px;
@@ -179,7 +230,7 @@ footer {
   width: 500px;
   height: 200px;
   border-radius: 15px;
-  box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 #userAnswer {
@@ -199,10 +250,10 @@ footer {
 #adaContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;    
-  justify-content: flex-start; 
-  margin-left: 150px;     
-  position: relative;      
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 150px;
+  position: relative;
 }
 
 #adaContainer img {
@@ -226,7 +277,7 @@ footer {
   border: 3px solid #333;
   transition: all 0.35s;
   position: relative;
-  transform: scale(1); 
+  transform: scale(1);
 }
 
 .btn-testCC:hover {
@@ -248,7 +299,7 @@ footer {
   padding: 15px;
   text-align: center;
   font-style: italic;
-  box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
   z-index: 10;
 }
 
@@ -315,46 +366,46 @@ footer {
   border-radius: 15px;
   padding: 15px;
   font-size: 18px;
-  position: absolute; /* Position relative to #marie-container */
-  right: 27%; /* Adjust as needed based on the width of text and image */
-  max-width: 200%; /* Maximum width */
-  text-align: left; /* Center the text inside the bubble */
+  position: absolute;
+  right: 27%;
+  max-width: 200%;
+  text-align: left;
 }
 
 #text-bubble:after {
   content: "";
   position: absolute;
-  top: 50%; /* Center vertically on the bubble */
-  right: -20px; /* Position at the left edge of the bubble */
-  margin-top: -10px; /* Offset to center of the arrow */
+  top: 50%;
+  right: -20px;
+  margin-top: -10px;
   border-width: 10px;
   border-style: solid;
-  border-color: transparent transparent transparent white; /* Arrow pointing left */
+  border-color: transparent transparent transparent white;
 }
 
 #combine-button {
   position: absolute;
-  bottom: 3%; /* Keep it near the bottom */
-  left: 50%; /* Center horizontally */
-  width: 15%; /* Width of the button */
-  height: 5%; /* Height of the button */
-  background-color: #024183; /* Button color */
+  bottom: 3%;
+  left: 50%;
+  width: 15%;
+  height: 5%;
+  background-color: #024183;
   color: white;
-  border: 2px solid #000000; /* Fixed border syntax */
-  border-radius: 5px; /* Rounded corners */
-  padding: 10px 20px; /* Padding for the button */
-  font-size: 16px; /* Font size */
-  cursor: pointer; /* Pointer cursor on hover */
-  z-index: 5; /* Make sure it's above the canvas */
-  transform: translateX(-50%); /* Center the button horizontally */
+  border: 2px solid #000000;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 5;
+  transform: translateX(-50%);
 }
 
 /* Disable pointer events when the overlay is visible */
 #overlay.active ~ #combine-button {
-  pointer-events: none; /* Disable button interactions */
-  opacity: 0.5; /* Make the button appear disabled */
+  pointer-events: none;
+  opacity: 0.5;
 }
 
 #combine-button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0056b3;
 }
