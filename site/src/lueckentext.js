@@ -129,7 +129,7 @@ function isPuzzleSolved() {
   // dreist von caner gestohlen
   async function loadJson() {
     try {
-      const response = await fetch("../quizdata.json"); //json einlesen
+      const response = await fetch("../textdata.json"); //json einlesen
       const data = await response.json();
       return data;
     } catch (error) {
