@@ -33,6 +33,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
         const result = document.getElementById("result");
         if (userInput === correctAnswer) {
             result.textContent = "Richtig!";
+            setTimeout(()=>{
+                loadNextRiddle();
+            },1500);
         } else {
             result.textContent = "Versuche es erneut!";
         }
