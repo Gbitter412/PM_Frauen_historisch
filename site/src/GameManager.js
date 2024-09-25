@@ -27,50 +27,54 @@ export class GameManager {
         }
     }
 
-    // Methode zum Starten des nächsten Puzzles
-    startNextPuzzle() {
-        if (this.currentPuzzleIndex >= this.puzzleSequence.length) {
-            this.endGame();  // Beende das Spiel, wenn alle Puzzles abgeschlossen sind
-            return;
-        }
-
-        const { type, imagePath } = this.puzzleSequence[this.currentPuzzleIndex];  // Hole den Puzzle-Typ und den Bildpfad für das aktuelle Puzzle
-
-        // Lade das Bild für das aktuelle Puzzle
-        const image = new Image();
-        image.src = imagePath;
-        image.onload = () => {
-            this.puzzle = PuzzleFactory.createPuzzle(type, image, this.canvas);  // Erstelle das Puzzle mit der PuzzleFactory
-            this.puzzle.init();  // Initialisiere das Puzzle
-            this.puzzle.draw();  // Zeichne das Puzzle auf das Canvas
-
-            // Behandlung der Puzzle-Vervollständigung
-            this.puzzle.onComplete(() => this.handlePuzzleComplete());  // Weise den handlePuzzleComplete-Handler zu
-        };
-
-        this.solveButton.textContent = 'Solve Puzzle';  // Setze den Text des Buttons auf "Solve Puzzle"
-        this.solveButton.disabled = false;  // Aktiviere den Button
+// Methode zum Starten des nächsten Puzzles
+startNextPuzzle() {
+    if (this.puzzle && !this.puzzle.isSolved()) {
+        // Falls das aktuelle Puzzle noch nicht vollständig gelöst ist, zeige eine Warnung oder ignoriere den Aufruf
+        console.warn('Das aktuelle Puzzle ist noch nicht vollständig gelöst!');
+        return;
     }
+
+    if (this.currentPuzzleIndex >= this.puzzleSequence.length) {
+        this.endGame();  // Beende das Spiel, wenn alle Puzzles abgeschlossen sind
+        return;
+    }
+
+    const { type, imagePath } = this.puzzleSequence[this.currentPuzzleIndex];  // Hole den Puzzle-Typ und den Bildpfad für das aktuelle Puzzle
+
+    // Lade das Bild für das aktuelle Puzzle
+    const image = new Image();
+    image.src = imagePath;
+    image.onload = () => {
+        this.puzzle = PuzzleFactory.createPuzzle(type, image, this.canvas);  // Erstelle das Puzzle mit der PuzzleFactory
+        this.puzzle.init();  // Initialisiere das Puzzle
+        this.puzzle.draw();  // Zeichne das Puzzle auf das Canvas
+
+        // Behandlung der Puzzle-Vervollständigung
+        this.puzzle.onComplete(() => this.handlePuzzleComplete());  // Weise den handlePuzzleComplete-Handler zu
+    };
+
+    this.solveButton.textContent = 'Solve Puzzle';  // Setze den Text des Buttons auf "Solve Puzzle"
+    this.solveButton.disabled = false;  // Aktiviere den Button
+}
+
 
     // Methode zur Behandlung des Abschlusses eines Puzzles
     handlePuzzleComplete() {
         this.showPuzzleInfo();  // Zeige die Puzzle-Informationen an
-        this.solveButton.textContent = 'Next Puzzle';  // Setze den Text des Buttons auf "Next Puzzle"
+        this.solveButton.textContent = 'Next';  // Setze den Text des Buttons auf "Next Puzzle"
         this.solveButton.disabled = false;  // Aktiviere den Button
     }
 
-    // Methode zur Behandlung von Klicks auf den Solve-Button
-    handleSolveButtonClick() {
-        if (this.solveButton.textContent === 'Next Puzzle') {
-            this.currentPuzzleIndex++;  // Erhöhe den Index des aktuellen Puzzles
-            this.startNextPuzzle();  // Starte das nächste Puzzle
-            document.getElementById('infoContainer').style.display = 'none';  // Verstecke den Info-Container
-            const gameContainer = document.getElementById('gameContainer');
-            gameContainer.classList.remove('show-info');  // Entferne die symmetrische Anzeige für das nächste Puzzle
-        } else if (this.puzzle) {
-            this.puzzle.solvePuzzle();  // Löse das Puzzle, wenn der Button gedrückt wird
-        }
+// Methode zur Behandlung von Klicks auf den Solve-Button
+handleSolveButtonClick() {
+    if (this.solveButton.textContent === 'Next') {
+        // Nach jedem gelösten Puzzle zur lueckentext.html-Seite weiterleiten
+        window.location.href = 'lueckentext.html';
+    } else if (this.puzzle) {
+        this.puzzle.solvePuzzle();  // Löse das Puzzle, wenn der Button gedrückt wird
     }
+}
 
 // Methode zur Anzeige der Puzzle-Informationen
 showPuzzleInfo() {
