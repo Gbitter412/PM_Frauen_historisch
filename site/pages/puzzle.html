@@ -78,9 +78,7 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="./puzzle.html"
-                      >Taktisches Puzzle</a
-                    >
+                    <li><a id="tactical_puzzle" class="dropdown-item" href="./puzzle.html">Tactical Puzzle</a></li>
                   </li>
                   <li>
                     <a class="dropdown-item" href="#">Marie Curie's Spiel</a>
@@ -153,6 +151,10 @@
         const gameContainer = document.getElementById("gameContainer");
         gameContainer.classList.add("show-info"); // Aktiviert das symmetrische Layout
       }
+
+      // Retrieve the variable from sessionStorage
+      const varImageIndex = sessionStorage.getItem("varImageIndex");
+      console.log("varImageIndex: ", varImageIndex); // Use the variable as needed
     </script>
   </body>
 </html>
