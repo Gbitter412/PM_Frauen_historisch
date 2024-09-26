@@ -22,65 +22,91 @@ function generateTextWithBlanks(text, correctAnswers) {
     }
   
     result.push(text.substring(lastIndex)); // add remaining text
-    return result.join("");
-  }
-  
-  // ATTENTION!! correctAnswers need to be ordered in JSON after their order in sentence
-  function createClickableWords(correctAnswers, blanks) {
-    const wordsContainer = document.getElementById("wordsContainer"); // contains our buttons
-  
-    // run over correctAnswers and create button for each
-    correctAnswers.forEach((word, index) => {
-      const wordElement = document.createElement("button");
-      wordElement.className = "clickable-word"; // gets style from css class
-      wordElement.textContent = word;
-  
-      // event listener for user feedback
-      wordElement.addEventListener("click", () => {
-        // on click execute below
-        const dropZones = document.querySelectorAll(".drop-zone"); // select all dropzones
-        dropZones[index].textContent = word; // drop word into correspondent dropzones
-        dropZones[index].classList.add("glow-green"); // give glow effect
-        setTimeout(() => {
-          // for 1000ms
-          dropZones[index].classList.remove("glow-green");
-        }, 500);
-  
-        if (isPuzzleSolved()) {
-          // Entfernt den location.reload Aufruf, sodass nichts passiert
-        }
-  
-        wordsContainer.removeChild(wordElement); // remove word from word container
-      });
-  
-      wordsContainer.appendChild(wordElement); // add word to word container
-    });
-  
-    // run over correctAnswers and create button for each
-    blanks.forEach((word, index) => {
-      const wordElement = document.createElement("button");
-      wordElement.className = "clickable-word";
-      wordElement.textContent = word;
-  
-      // event listener for user feedback
-      wordElement.addEventListener("click", () => {
-        wordElement.classList.add("glow-red");
-        setTimeout(() => {
-          wordElement.classList.remove("glow-red");
-        }, 500);
-      });
-  
-      wordsContainer.appendChild(wordElement);
-    });
-  
+    return result.join('');
+}
+
+// ATTENTION!! answers need to be ordered in JSON after their order in sentence
+function createClickableWords(answers, blanks) { // possible arguments
+    const wordsContainer = document.getElementById('wordsContainer'); // contains our buttons
+    const feedbackContainer = document.getElementById('feedbackContainer'); // will contain feedback message
+
+    if(arguments.length === 1) {
+        answers.forEach((word, index) => {
+            const wordElement = document.createElement('button');
+            wordElement.className = 'clickable-word'; // gets style from css class
+            wordElement.textContent = word;
+
+            // event listener for user feedback
+            wordElement.addEventListener('click', () => {
+                if(index === 0) {
+                    // add green glow, permanent + message
+                    wordElement.classList.add('correct-answer');
+                    feedbackContainer.innerHTML = 'Richtig!';
+                } else {
+                    // add red glow temporal
+                    wordElement.classList.add('glow-red');
+                    setTimeout(() => {
+                        wordElement.classList.remove('glow-red');
+                    }, 500);
+                }
+            });
+
+            wordsContainer.appendChild(wordElement);
+        });
+    } else if(arguments.length === 2) {
+        // run over answers and create button for each
+        answers.forEach((word, index) => {
+            const wordElement = document.createElement('button');
+            wordElement.className = 'clickable-word';
+            wordElement.textContent = word;
+
+            // event listener for user feedback
+            wordElement.addEventListener('click', () => { // on click execute below
+                const dropZones = document.querySelectorAll('.drop-zone'); // select all dropzones
+                dropZones[index].textContent = word; // drop word into correspondent dropzones
+                dropZones[index].classList.add('glow-green'); // give glow effect
+                setTimeout(() => { // for 1000ms
+                    dropZones[index].classList.remove('glow-green');
+                }, 500);
+
+                if (isPuzzleSolved()) {
+                    feedbackContainer.innerHTML = 'Richtig!';
+                }
+
+                wordsContainer.removeChild(wordElement); // remove word from word container
+            });
+
+            wordsContainer.appendChild(wordElement); // add word to word container
+        });
+
+        // run over answers and create button for each
+        blanks.forEach((word, index) => {
+            const wordElement = document.createElement('button');
+            wordElement.className = 'clickable-word';
+            wordElement.textContent = word;
+
+            // event listener for user feedback
+            wordElement.addEventListener('click', () => {
+                wordElement.classList.add('glow-red');
+                setTimeout(() => {
+                    wordElement.classList.remove('glow-red');
+                }, 500);
+            });
+
+            wordsContainer.appendChild(wordElement);
+        });
+    } else {
+        console.log("Illegal amounts of arguments")
+    }
+
     // shuffle word container
     const words = Array.from(wordsContainer.children);
     const shuffled = shuffleArray(words);
-    wordsContainer.innerHTML = "";
-    shuffled.forEach((word) => wordsContainer.appendChild(word));
-  }
-  
-  function isPuzzleSolved() {
+    wordsContainer.innerHTML = ''; // clear previous content
+    shuffled.forEach(word => wordsContainer.appendChild(word));
+}
+
+function isPuzzleSolved() {
     // get all dropzones and check if solved
     const dropZones = document.querySelectorAll(".drop-zone");
     for (const dropZone of dropZones) {
@@ -116,16 +142,33 @@ function generateTextWithBlanks(text, correctAnswers) {
     const entries = data.entries;
     const randomIndex = sessionStorage.getItem("varImageIndex");
     return entries[randomIndex];
-  }
-  
-  async function initialize() {
+}
+
+function chooseQuiz() {
+    return Math.floor(Math.random() * 2) + 1;
+}
+
+async function initialize() {
     const entry = await getRandomEntry();
-    const generatedText = generateTextWithBlanks(
-      entry.Text,
-      entry.correctAnswers
-    );
-    document.getElementById("textContainer").innerHTML = generatedText;
-    createClickableWords(entry.correctAnswers, entry.blanks);
-  }
-  
-  initialize();  
+    const puzzle = chooseQuiz();
+    const description = document.getElementById('description');
+
+    // switch case so easier to expand if somebody ever wants to touch this again
+    switch (puzzle) {
+        case 1:
+            description.innerHTML = '<h2>Füllen Sie die Lücken richtig aus.</h2>'
+            const generatedText = generateTextWithBlanks(entry.Text, entry.correctAnswers);
+            document.getElementById('textContainer').innerHTML = generatedText;
+            createClickableWords(entry.correctAnswers, entry.blanks);
+            break;
+        case 2:
+            description.innerHTML = '<h2>Wählen Sie die richtige Antwort aus.</h2>'
+            document.getElementById('textContainer').innerHTML = entry.Quizfrage;
+            createClickableWords(entry.Antworten);
+            break;
+        default:
+            console.log("Error when choosing Quiz")
+    }
+}
+
+initialize();

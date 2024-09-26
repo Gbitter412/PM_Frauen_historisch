@@ -186,11 +186,17 @@ canvas {
   box-shadow: 0 0 15px rgba(40, 167, 69, 0.5);
 }
 
+.correct-answer {
+  background-color: #d4edda !important;
+  border-color: #c3e6cb !important;
+  box-shadow: 0 0 30px rgba(40, 167, 69, 0.5), 0 0 15px rgba(40, 167, 69, 0.5) !important;
+}
+
 .glow-red {
-  background-color: #f8d7da;
-  border-color: #f5c6cb;
-  box-shadow: 0 0 30px rgba(220, 53, 69, 0.8), 0 0 15px rgba(220, 53, 69, 0.5);
-  transition: all 0.3s ease;
+  background-color: #f8d7da !important;
+  border-color: #f5c6cb !important;
+  box-shadow: 0 0 30px rgba(220, 53, 69, 0.8), 0 0 15px rgba(220, 53, 69, 0.5) !important;
+  transition: all 0.3s ease !important;
 }
 
 @keyframes scroll {
