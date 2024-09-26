@@ -63,12 +63,21 @@ function createPeriodicElement(squareColor, centerText, bottomText, topNumber) {
     // Create the bottom text below the square
     const canvasBottom = document.createElement('canvas');
     const contextBottom = canvasBottom.getContext('2d');
-    canvasBottom.width = 256;
-    canvasBottom.height = 256;
+    /*canvasBottom.width = 256;// Create a raycaster and mouse vector
+    const raycaster = new THREE.Raycaster();
+    const mouse = new THREE.Vector2();*/
+
+    // Measure the text width
+    contextBottom.font = '45px Arial'; // Set the font to measure
+    const textWidth = contextBottom.measureText(bottomText).width;
+
+    // Set the canvas size based on the text width with padding
+    canvasBottom.width = Math.max(textWidth + 20, 256); // Add padding and ensure a minimum width
+    canvasBottom.height = 256; // Height can remain constant
 
     // Draw the bottom text
     contextBottom.fillStyle = 'black';
-    contextBottom.font = '50px Arial'; // Smaller font
+    contextBottom.font = '45px Arial'; // Smaller font
     contextBottom.textAlign = 'center';
     contextBottom.textBaseline = 'bottom';
     contextBottom.fillText(bottomText, canvasBottom.width / 2, canvasBottom.height / 2);

@@ -1,21 +1,23 @@
-// Function to show the overlay
-function showOverlay() {
+import { updateTextBox } from './textBox.js';
+import { resetMouseClicks } from './squareAnimation.js';
+import { isOverlayVisible,setIsOverlayVisible } from './marieCurie.js';
+
+// Function to show the overlay with dynamic text
+function showOverlay(text) {
+    if (!isOverlayVisible) {
+        setIsOverlayVisible(true);
+    }
     const overlay = document.getElementById('overlay');
     const textBubble = document.getElementById('text-bubble');
 
-    // Array of texts to show in the bubble
-    const texts = [
-        "Hi! My name is Marie Curie.<br><br>" + 
-        "I was the first woman to be awarded the Nobel Prize for my work discovering radium and polonium.<br><br>" +
-        "Let us combine some elements!",
-        "Test."
-    ];
-
-    // Pick a random text from the array
-    textBubble.innerHTML = texts[0]; // Set the text in the bubble
+    // Set the passed text in the bubble
+    textBubble.innerHTML = text;
 
     // Adjust bubble size dynamically (optional)
     setTimeout(() => {
+        // Reset width to auto to recalculate
+        textBubble.style.width = 'auto'; 
+
         // Adjust bubble size after rendering content
         const textWidth = textBubble.offsetWidth;
         textBubble.style.width = `${textWidth}px`;
@@ -24,10 +26,34 @@ function showOverlay() {
     overlay.style.display = 'flex'; // Show the overlay
 }
 
-// Function to hide the overlay
-function hideOverlay() {
+// Function to hide the overlay and reset the textBox
+function hideOverlay(textBox) {
     const overlay = document.getElementById('overlay');
     overlay.style.display = 'none'; // Hide the overlay
+
+    // Reset the textBox after the overlay is hidden
+    if (textBox) {
+        textBox.userData.combinationString = '';  // Clear the combination string
+        updateTextBox(textBox, '');
+    }
+
+    resetMouseClicks();
 }
 
-export { showOverlay, hideOverlay };
+// Function to update the content of the overlay without hiding it
+function updateTextBubble(newText) {
+    const textBubble = document.getElementById('text-bubble');
+    textBubble.innerHTML = newText; // Update the overlay with new text (compound info)
+
+    // Use setTimeout to allow the browser to render the content
+    setTimeout(() => {
+        // Reset width to auto to recalculate
+        textBubble.style.width = 'auto'; 
+
+        // Adjust bubble size after rendering content
+        const textWidth = textBubble.offsetWidth;
+        textBubble.style.width = `${textWidth}px`;
+    }, 0);
+}
+
+export { showOverlay, hideOverlay, updateTextBubble };

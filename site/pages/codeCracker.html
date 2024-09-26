@@ -29,14 +29,17 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="./puzzle.html">Tactical Puzzle</a></li>
-                                <li><a class="dropdown-item" href="#">Marie Curie's Game</a></li>
+                                <li><a class="dropdown-item" href="./marieCurie.html">Marie Curie's Game</a></li>
                                 <li><a class="dropdown-item" href="./codeCracker.html">Code Cracker</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="./maryAnning.html">Mary Annings's Game</a>
+                                </li>
                             </ul>
                         <li class="nav-item">
                             <a class="nav-link me-2" href="./help.html">Help</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Infos</a>
+                            <a class="nav-link" href="./info.html">Infos</a>
                         </li>
                         </li>
                     </ul>
@@ -49,14 +52,14 @@
     <div id="gameContainer">
         <div id="riddleSection">
             <div id="riddleContainer">
-                <canvas id="codeCanvas" width="450" height="450"></canvas>
+                <canvas id="codeCanvas" width="1200" height="600"></canvas>
                 <input type="text" id="userAnswer" placeholder="Type your answer here...">
                 <button class="btn-test" onclick="checkAnswer()">Submit</button>
                 <p id="result"></p>
             </div>
             <div id="adaContainer">
                 <img src="../assets/img/1.jpg" alt="Ada Lovelace" width="200">
-                <button class="btn-test" onclick="toggleHint()">Ask Ada</button>
+                <button class="btn-testCC" onclick="toggleHint()">Ask Ada</button>
                 <div id="hintBox">
                     <p id="hintText"></p>
                 </div>

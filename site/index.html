@@ -15,11 +15,15 @@
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="./index.html">
           <img src="./assets/img/logo.jpg" alt="Logo" width="30" height="24"
             class="d-inline-block align-text-top logo" />
           <span class="brand-text">HiddenHeroes</span>
         </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item dropdown">
@@ -28,16 +32,25 @@
                 Play
               </a>
               <ul class="dropdown-menu">
-                <li><a id="tactical_puzzle" class="dropdown-item" href="./pages/puzzle.html">Tactical Puzzle</a></li>
-                <li><a class="dropdown-item" href="./pages/marieCurie.html">Marie Curie's Game</a></li>
-                <li><a class="dropdown-item" href="./pages/codeCracker.html">Code Cracker</a></li>
+                <li>
+                  <a id="tactical_puzzle" class="dropdown-item" href="./pages/puzzle.html">Tactical Puzzle</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./pages/marieCurie.html">Marie Curie's Game</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./pages/codeCracker.html">Code Cracker</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./pages/maryAnning.html">Mary Annings's Game</a>
+                </li>
               </ul>
+            </li>
             <li class="nav-item">
               <a class="nav-link me-2" href="./pages/help.html">Help</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Infos</a>
-            </li>
+              <a class="nav-link" href="./pages/info.html">Infos</a>
             </li>
           </ul>
         </div>
@@ -50,7 +63,7 @@
     <p id="randomInfo"></p>
   </div>
 
-  <footer>
+  <footer class="sticky-footer">
     <div class="image-slider">
       <div class="slider-track" id="slider-track">
         <div class="slide">
@@ -216,12 +229,11 @@
 
     const navLink = document.getElementById("tactical_puzzle");
     // Add an event listener to the button
-    navLink.addEventListener("click", function(event) {
+    navLink.addEventListener("click", function (event) {
       event.preventDefault(); // Prevent the default anchor behavior
       sessionStorage.setItem('varImageIndex', varImageIndex); // Store the variable
       window.location.href = './pages/puzzle.html'; // Redirect to another page
-    }); 
-
+    });
 
   </script>
 </body>
