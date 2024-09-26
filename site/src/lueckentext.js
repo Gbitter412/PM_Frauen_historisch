@@ -41,7 +41,7 @@ function createClickableWords(answers, blanks) { // possible arguments
                 if(index === 0) {
                     // add green glow, permanent + message
                     wordElement.classList.add('correct-answer');
-                    feedbackContainer.innerHTML = 'Richtig!';
+                    feedbackContainer.innerHTML = '<p style="font-size: 1.5em; color: green;">Richtig!</p>';
                 } else {
                     // add red glow temporal
                     wordElement.classList.add('glow-red');
@@ -70,7 +70,7 @@ function createClickableWords(answers, blanks) { // possible arguments
                 }, 500);
 
                 if (isPuzzleSolved()) {
-                    feedbackContainer.innerHTML = 'Richtig!';
+                    feedbackContainer.innerHTML = '<p style="font-size: 1.5em; color: green;">Richtig!</p>';
                 }
 
                 wordsContainer.removeChild(wordElement); // remove word from word container
