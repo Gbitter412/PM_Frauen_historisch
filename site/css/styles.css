@@ -330,3 +330,90 @@ button {
 #combine-button:hover {
   background-color: #0056b3; /* Darker blue on hover */
 }
+
+/* Nur auf info.html angewendet */
+.info-page {
+  display: flex;  
+  flex-direction: column; 
+  min-height: 100vh; 
+}
+
+.info-page main {
+  flex: 1; 
+}
+
+.info-page footer {
+  background-color: #333; 
+  color: #fff; 
+  text-align: center; 
+  padding: 10px; 
+}
+
+.info-page #textContainer {
+  font-size: 1.25rem;
+  padding: 20px;
+}
+
+.info-page canvas {
+  border: 1px solid #000;
+}
+
+.info-page #solveButton {
+  margin-top: 20px;
+}
+
+/* Gemeinsame Footer-Stile für beide Seiten */
+footer {
+  background-color: #333; 
+  color: #fff; 
+  text-align: center; 
+  padding: 10px; 
+  position: relative; 
+}
+
+
+
+.info-page,
+.help-page {
+  display: flex;  
+  flex-direction: column; 
+  min-height: 100vh; 
+}
+
+.info-page main,
+.help-page main {
+  flex: 1; 
+}
+
+/* Style nur auf help.html angewendet */
+.help-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+.help-page h1 {
+  text-align: center;
+  margin-top: 20px; 
+}
+
+.help-page .help-section {
+  margin: 20px; 
+  padding: 20px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  background-color: #f9f9f9; 
+}
+
+.help-page #textContainer {
+  font-size: 1.25rem; 
+  padding: 20px;
+}
+
+.help-page canvas {
+  border: 1px solid #000;
+}
+
+.help-page #solveButton {
+  margin-top: 20px;
+}
