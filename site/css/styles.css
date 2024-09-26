@@ -1,5 +1,9 @@
+html,
 body {
   font-family: "Roboto", system-ui;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 #container {
@@ -49,21 +53,46 @@ canvas {
 }
 
 .container-test {
-  max-width: 500px;
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   padding-top: 50px;
-  padding-bottom: 200px;
 }
 
 .container-test p {
-  padding-top: 30px;
+  padding-top: 20px;
+  font-size: 24px;
 }
 
-.navbar-brand:hover {
-  transform: scale(1.1);
+.container-test h1 {
+  font-size: 64px;
+  font-weight: 600;
+  color: #333;
+  position: relative;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.container-test h1::after {
+  content: "";
+  width: 300px;
+  height: 3px;
+  background-color: #333;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.container-test h1:hover {
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand {
+  display: inline-block;
+  padding: 10px 15px;
   transition: transform 0.2s ease;
+  transform-origin: center;
 }
 
 .logo {
@@ -74,16 +103,30 @@ canvas {
   transition: transform 0.2s ease;
 }
 
-.nav-link:hover {
-  transform: scale(1.1);
+.nav-link {
+  display: inline-block;
+  padding: 10px 15px;
   transition: transform 0.2s ease;
+  transform-origin: center;
 }
 
-footer {
+.nav-link:hover,
+.navbar-brand:hover {
+  transform: scale(1.05);
+}
+.navbar-collapse.show .nav-link:hover,
+.navbar-collapse.show .navbar-brand:hover {
+  transform: none;
+}
+
+.sticky-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background-color: #333;
   padding: 5px;
   text-align: center;
-  position: relative;
+  z-index: 10;
 }
 
 .image-slider {
@@ -179,7 +222,7 @@ footer {
   width: 500px;
   height: 200px;
   border-radius: 15px;
-  box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 #userAnswer {
@@ -199,10 +242,10 @@ footer {
 #adaContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;    
-  justify-content: flex-start; 
-  margin-left: 150px;     
-  position: relative;      
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 150px;
+  position: relative;
 }
 
 #adaContainer img {
@@ -226,7 +269,7 @@ footer {
   border: 3px solid #333;
   transition: all 0.35s;
   position: relative;
-  transform: scale(1); 
+  transform: scale(1);
 }
 
 .btn-testCC:hover {
@@ -248,7 +291,7 @@ footer {
   padding: 15px;
   text-align: center;
   font-style: italic;
-  box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
   z-index: 10;
 }
 
@@ -271,10 +314,10 @@ footer {
 /* styling für marie curie game */
 #gameCanvas {
   position: absolute;
-  bottom: 0;         /* Anchors the canvas to the bottom */
-  left: 0;           /* Ensures the canvas starts from the left */
-  width: 100%;       /* Makes the canvas span the full width */
-  height: 100%;   /* Allows height to be controlled by JavaScript */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #overlay {
@@ -283,143 +326,140 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* Black with heavy transparency */
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  justify-content: center;
+  align-items: center;
   color: white;
   font-family: Arial, sans-serif;
-  z-index: 10; /* Above the Three.js canvas */
+  z-index: 10;
 }
 
 #overlay-title {
   position: absolute;
   top: 2%;
-  font-family: 'Tangerine', cursive; /* Use the imported font */
-  font-size: 600%; /* Adjust the size as needed */
-  text-align: center; /* Center the title */
-  color: white; /* Text color */
-  text-shadow: 1px 1px 0px rgba(255, 255, 255, 1), /* First shadow */
-               2px 2px 0px rgba(0, 0, 0, 0.5); /* Second shadow for depth */
-  -webkit-text-stroke: 1px black; /* Black border */
+  font-family: "Tangerine", cursive;
+  font-size: 600%;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 1),
+    2px 2px 0px rgba(0, 0, 0, 0.5);
+  -webkit-text-stroke: 1px black;
 }
-
 
 #marie-container {
   display: flex;
-  align-items: center; /* Center vertically */
+  align-items: center;
 }
 
 #marie-image {
   position: absolute;
   right: 1%;
-  width: 25%; /* Image width */
+  width: 25%;
 }
 
-.wrapper { 
-  position: absolute; /* or fixed based on your layout needs */
-  right: 27%; /* Adjust as needed */
-  z-index: 3000; /* Ensure it's above other elements */
+.wrapper {
+  position: absolute;
+  right: 27%;
+  z-index: 3000;
 }
 
 .wrapper:before {
   content: "";
   position: absolute;
-  top: 50%; /* Center vertically */
-  right: -15px; /* Position it to the left of the bubble */
-  margin-top: -10px; /* Adjust for vertical centering */
-  border-top: 10px solid transparent; /* Top border transparent */
-  border-bottom: 10px solid transparent; /* Bottom border transparent */
-  border-left: 20px solid white; /* Left border is the color of the arrow */
+  top: 50%;
+  right: -15px;
+  margin-top: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 20px solid white;
 }
 
 #text-bubble {
-  display: inline-block; /* Allow dynamic resizing */
+  display: inline-block;
   background-color: white;
   color: black;
   border-radius: 15px;
   padding: 15px;
   font-size: 18px;
-  position: absolute; /* Position relative to #marie-container */
-  right: 27%; /* Adjust as needed based on the width of text and image */
+  position: absolute;
+  right: 27%;
   width: auto;
-  max-width: max-content; /* Maximum width */
+  max-width: max-content;
   max-height: 50%;
-  text-align: left; /* Center the text inside the bubble */
-  word-wrap: break-word; /* Break long words to prevent overflow */
-  overflow-y: auto; /* Enable vertical scrolling */
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  text-align: left;
+  word-wrap: break-word;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 #text-bubble:after {
-  content: '';
+  content: "";
   position: absolute;
-  top: 50%; /* Center vertically on the bubble */
-  right: -20px; /* Position at the left edge of the bubble */
-  margin-top: -10px; /* Offset to center of the arrow */
+  top: 50%;
+  right: -20px;
+  margin-top: -10px;
   border-width: 10px;
   border-style: solid;
-  border-color: transparent transparent transparent white; /* Arrow pointing left */
+  border-color: transparent transparent transparent white;
 }
 
 /* Optional: Styling the scrollbar for better visibility */
 #text-bubble::-webkit-scrollbar {
-  width: 8px; /* Width of the scrollbar */
+  width: 8px;
 }
 
 #text-bubble::-webkit-scrollbar-thumb {
-  background: #024183; /* Color of the scrollbar thumb */
-  border-radius: 10px; /* Rounded edges for the scrollbar thumb */
+  background: #024183;
+  border-radius: 10px;
 }
 
 #text-bubble::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Background of the scrollbar track */
+  background: #f1f1f1;
 }
 
 #combine-button {
   position: absolute;
-  bottom: 3%; /* Keep it near the bottom */
-  left: 50%; /* Center horizontally */
-  width: 15%; /* Width of the button */
-  height: 5%; /* Height of the button */
-  background-color: #024183; /* Button color */
+  bottom: 3%;
+  left: 50%;
+  width: 15%;
+  height: 5%;
+  background-color: #024183;
   color: white;
-  border: 2px solid #000000; /* Fixed border syntax */
-  border-radius: 5px; /* Rounded corners */
-  padding: 10px 20px; /* Padding for the button */
-  font-size: 16px; /* Font size */
-  cursor: pointer; /* Pointer cursor on hover */
-  z-index: 5; /* Make sure it's above the canvas */
-  transform: translateX(-50%); /* Center the button horizontally */
+  border: 2px solid #000000;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 5;
+  transform: translateX(-50%);
 }
 
-/* Disable pointer events when the overlay is visible */
 #overlay.active ~ #combine-button {
-  pointer-events: none; /* Disable button interactions */
-  opacity: 0.5; /* Make the button appear disabled */
+  pointer-events: none;
+  opacity: 0.5;
 }
 
 #combine-button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-
+  background-color: #0056b3;
 }
 
 /* Nur auf info.html angewendet */
 .info-page {
-  display: flex;  
-  flex-direction: column; 
-  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .info-page main {
-  flex: 1; 
+  flex: 1;
 }
 
 .info-page footer {
-  background-color: #333; 
-  color: #fff; 
-  text-align: center; 
-  padding: 10px; 
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
 }
 
 .info-page #textContainer {
@@ -437,49 +477,47 @@ footer {
 
 /* Gemeinsame Footer-Stile für beide Seiten */
 footer {
-  background-color: #333; 
-  color: #fff; 
-  text-align: center; 
-  padding: 10px; 
-  position: relative; 
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: relative;
 }
-
-
 
 .info-page,
 .help-page {
-  display: flex;  
-  flex-direction: column; 
-  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .info-page main,
 .help-page main {
-  flex: 1; 
+  flex: 1;
 }
 
 /* Style nur auf help.html angewendet */
 .help-page {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; 
+  min-height: 100vh;
 }
 
 .help-page h1 {
   text-align: center;
-  margin-top: 20px; 
+  margin-top: 20px;
 }
 
 .help-page .help-section {
-  margin: 20px; 
-  padding: 20px; 
-  border: 1px solid #ccc; 
-  border-radius: 5px; 
-  background-color: #f9f9f9; 
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
 }
 
 .help-page #textContainer {
-  font-size: 1.25rem; 
+  font-size: 1.25rem;
   padding: 20px;
 }
 
@@ -489,5 +527,4 @@ footer {
 
 .help-page #solveButton {
   margin-top: 20px;
-
 }
