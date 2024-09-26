@@ -59,12 +59,25 @@ startNextPuzzle() {
 }
 
 
-    // Methode zur Behandlung des Abschlusses eines Puzzles
-    handlePuzzleComplete() {
-        this.showPuzzleInfo();  // Zeige die Puzzle-Informationen an
-        this.solveButton.textContent = 'Next';  // Setze den Text des Buttons auf "Next Puzzle"
-        this.solveButton.disabled = false;  // Aktiviere den Button
-    }
+// In GameManager.js
+handlePuzzleComplete() {
+    this.showPuzzleInfo();  // Zeige die Puzzle-Informationen an
+    this.showCompletionMessage();  // Zeige die Nachricht "Puzzle gelöst" an
+    this.solveButton.textContent = 'Next';  // Setze den Text des Buttons auf "Next Puzzle"
+    this.solveButton.disabled = false;  // Aktiviere den Button
+}
+
+// Neue Methode zur Anzeige der Nachricht
+showCompletionMessage() {
+    const messageContainer = document.createElement('div');
+    messageContainer.style.marginTop = '20px';
+    messageContainer.style.textAlign = 'center';
+    messageContainer.innerHTML = '<p style="font-size: 1.5em; color: green;">Puzzle gelöst!</p>';
+
+    const puzzleContainer = document.getElementById('puzzleContainer');
+    puzzleContainer.appendChild(messageContainer);
+}
+
 
 // Methode zur Behandlung von Klicks auf den Solve-Button
 handleSolveButtonClick() {
