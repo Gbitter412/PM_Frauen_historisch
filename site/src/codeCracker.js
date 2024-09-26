@@ -101,10 +101,23 @@ document.addEventListener("DOMContentLoaded", (event) => {
       hint: "Die Funktion square() gibt das Quadrat der übergebenen Zahl zurück.",
     },
   ];
-  let currentRiddleIndex = 0;
+  let lastRiddles = []; //Array um die letzten 7 Rätsel zu speichern
+  const maxHistory = 7;
   
   function loadRiddle() {
-    const riddle = riddles[currentRiddleIndex];
+    let randomIndex;
+    do{
+      randomIndex = Math.floor(Math.random() * riddles.length);
+    }while (lastRiddles.includes(randomIndex)); //stellt sicher, dass das Rätsel nicht in den letzten 7 war
+
+
+    lastRiddles.push(randomIndex);
+    if (lastRiddles.length > maxHistory){
+      lastRiddles.shift(); //löscht den letzten Eintrag um die Größe konstant zu halten
+    }
+
+
+    const riddle = riddles[randomIndex];
     const canvas = document.getElementById("codeCanvas");
     const ctx = canvas.getContext("2d");
     const img = new Image(); // Neues Bild-Objekt
@@ -122,7 +135,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
   }
 
   function loadNextRiddle() {
-    currentRiddleIndex = (currentRiddleIndex + 1) % riddles.length;
     correctAnswer = loadRiddle();
     document.getElementById("userAnswer").value = ""; // Clear the input field
     document.getElementById("result").textContent = ""; // Clear the result message
