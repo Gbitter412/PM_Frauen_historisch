@@ -1,16 +1,555 @@
-#game-info {
-    text-align: center;
-    margin-bottom: 20px;
+html,
+body {
+  font-family: "Roboto", system-ui;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 #container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+#textContainer {
+  font-size: 1.25rem;
+  padding: 20px;
 }
 
 canvas {
-    border: 1px solid #000;
+  border: 1px solid #000;
+}
+
+#solveButton {
+  margin-top: 20px;
+}
+
+/* button vorlage styling ANFAG */
+.btn-test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  background: #333;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid #333;
+  border-radius: 5px;
+  transition: all 0.35s;
+}
+
+.btn-test:hover {
+  transform: scale(0.92);
+  border: 3px solid #2ecc71;
+  background: transparent;
+  color: #2ecc71;
+}
+/* button vorlage styling ENDE */
+
+/* styling homepage titel ANFANG */
+.container-test {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.container-test p {
+  padding-top: 20px;
+  font-size: 24px;
+}
+
+.container-test h1 {
+  font-size: 64px;
+  font-weight: 600;
+  color: #333;
+  position: relative;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.container-test h1::after {
+  content: "";
+  width: 300px;
+  height: 3px;
+  background-color: #333;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.container-test h1:hover {
+  color: #555;
+  transition: color 0.3s ease;
+}
+/* styling homepage titel ENDE */
+
+/* navbar styling ANFANG */
+.navbar-brand {
+  display: inline-block;
+  padding: 10px 15px;
+  transition: transform 0.2s ease;
+  transform-origin: center;
+}
+
+.logo {
+  transition: transform 0.2s ease;
+}
+
+.brand-text {
+  transition: transform 0.2s ease;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 10px 15px;
+  transition: transform 0.2s ease;
+  transform-origin: center;
+}
+
+.nav-link:hover,
+.navbar-brand:hover {
+  transform: scale(1.05);
+}
+.navbar-collapse.show .nav-link:hover,
+.navbar-collapse.show .navbar-brand:hover {
+  transform: none;
+}
+/* navbar styling ENDE */
+
+/* sticky-footer homepage styling ANFANG */
+.sticky-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 5px;
+  text-align: center;
+  z-index: 10;
+}
+
+.image-slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider-track {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  animation: scroll 60s linear infinite;
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: 300px;
+  height: 300px;
+  margin-right: 20px;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+/* sticky-footer homepage styling ENDE */
+
+.clickable-word {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.clickable-word:hover {
+  background-color: #e0e0e0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.glow-green {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  box-shadow: 0 0 15px rgba(40, 167, 69, 0.5);
+}
+
+.correct-answer {
+  background-color: #d4edda !important;
+  border-color: #c3e6cb !important;
+  box-shadow: 0 0 30px rgba(40, 167, 69, 0.5), 0 0 15px rgba(40, 167, 69, 0.5) !important;
+}
+
+.glow-red {
+  background-color: #f8d7da !important;
+  border-color: #f5c6cb !important;
+  box-shadow: 0 0 30px rgba(220, 53, 69, 0.8), 0 0 15px rgba(220, 53, 69, 0.5) !important;
+  transition: all 0.3s ease !important;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* styling code cracker ANFANG */
+#gameContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin-right: 200px;
+}
+
+#riddleSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#riddleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+#codeCanvas {
+  border: 3px solid #333;
+  width: 500px;
+  height: 200px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#userAnswer {
+  margin-top: 30px;
+  padding: 10px;
+  font-size: 16px;
+  width: 400px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#result {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+#adaContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 150px;
+  position: relative;
+}
+
+#adaContainer img {
+  margin-bottom: 80px;
+  transform: scale(1.6);
+}
+
+.btn-testCC {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  background: #333;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid #333;
+  border-radius: 5px;
+  transition: all 0.35s;
+  position: relative;
+  transform: scale(1);
+}
+
+.btn-testCC:hover {
+  transform: scale(0.92);
+  border: 3px solid #2ecc71;
+  background: transparent;
+  color: #2ecc71;
+}
+
+#hintBox {
+  display: none;
+  position: absolute;
+  top: -30px;
+  left: 300px;
+  width: 250px;
+  background-color: #f8f9fa;
+  border: 3px solid #333;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  font-style: italic;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+#hintBox::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: -33px;
+  border-width: 15px;
+  border-style: solid;
+  border-color: transparent #333 transparent transparent;
+}
+
+#hintText {
+  color: #333;
+  font-style: italic;
+}
+/* styling für code cracker ENDE */
+
+/* styling für marie curie game ANFANG */
+#gameCanvas {
+  position: absolute;
+  top: 56px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 56px);
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Arial, sans-serif;
+  z-index: 10;
+}
+
+#overlay-title {
+  position: absolute;
+  top: 2%;
+  font-family: "Tangerine", cursive;
+  font-size: 600%;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 1),
+    2px 2px 0px rgba(0, 0, 0, 0.5);
+  -webkit-text-stroke: 1px black;
+}
+
+#marie-container {
+  display: flex;
+  align-items: center;
+}
+
+#marie-image {
+  position: absolute;
+  right: 1%;
+  width: 25%;
+}
+
+.wrapper {
+  position: absolute;
+  right: 27%;
+  z-index: 3000;
+}
+
+.wrapper:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  margin-top: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 20px solid white;
+}
+
+#text-bubble {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 18px;
+  position: absolute;
+  right: 27%;
+  width: auto;
+  max-width: max-content;
+  max-height: 50%;
+  text-align: left;
+  word-wrap: break-word;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#text-bubble:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  margin-top: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent white;
+}
+
+/* Optional: Styling the scrollbar for better visibility */
+#text-bubble::-webkit-scrollbar {
+  width: 8px;
+}
+
+#text-bubble::-webkit-scrollbar-thumb {
+  background: #024183;
+  border-radius: 10px;
+}
+
+#text-bubble::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+#combine-button {
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  width: 200px;
+  height: 50px;
+  background: #333;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border: 3px solid #333;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.35s;
+  z-index: 5;
+  transform: translateX(-50%);
+}
+
+#combine-button:hover {
+  transform: translateX(-50%) scale(0.92);
+  border: 3px solid #2ecc71;
+  background: transparent;
+  color: #2ecc71;
+}
+
+#overlay.active ~ #combine-button {
+  pointer-events: none;
+  opacity: 0.5;
+}
+/* styling für marie curie game ENDE */
+
+/* Nur auf info.html angewendet */
+.info-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.info-page main {
+  flex: 1;
+}
+
+.info-page footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.info-page #textContainer {
+  font-size: 1.25rem;
+  padding: 20px;
+}
+
+.info-page canvas {
+  border: 1px solid #000;
+}
+
+.info-page #solveButton {
+  margin-top: 20px;
+}
+
+/* Gemeinsame Footer-Stile für beide Seiten */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+}
+
+.info-page,
+.help-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.info-page main,
+.help-page main {
+  flex: 1;
+}
+
+/* Style nur auf help.html angewendet */
+.help-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.help-page h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.help-page .help-section {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.help-page #textContainer {
+  font-size: 1.25rem;
+  padding: 20px;
+}
+
+.help-page canvas {
+  border: 1px solid #000;
+}
+
+.help-page #solveButton {
+  margin-top: 20px;
 }
