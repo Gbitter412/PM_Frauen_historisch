@@ -50,6 +50,56 @@ document.addEventListener("DOMContentLoaded", (event) => {
       answer: "120",
       hint: "Dies ist die Fakultät von n. Multipliziere alle Zahlen von 1 bis n.",
     },
+    {
+      image: "../assets/img/cc_11.png",
+      answer: "8",
+      hint: "In Python ist ** der Operator für Potenzierung (x hoch y).",
+    },
+    {
+      image: "../assets/img/cc_12.png",
+      answer: "15",
+      hint: "Die Funktion sum() addiert alle Elemente in einer Liste.",
+    },
+    {
+      image: "../assets/img/cc_13.png",
+      answer: "Hello World",
+      hint: "In Python kannst du Zeichenketten mit dem +-Operator zusammenfügen.",
+    },
+    {
+      image: "../assets/img/cc_14.png",
+      answer: "[1, 1, 3, 4, 5]",
+      hint: "Die Methode .sort() sortiert die Liste in aufsteigender Reihenfolge. Klammern nicht vergessen!",
+    },
+    {
+      image: "../assets/img/cc_15.png",
+      answer: "Hello, Alice",
+      hint: "Die Funktion gibt eine Begrüßungsnachricht mit dem übergebenen Namen zurück.",
+    },
+    {
+      image: "../assets/img/cc_16.png",
+      answer: "3",
+      hint: "Die Funktion len() gibt die Anzahl der Elemente in einer Liste zurück.",
+    },
+    {
+      image: "../assets/img/cc_17.png",
+      answer: "0 1 4",
+      hint: "Die Schleife durchläuft Werte von 0 bis 2. i * i ist das Quadrat jeder Zahl.",
+    },
+    {
+      image: "../assets/img/cc_18.png",
+      answer: "[1, 3]",
+      hint: "Die Methode .pop() entfernt das Element am angegebenen Index und gibt es zurück.",
+    },
+    {
+      image: "../assets/img/cc_19.png",
+      answer: "Not divisible by 3",
+      hint: "Der Modulo-Operator % gibt den Rest einer Division zurück. Wenn x durch 3 teilbar ist, ist der Rest 0.",
+    },
+    {
+      image: "../assets/img/cc_20.png",
+      answer: "25",
+      hint: "Die Funktion square() gibt das Quadrat der übergebenen Zahl zurück.",
+    },
   ];
   let currentRiddleIndex = 0;
   
