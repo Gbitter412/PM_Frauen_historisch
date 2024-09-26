@@ -28,7 +28,10 @@ let currentText = '';
 function updateTextBox(textBox, newText) {
     if (currentText === '') {
         currentText = newText; // First click
-    } else {
+    } else if (newText === '') {
+        currentText = '';
+    }
+    else {
         currentText += ' + ' + newText; // Subsequent clicks
     }
 
@@ -52,6 +55,9 @@ function updateTextBox(textBox, newText) {
 
     // Update the texture
     textBox.material.map.needsUpdate = true;
+
+    // Add the new string as userData for manipulation
+    textBox.userData.combinationString = currentText;
 }
 
 // Export the functions to be used in other scripts
