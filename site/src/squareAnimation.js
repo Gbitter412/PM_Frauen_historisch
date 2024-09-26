@@ -10,6 +10,9 @@ const animationDuration = 200; // Animation duration in milliseconds
 let clickCount = 0; // Initialize click counter
 const maxClicks = 6; // Maximum number of allowed clicks
 
+// Height of the navbar (56px)
+const navbarHeight = 56;
+
 // Create a raycaster and mouse vector
 const raycaster = new THREE.Raycaster();
 const mouse = new THREE.Vector2();
@@ -23,7 +26,7 @@ function handleMouseClick(event, squareGroups, camera, textBox) {
 
     // Calculate mouse position in normalized device coordinates (-1 to +1) for both components
     mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-    mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+    mouse.y = -((event.clientY - navbarHeight) / window.innerHeight) * 2 + 1;
 
     // Update the raycaster with the camera and mouse position
     raycaster.setFromCamera(mouse, camera);
