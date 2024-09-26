@@ -70,7 +70,7 @@ function createClickableWords(answers, blanks) { // possible arguments
                 }, 500);
 
                 if (isPuzzleSolved()) {
-                    // Entfernt den location.reload Aufruf, sodass nichts passiert
+                    feedbackContainer.innerHTML = 'Richtig!';
                 }
 
                 wordsContainer.removeChild(wordElement); // remove word from word container
@@ -151,15 +151,18 @@ function chooseQuiz() {
 async function initialize() {
     const entry = await getRandomEntry();
     const puzzle = chooseQuiz();
+    const description = document.getElementById('description');
 
     // switch case so easier to expand if somebody ever wants to touch this again
     switch (puzzle) {
         case 1:
+            description.innerHTML = '<h2>Füllen Sie die Lücken richtig aus.</h2>'
             const generatedText = generateTextWithBlanks(entry.Text, entry.correctAnswers);
             document.getElementById('textContainer').innerHTML = generatedText;
             createClickableWords(entry.correctAnswers, entry.blanks);
             break;
         case 2:
+            description.innerHTML = '<h2>Wählen Sie die richtige Antwort aus.</h2>'
             document.getElementById('textContainer').innerHTML = entry.Quizfrage;
             createClickableWords(entry.Antworten);
             break;
