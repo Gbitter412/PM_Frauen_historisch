@@ -14,22 +14,26 @@
     /* Flexbox-Layout für das zentrale und symmetrische Layout */
     #gameContainer {
       display: flex;
-      justify-content: center; /* Zuerst zentriert */
+      justify-content: center;
+      /* Zuerst zentriert */
       align-items: flex-start;
-      transition: justify-content 0.5s; /* Weiche Animation für die Umstellung */
+      transition: justify-content 0.5s;
+      /* Weiche Animation für die Umstellung */
     }
 
     #puzzleContainer {
       flex: 1;
       display: flex;
       flex-direction: column;
-      align-items: center; /* Zentriere den Inhalt im Puzzle-Container */
+      align-items: center;
+      /* Zentriere den Inhalt im Puzzle-Container */
     }
 
     #infoContainer {
       flex: 1;
       margin-left: 20px;
-      display: none; /* Verstecke den Info-Container am Anfang */
+      display: none;
+      /* Verstecke den Info-Container am Anfang */
     }
 
     /* Symmetrisches Layout aktivieren, wenn der Info-Container sichtbar ist */
@@ -38,132 +42,119 @@
     }
 
     #gameContainer.show-info {
-      justify-content: space-between; /* Symmetrisches Layout aktivieren */
+      justify-content: space-between;
+      /* Symmetrisches Layout aktivieren */
     }
   </style>
 </head>
 
 
-  <body>
-    <!-- Navigation -->
-    <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <!-- Logo und Markenname -->
-          <a class="navbar-brand" href="../index.html">
-            <img
-              src="../assets/img/logo.jpg"
-              alt="Logo"
-              width="30"
-              height="24"
-              class="d-inline-block align-text-top logo"
-            />
-            <span class="brand-text">HiddenHeroes</span>
-          </a>
-          <!-- Navigationsmenü -->
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle ms-2 me-2"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Spielen
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <li><a id="tactical_puzzle" class="dropdown-item" href="./puzzle.html">Tactical Puzzle</a></li>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./marieCurie.html">Marie Curie's Spiel</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./codeCracker.html"
-                      >Code Knacker</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link me-2" href="./help.html">Hilfe</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./info.html">Infos</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <!-- Überschrift für das Puzzle -->
-    <h1 style="text-align: center; margin: 30px 0; font-size: 2em; color: #333">
-      Kannst du das Puzzle lösen?
-    </h1>
-
-    <!-- Hauptinhalt -->
-    <div id="gameContainer">
-      <div class="row">
-        <!-- Container für das Puzzle -->
-        <div id="puzzleContainer">
-          <canvas id="puzzleCanvas" width="450" height="450"></canvas>
-          <!-- Buttons zur Steuerung -->
-          <div class="button-group">
-            <button class="btn-test d-inline-block me-2" id="solveButton">
-              Puzzle lösen
-            </button>
-            <button
-              class="btn-test d-inline-block me-2"
-              id="homeButton"
-              onclick="location.href='../index.html'"
-            >
-              Startseite
-            </button>
-          </div>
-
-        </div>
-
-        <!-- Neuer Container für die Anzeige der Infotexte -->
-        <div id="infoContainer">
-          <div id="infoContent"></div>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <!-- Logo und Markenname -->
+        <a class="navbar-brand" href="../index.html">
+          <img src="../assets/img/logo.jpg" alt="Logo" width="30" height="24"
+            class="d-inline-block align-text-top logo" />
+          <span class="brand-text">HiddenHeroes</span>
+        </a>
+        <!-- Navigationsmenü -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle ms-2 me-2" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Spielen
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                <li><a id="tactical_puzzle" class="dropdown-item" href="./puzzle.html">Tactical Puzzle</a></li>
+            </li>
+            <li>
+              <a class="dropdown-item" href="./marieCurie.html">Marie Curie's Spiel</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="./codeCracker.html">Code Knacker</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="./maryAnning.html">Mary Annings's Game</a>
+            </li>
+          </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-2" href="./help.html">Hilfe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./info.html">Infos</a>
+          </li>
+          </ul>
         </div>
       </div>
-    </div>
+    </nav>
+  </header>
 
-    <!-- Einbindung des Haupt-JavaScripts für das Spiel -->
-    <script type="module" src="../src/main.js"></script>
-    <!-- Neuer Container für die Anzeige der Infotexte -->
-    <div id="infoContainer">
-      <div id="infoContent"></div>
-    </div>
+  <!-- Überschrift für das Puzzle -->
+  <h1 style="text-align: center; margin: 30px 0; font-size: 2em; color: #333">
+    Kannst du das Puzzle lösen?
+  </h1>
 
-    <div id="puzzleInfo" style="display:none;">
-      <h2 id="infoName"></h2>
-      <p id="infoLife"></p>
-      <p id="infoOrigin"></p>
-      <p id="infoDetails"></p>
+  <!-- Hauptinhalt -->
+  <div id="gameContainer">
+    <div class="row">
+      <!-- Container für das Puzzle -->
+      <div id="puzzleContainer">
+        <canvas id="puzzleCanvas" width="450" height="450"></canvas>
+        <!-- Buttons zur Steuerung -->
+        <div class="button-group">
+          <button class="btn-test d-inline-block me-2" id="solveButton">
+            Puzzle lösen
+          </button>
+          <button class="btn-test d-inline-block me-2" id="homeButton" onclick="location.href='../index.html'">
+            Startseite
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Neuer Container für die Anzeige der Infotexte -->
+      <div id="infoContainer">
+        <div id="infoContent"></div>
+      </div>
+    </div>
   </div>
 
-    <!-- Bootstrap JavaScript -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Einbindung des Haupt-JavaScripts für das Spiel -->
+  <script type="module" src="../src/main.js"></script>
+  <!-- Neuer Container für die Anzeige der Infotexte -->
+  <div id="infoContainer">
+    <div id="infoContent"></div>
+  </div>
 
-    <script>
-      // Nach dem Anzeigen des Infotextes symmetrisches Layout aktivieren
-      function showInfo() {
-        const gameContainer = document.getElementById("gameContainer");
-        gameContainer.classList.add("show-info"); // Aktiviert das symmetrische Layout
-      }
+  <div id="puzzleInfo" style="display:none;">
+    <h2 id="infoName"></h2>
+    <p id="infoLife"></p>
+    <p id="infoOrigin"></p>
+    <p id="infoDetails"></p>
+  </div>
 
-      // Retrieve the variable from sessionStorage
-      const varImageIndex = sessionStorage.getItem("varImageIndex");
-      console.log("varImageIndex: ", varImageIndex); // Use the variable as needed
-    </script>
-  </body>
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <script>
+    // Nach dem Anzeigen des Infotextes symmetrisches Layout aktivieren
+    function showInfo() {
+      const gameContainer = document.getElementById("gameContainer");
+      gameContainer.classList.add("show-info"); // Aktiviert das symmetrische Layout
+    }
+
+    // Retrieve the variable from sessionStorage
+    const varImageIndex = sessionStorage.getItem("varImageIndex");
+    console.log("varImageIndex: ", varImageIndex); // Use the variable as needed
+  </script>
+</body>
+
 </html>
