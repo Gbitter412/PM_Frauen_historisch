@@ -13,13 +13,22 @@ export function setIsOverlayVisible(value) {
     isOverlayVisible = value;
 }
 
-// Show the overlay when the page loads
-showOverlay(introText);
+const canvas = document.getElementById('gameCanvas'); // Get the canvas element
+const navbarHeight = 56; // Height of the navbar
+
+function resizeCanvas() {
+    canvas.width = window.innerWidth; // Full width of the window
+    canvas.height = window.innerHeight - navbarHeight; // Height minus the navbar height
+}
+
+resizeCanvas(); // Initial sizing
+window.addEventListener('resize', resizeCanvas); // Adjust on window resize
 
 // Set up the scene
+const renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true });
+renderer.setSize(canvas.width, canvas.height);
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-const renderer = new THREE.WebGLRenderer({ alpha: true });
 
 // Set the size of the renderer and add it to the document
 renderer.setSize(window.innerWidth, window.innerHeight);
@@ -30,6 +39,9 @@ scene.background = new THREE.Color(0xeeeeee);
 
 // Create the periodics elements
 const periodicElements = createPeriodicElementArray();
+
+// Show the overlay when the page loads
+showOverlay(introText);
 
 // Create the periodic table
 createPeriodicTable(periodicElements, scene);
@@ -61,6 +73,15 @@ window.addEventListener('click', (event) => {
         event.preventDefault();  // Prevent default behavior
         return; // Exit the function, so no element clicks are registered
     }
+
+    // Adjust the y-coordinate to account for the navbar height
+    const adjustedY = event.clientY - navbarHeight;
+
+    // Create a new event with the adjusted y-coordinate for handling clicks
+    const adjustedEvent = {
+        ...event,
+        clientY: adjustedY // Override the y-coordinate with the adjusted value
+    };
     
     // If overlay is hidden, handle mouse click normally
     handleMouseClick(event, periodicElements, camera, textBox);

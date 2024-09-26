@@ -10,16 +10,16 @@ const animationDuration = 200; // Animation duration in milliseconds
 let clickCount = 0; // Initialize click counter
 const maxClicks = 6; // Maximum number of allowed clicks
 
+// Create a raycaster and mouse vector
+const raycaster = new THREE.Raycaster();
+const mouse = new THREE.Vector2();
+
 // Function to handle the mouse click event
 function handleMouseClick(event, squareGroups, camera, textBox) {
     // Check if the maximum number of clicks has been reached
     if (clickCount >= maxClicks) {
         return; // Exit the function if max clicks reached
     }
-
-    // Create a raycaster and mouse vector
-    const raycaster = new THREE.Raycaster();
-    const mouse = new THREE.Vector2();
 
     // Calculate mouse position in normalized device coordinates (-1 to +1) for both components
     mouse.x = (event.clientX / window.innerWidth) * 2 - 1;

@@ -268,7 +268,14 @@ footer {
 }
 /* styling für code cracker ENDE */
 
-/* styling für marice curie game */
+/* styling für marie curie game */
+#gameCanvas {
+  position: absolute;
+  bottom: 0;         /* Anchors the canvas to the bottom */
+  left: 0;           /* Ensures the canvas starts from the left */
+  width: 100%;       /* Makes the canvas span the full width */
+  height: 100%;   /* Allows height to be controlled by JavaScript */
+}
 
 #overlay {
   position: fixed;

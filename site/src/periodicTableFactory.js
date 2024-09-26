@@ -47,7 +47,7 @@ function createPeriodicTable(periodicElements, scene) {
 
             // Set the position of each square based on its row and column
             const xPosition = col * spacing - 5.5; // Adjust X position to center
-            const yPosition = (row - 4) * -spacing; // Adjust Y position to center
+            const yPosition = (row - 4.4) * -spacing; // Adjust Y position to center
 
             periodicElements[index].position.set(xPosition, yPosition, 0); // Set each square's position
             scene.add(periodicElements[index]); // Add the square to the scene

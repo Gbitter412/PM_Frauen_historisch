@@ -12,7 +12,7 @@ const unknownCompoundText = "<p>That's unfortunate! I'm afraid I have never seen
                             "Remember that nonmetals (blue) combine quite well with others. Even with each other!</p>";
 
 const successMessage = "<p><strong>Congratulations!</strong></p>" +
-                        "You've discovered the following compounds...";
+                        "<p>You've discovered the following compounds...</p>";
 
 const knownCompoundText = new Map([
     [["H", "O"], {
