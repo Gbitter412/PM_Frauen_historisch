@@ -28,6 +28,7 @@ canvas {
   margin-top: 20px;
 }
 
+/* button vorlage styling ANFAG */
 .btn-test {
   display: flex;
   justify-content: center;
@@ -42,6 +43,7 @@ canvas {
   text-transform: uppercase;
   letter-spacing: 1px;
   border: 3px solid #333;
+  border-radius: 5px;
   transition: all 0.35s;
 }
 
@@ -51,7 +53,9 @@ canvas {
   background: transparent;
   color: #2ecc71;
 }
+/* button vorlage styling ENDE */
 
+/* styling homepage titel ANFANG */
 .container-test {
   max-width: 600px;
   margin-left: auto;
@@ -87,7 +91,9 @@ canvas {
   color: #555;
   transition: color 0.3s ease;
 }
+/* styling homepage titel ENDE */
 
+/* navbar styling ANFANG */
 .navbar-brand {
   display: inline-block;
   padding: 10px 15px;
@@ -118,7 +124,9 @@ canvas {
 .navbar-collapse.show .navbar-brand:hover {
   transform: none;
 }
+/* navbar styling ENDE */
 
+/* sticky-footer homepage styling ANFANG */
 .sticky-footer {
   position: fixed;
   bottom: 0;
@@ -154,6 +162,7 @@ canvas {
   object-fit: cover;
   display: block;
 }
+/* sticky-footer homepage styling ENDE */
 
 .clickable-word {
   margin: 5px;
@@ -266,6 +275,7 @@ canvas {
   text-transform: uppercase;
   letter-spacing: 1px;
   border: 3px solid #333;
+  border-radius: 5px;
   transition: all 0.35s;
   position: relative;
   transform: scale(1);
@@ -310,7 +320,7 @@ canvas {
 }
 /* styling für code cracker ENDE */
 
-/* styling für marie curie game */
+/* styling für marie curie game ANFANG */
 #gameCanvas {
   position: absolute;
   top: 56px;
@@ -419,29 +429,39 @@ canvas {
 
 #combine-button {
   position: absolute;
-  bottom: 3%;
+  bottom: 1%;
   left: 50%;
-  width: 15%;
-  height: 5%;
-  background-color: #024183;
-  color: white;
-  border: 2px solid #000000;
+  width: 200px;
+  height: 50px;
+  background: #333;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border: 3px solid #333;
   border-radius: 5px;
   padding: 10px 20px;
-  font-size: 16px;
   cursor: pointer;
+  transition: all 0.35s;
   z-index: 5;
   transform: translateX(-50%);
+}
+
+#combine-button:hover {
+  transform: translateX(-50%) scale(0.92);
+  border: 3px solid #2ecc71;
+  background: transparent;
+  color: #2ecc71;
 }
 
 #overlay.active ~ #combine-button {
   pointer-events: none;
   opacity: 0.5;
 }
-
-#combine-button:hover {
-  background-color: #0056b3;
-}
+/* styling für marie curie game ENDE */
 
 /* Nur auf info.html angewendet */
 .info-page {
