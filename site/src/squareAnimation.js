@@ -69,5 +69,9 @@ function animateSquarePress(time) {
     }
 }
 
+function resetMouseClicks() {
+    clickCount = 0;
+}
+
 // Export the functions to be used in other scripts
-export { animateSquarePress, handleMouseClick };
+export { animateSquarePress, handleMouseClick, resetMouseClicks };

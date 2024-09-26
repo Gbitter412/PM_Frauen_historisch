@@ -3,24 +3,18 @@ import { createPeriodicTable, createPeriodicElementArray } from './periodicTable
 import { animateSquarePress, handleMouseClick } from './squareAnimation.js';
 import { createTextBox } from './textBox.js';
 import { showOverlay, hideOverlay } from './overlayControl.js';
+import { processCombination } from './combineElements.js';
+import { introText } from '../assets/data/marieCurieInfoText.js';
 
 // Create a flag to track the overlay state
-let isOverlayVisible = true;
+export let isOverlayVisible = true;
+
+export function setIsOverlayVisible(value) {
+    isOverlayVisible = value;
+}
 
 // Show the overlay when the page loads
-showOverlay();
-
-// Add an event listener to hide the overlay on click
-document.getElementById('overlay').addEventListener('click', () => {
-    hideOverlay();
-    const overlay = document.getElementById('overlay');
-    overlay.classList.remove('active'); // Remove active class when overlay is hidden
-
-    // Set a delay before allowing interactions with the elements
-    setTimeout(() => {
-        isOverlayVisible = false; // Enable interaction after the delay
-    }, 500); // Delay in milliseconds (500ms = 0.5 seconds)
-});
+showOverlay(introText);
 
 // Set up the scene
 const scene = new THREE.Scene();
@@ -47,6 +41,18 @@ scene.add(textBox);
 // Set camera position
 camera.position.z = 5;
 
+// Add an event listener to hide the overlay on click
+document.getElementById('overlay').addEventListener('click', () => {
+    hideOverlay(textBox);
+    const overlay = document.getElementById('overlay');
+    overlay.classList.remove('active'); // Remove active class when overlay is hidden
+    
+    // Set a delay before allowing interactions with the elements
+    setTimeout(() => {
+        isOverlayVisible = false; // Enable interaction after the delay
+    }, 500); // Delay in milliseconds (500ms = 0.5 seconds)
+});
+
 // Modified event listener for mouse click
 window.addEventListener('click', (event) => {
     // Check if the overlay is visible; if true, prevent the event from proceeding
@@ -58,6 +64,11 @@ window.addEventListener('click', (event) => {
     
     // If overlay is hidden, handle mouse click normally
     handleMouseClick(event, periodicElements, camera, textBox);
+});
+
+// Add event listener for the "Combine Elements" button
+document.getElementById('combine-button').addEventListener('click', () => {
+    processCombination(textBox); // Pass the textBox to the processing function
 });
 
 // Animation loop
