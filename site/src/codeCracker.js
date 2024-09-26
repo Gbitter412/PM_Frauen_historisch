@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     {
       image: "../assets/img/cc_18.png",
       answer: "[1, 3]",
-      hint: "Die Methode .pop() entfernt das Element am angegebenen Index und gibt es zurück.",
+      hint: "Die Methode .pop() entfernt das Element am angegebenen Index und gibt es zurück. Klammern nicht vergessen!",
     },
     {
       image: "../assets/img/cc_19.png",
