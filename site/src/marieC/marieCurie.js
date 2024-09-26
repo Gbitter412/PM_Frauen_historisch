@@ -4,7 +4,7 @@ import { animateSquarePress, handleMouseClick } from './squareAnimation.js';
 import { createTextBox } from './textBox.js';
 import { showOverlay, hideOverlay } from './overlayControl.js';
 import { processCombination } from './combineElements.js';
-import { introText } from '../assets/data/marieCurieInfoText.js';
+import { introText } from '../../assets/data/marieCurieInfoText.js';
 
 // Create a flag to track the overlay state
 export let isOverlayVisible = true;

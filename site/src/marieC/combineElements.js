@@ -1,5 +1,5 @@
 import { showOverlay, updateTextBubble } from './overlayControl.js';
-import { unknownCompoundText, knownCompoundText, successMessage, thankYouMessage, checkSurprise } from '../assets/data/marieCurieInfoText.js';
+import { unknownCompoundText, knownCompoundText, successMessage, thankYouMessage, checkSurprise } from '../../assets/data/marieCurieInfoText.js';
 
 // Function to process the combination of elements from the textBox
 function processCombination(textBox) {

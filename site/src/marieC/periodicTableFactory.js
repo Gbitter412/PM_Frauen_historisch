@@ -1,5 +1,5 @@
 import { createPeriodicElement } from './elementFactory.js';
-import { color, name, symbol, atomicNumber, atomicMass, group } from '../assets/data/elements.js';
+import { color, name, symbol, atomicNumber, atomicMass, group } from '../../assets/data/elements.js';
 
 // Array representation of the periodic table layout
 const periodicTableArray = [
