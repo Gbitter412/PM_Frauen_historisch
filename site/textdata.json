@@ -3,8 +3,16 @@
       {
         "ID": 1,
         "Text": "Ada Lovelace, eine Pionierin der Informatik, entwickelte das erste formale BLANK zur BLANK und legte damit den Grundstein für die moderne Programmierung.",
-        "correctAnswers": ["Computerprogramm", "Berechnung der Bernoulli-Zahlen"],
-        "blanks": ["Schaltkreisdesign", "Verschlüsselung von Nachrichten", "Algorithmusdiagram", "Virtualisierung von Abläufen"],
+        "correctAnswers": [
+          "Computerprogramm",
+          "Berechnung der Bernoulli-Zahlen"
+        ],
+        "blanks": [
+          "Schaltkreisdesign",
+          "Verschlüsselung von Nachrichten",
+          "Algorithmusdiagram",
+          "Virtualisierung von Abläufen"
+        ],
         "Quizfrage": "Was war eine der visionären Ideen Ada Lovelaces zur Nutzung von Computern?",
         "Antworten": ["Musikkomposition", "Gedichtskomposition", "Malerei", "Textanalyse"],
         "solved": false
@@ -12,17 +20,33 @@
       {
         "ID": 2,
         "Text": "Mary Anning, eine bedeutende BLANK, revolutionierte die Wissenschaft durch ihre Entdeckung des ersten vollständigen BLANK und andere wichtige Funde an der Jurassic Coast.",
-        "correctAnswers": ["Paläontologin", "Plesiosaurus"],
-        "blanks": ["Geologin", "Archäologin", "Tyrannosaurus", "Mammuts"],
+        "correctAnswers": [
+          "Paläontologin",
+          "Plesiosaurus"
+        ],
+        "blanks": [
+          "Geologin",
+          "Archäologin",
+          "Tyrannosaurus",
+          "Mammuts"
+        ],
         "Quizfrage": "Wie trugen die Entdeckungen von Mary Anning zur Unterstützung der Theorien von Georges Cuvier bei?",
         "Antworten": ["lieferten Beweise fürs Austerben von Arten", "bewiesen Existenz Dinosaurier", "führzen zu Entdeckungen in der Geologie", "bestätigten Evolutionstheorie"],
         "solved": false
       },
       {
         "ID": 3,
-        "Text": "Stephanie Kwolek, eine bahnbrechende BLANK, entwickelte 1964 die Kunstfaser BLANK, welche aufgrund ihrer Stärke und Leichtigkeit vielfältige Anwendungen fand",
-        "correctAnswers": ["Chemikerin", "Kevlar"],
-        "blanks": ["Textildesignerin", "Nylon", "Lycra/Elasthan", "Ingenieurin"],
+        "Text": "Stephanie Kwolek, eine bahnbrechende BLANK, entwickelte 1964 die Kunstfaser BLANK, welche aufgrund ihrer Stärke und Leichtigkeit vielfältige Anwendungen fand.",
+        "correctAnswers": [
+          "Kevlar",
+          "Chemikerin"
+        ],
+        "blanks": [
+          "Textildesignerin",
+          "Nylon",
+          "Lycra/Elasthan",
+          "Ingenieurin"
+        ],
         "Quizfrage": "Welches der folgenden Anwendungsgebiete ist eine typische Verwendung von Kevlar?",
         "Antworten": ["Kugelsichere Westen", "Lebensmittelverpackungen", "Hochspannungsleitungen", "Küchengeräte"],
         "solved": false
@@ -30,8 +54,16 @@
       {
         "ID": 4,
         "Text": "Als Pionierin der frühen Computertechnologie erschuf Grace Hopper nicht nur den ersten BLANK, sondern legte auch den Grundstein für die Entwicklung benutzerfreundlicher Programmiersprachen wie BLANK.",
-        "correctAnswers": ["Compiler ", "COBOL"],
-        "blanks": ["Internetbrowser", "FORTRAN", "Quantencomputer", "BASIC"],
+        "correctAnswers": [
+          "Compiler ",
+          "COBOL"
+        ],
+        "blanks": [
+          "Internetbrowser",
+          "FORTRAN",
+          "Quantencomputer",
+          "BASIC"
+        ],
         "Quizfrage": "Welche Programmiersprache entwickelte Grace Hopper, die als Vorläufer von COBOL gilt?",
         "Antworten": ["FLOW-MATIC", "ALGOL", "Fortran", "PL-1"],
         "solved": false
@@ -39,8 +71,16 @@
       {
         "ID": 5,
         "Text": "Melitta Bentz revolutionierte 1908 die Kaffeezubereitung durch die Erfindung des ersten BLANK, den sie aus BLANK und einer durchlöcherten Konservendose entwickelte.",
-        "correctAnswers": ["Kaffeefilters ", "Löschpapier"],
-        "blanks": ["Espressokochers", "Baumwolle", "Kaffeemühle", "Seidenstoff"],
+        "correctAnswers": [
+          "Kaffeefilters ",
+          "Löschpapier"
+        ],
+        "blanks": [
+          "Espressokochers",
+          "Baumwolle",
+          "Kaffeemühle",
+          "Seidenstoff"
+        ],
         "Quizfrage": "Was macht das Unternehmen Melitta heute bekannt?",
         "Antworten": ["Kaffeeprodukte und Kaffeefilter", "Maschinen zur Kaffeeröstung", "Schokoladenprodukte", "Kaffebohnen"],
         "solved": false
@@ -48,8 +88,17 @@
       {
         "ID": 6,
         "Text": "BlANK erfand 1886 den ersten praktischen BLANK, der aus einem wasserdichten BLANK mit Drahtkörben bestand und mit hilfe einer Seifenlauge reinigte.",
-        "correctAnswers": ["Josephine Cochrane", "Geschirrspüler", "Kupferkessel"],
-        "blanks": ["Wäschereiniger", "Eliza Tinsley", "Holzfass", "Sarah Boone"],
+        "correctAnswers": [
+          "Josephine Cochrane",
+          "Geschirrspüler",
+          "Kupferkessel"
+        ],
+        "blanks": [
+          "Wäschereiniger",
+          "Eliza Tinsley",
+          "Holzfass",
+          "Sarah Boone"
+        ],
         "Quizfrage": "Was motivierte Josephine Cochrane zur Entwicklung des Geschirrspülers?",
         "Antworten": ["beschädigtes Geschirr bei Partys", "Wunsch Geld zu sparen", "Abneigung gegen Geschier spülen durch Dienstmädchen", "Interesse an Mechanik"],
         "solved": false
@@ -57,8 +106,16 @@
       {
         "ID": 7,
         "Text": "Hedy Lamarr war eine erfolgreiche Schauspielerin und Erfinderin. Zusammen mit George Antheil entwickelte sie das BLANK, das als Grundlage für moderne Technologien wie BLANK dient.",
-        "correctAnswers": ["Frequenzsprungverfahren ", "WLAN"],
-        "blanks": ["Kommunikationsnetzwerk", "Mobilfunk", "Verschlüsselungssystem", "GPS"],
+        "correctAnswers": [
+          "Frequenzsprungverfahren ",
+          "WLAN"
+        ],
+        "blanks": [
+          "Kommunikationsnetzwerk",
+          "Mobilfunk",
+          "Verschlüsselungssystem",
+          "GPS"
+        ],
         "Quizfrage": "Was war der Hauptzweck des Frequenzsprungverfahrens, das von Lamarr und Antheil entwickelt wurde?",
         "Antworten": ["sichere Kommunikation", "Verbesserung Fernsehrtechnologie", "Entwicklung Internets", "Abfangen feindlicher Kommunikation"],
         "solved": false
@@ -66,209 +123,277 @@
       {
         "ID": 8,
         "Text": "BLANK eine Physikerin und Chemikerin, die zusammen mit ihrem Ehemann die BLANK entdeckte. Diese Entdeckung ermöglichte die Herstellung BLANK, die in Medizin und Forschung weitreichend genutzt werden.",
-        "correctAnswers": ["Irène Joliot-Curie", "künstliche Radioaktivität", "radioaktiver Isotope"],
-        "blanks": ["Kernspaltung", "Lise Meitner", "Atomenergie", "nuklearer Waffen"],
+        "correctAnswers": [
+          "Irène Joliot-Curie",
+          "künstliche Radioaktivität",
+          "radioaktiver Isotope"
+        ],
+        "blanks": [
+          "Kernspaltung",
+          "Lise Meitner",
+          "Atomenergie",
+          "nuklearer Waffen"
+        ],
         "Quizfrage": "Was war eine der weitreichenden Anwendungen von radioaktiven Isotopen, die durch die Entdeckung von Irène Joliot-Curie ermöglicht wurde?",
         "Antworten": ["Medizin und Forschung", "Nuklearwaffen", "Untersuchung von DNA-Strukturen", "Sterilisation medizinischer Geräte"],
         "solved": false
       },
       {
         "ID": 9,
-        "Text": "Jeanne Villepreux-Power, geboren 1794 in BLANK, BLANK, war die Erfinderin des ersten BLANK zur Erforschung von Meereslebewesen.",
-        "correctAnswers": ["Juillac", "Frankreich", "Aquariums"],
-        "blanks": ["Juillac", "Frankreich", "Aquariums"],
-        "Quizfrage": "TODO",
-        "Antworten": ["TODO"],
+        "Text": "Jeanne Villepreux-Power war eine Pionierin der Meeresbiologie und entwickelte das BLANK. Diese Innovation ermöglichte die Beobachtung von BLANK und legte den Grundstein für die moderne Meeresforschung.",
+        "correctAnswers": [
+          "Aquarium ",
+          "Wasserorganismen "
+        ],
+        "blanks": [
+          "Sonar",
+          "Tiefseefische",
+          "Korallenriffe",
+          "Echolot"
+        ],
+        "Quizfrage": "Welche Entdeckung machte Jeanne Villepreux-Power über den Argonauta-Kraken?",
+        "Antworten": ["Er erzeugt seine eigene Schale.", "Er verwendet gesammelte Muschelschalen", "Er ernährt sich von Korallen", "Er lebt nur in flachen Gewässern"],
         "solved": false
       },
       {
         "ID": 10,
-        "Text": "Margaret E. Knight, geboren in BLANK, BLANK, entwickelte die erste Maschine zur Herstellung von BLANK-Tüten.",
-        "correctAnswers": ["York", "Maine", "Papier"],
-        "blanks": ["York", "Maine", "Papier"],
-        "Quizfrage": "TODO",
-        "Antworten": ["TODO"],
-        "solved": false
+        "Text": "Margaret E. Knight revolutionierte die Verpackungsindustrie, indem sie 1868 eine BLANK  zur Herstellung von BLANK erfand. Trotz eines Patentstreits erhielt sie 1871 das Patent  und gründete die BLANK.",
+        "correctAnswers": [
+          "Maschine  ",
+          "Papiertüten mit flachem Boden",
+          "Eastern Paper Bag Company"
+        ],
+        "blanks": [
+          "Presse",
+          "Baumwolltaschen",
+          "Western Storage Company",
+          "Plastikverpackungen"
+        ],
+        "Quizfrage": "Was war eine der ersten Erfindungen von Margaret E. Knight im Alter von 12 Jahren?",
+        "Antworten": ["Notstop für Maschinen um Unfälle zu verhindern", "Maschine zur Herstellung Metallwaren", "Verschluss für Kisten", "eigene Druckmaschine"],
+        "solved": true
       },
       {
         "ID": 11,
-        "Text": "Hildegard von Bingen, geboren 1098 in BLANK, BLANK, war eine berühmte Schriftstellerin und BLANK.",
-        "correctAnswers": ["Bermersheim", "Rheinland-Pfalz", "Äbtissin"],
-        "blanks": ["Bermersheim", "Rheinland-Pfalz", "Äbtissin"],
-        "Quizfrage": "TODO",
-        "Antworten": ["TODO"],
-        "solved": false
+        "Text": "BLANK wurde 1136 zur BLANK des Frauenkonvents auf dem Disibodenberg gewählt und gründete später das Kloster Rupertsberg . Sie ist berühmt für ihre Schriften wie „BLANK“, das Kosmologie und Theologie verknüpft.",
+        "correctAnswers": [
+          "Hildegard von Bingen",
+          "Äbtissin",
+          "Liber Scivias"
+        ],
+        "blanks": [
+          "De Natura Rerum",
+          "Diakonin",
+          "Summa Theologica",
+          "Marianne von Waldenburg"
+        ],
+        "Quizfrage": "Was war einer der zentralen Kritikpunkte Hildegard von Bingens gegenüber der Gesellschaft ihrer Zeit?",
+        "Antworten": ["Ausbreitung Missstände und Ketzereien im Klerus", "Unterdrückung der Frau in Kirche", "magelnde spirituelle Praxis in Klöstern", "Zensur religiöser Schriften"],
+        "solved": true
       },
       {
         "ID": 12,
-        "Text": "Barbara Strozzi, eine Komponistin des Barock, wurde 1619 in BLANK, BLANK, geboren und ist bekannt für ihre BLANK.",
-        "correctAnswers": ["Venedig", "Italien", "Arien"],
-        "blanks": ["Venedig", "Italien", "Arien"],
-        "Quizfrage": "TODO",
-        "Antworten": ["TODO"],
-        "solved": false
+        "Text": "Als herausragende Komponistin des Barock ist BLANK bekannt für ihre acht Sammlungen mit über 125 Werken, darunter Arien und Kantaten. Trotz ihrer Bemühungen blieb ihr eine BLANK verwehrt.",
+        "correctAnswers": [
+          "Barbara Strozzi",
+          "Hofanstellung"
+        ],
+        "blanks": [
+          "Professur",
+          "königliche Einladung",
+          "Francesca Caccini",
+          "Isabella Leonarda"
+        ],
+        "Quizfrage": "Welche Art von musikalischen Werken ist besonders mit Barbara Strozzi verbunden?",
+        "Antworten": ["Arien und Kantaten", "Sinfonien und Opern", "Konzerte und Sonaten", "Madrigale und Messen"],
+        "solved": true
       },
       {
         "ID": 13,
-        "Text": "Fanny Mendelssohn, geboren in BLANK, BLANK, war eine talentierte BLANK und Komponistin.",
-        "correctAnswers": ["Hamburg", "Deutschland", "Pianistin"],
-        "blanks": ["Hamburg", "Deutschland", "Pianistin"],
-        "Quizfrage": "TODO",
-        "Antworten": ["TODO"],
-        "solved": false
+        "Text": "Fanny Hensel war eine herausragende Komponistin und Pianistin des 19. Jahrhunderts und die ältere Schwester von BLANK. Trotz gesellschaftlicher Einschränkungen führte sie ab 1823 die „BLANK“ in ihrem Haus in Berlin ein, bei denen sie eigene Kompositionen aufführte.",
+        "correctAnswers": [
+          "Felix Mendelssohn",
+          "Sonntagsmusiken"
+        ],
+        "blanks": [
+          "Kammermusikabende",
+          "Johannes Brahms",
+          "Konzertabende",
+          "Robert Schumann"
+        ],
+        "Quizfrage": "Welche gesellschaftlichen Einschränkungen hinderten Fanny Hensel daran, ihre Werke unter eigenem Namen zu veröffentlichen?",
+        "Antworten": ["Gesellschaftliche Vorurteile gegenüber Frauen in Musik", "mangelnde Unterstüztung ihrer Familie", "ihr Bruder verbot es ihr", "Bevorzugung Anonymität"],
+        "solved": true
       },
       {
         "ID": 14,
-        "Text": "Clara Schumann, geboren 1819 in BLANK, BLANK, wurde als eine der größten BLANK ihrer Zeit gefeiert.",
-        "correctAnswers": ["Leipzig", "Deutschland", "Pianistinnen"],
-        "blanks": ["Leipzig", "Deutschland", "Pianistinnen"],
-        "Quizfrage": "TODO",
-        "Antworten": ["TODO"],
-        "solved": false
+        "Text": "Clara Wieck, eine bedeutende BLANK und Komponistin, debütierte 1828 im Gewandhaus und wurde 1878 die erste BLANK am Hoch'schen Konservatorium in Frankfurt.",
+        "correctAnswers": [
+          "Pianistin",
+          "Klavierlehrerin"
+        ],
+        "blanks": [
+          "Orchesterleiterin",
+          "Musiktheoretikerin",
+          "Konzertabende",
+          "Violinistin"
+        ],
+        "Quizfrage": "Welche Rolle spielte Clara Wiecks Vater in ihrer frühen Karriere?",
+        "Antworten": ["intensive Förderung ihrer musikalischen Fähigkeiten", "widmete ihr seine Werke", "zwang sie Klavierspielen zu lernen", "sie debütierte in seinen Musikhaus"],
+        "solved": true
       },
       {
         "ID": 15,
-        "Text": "Margaret A. Wilcox, geboren in BLANK, BLANK, erfand 1893 die erste BLANK für Automobile.",
-        "correctAnswers": ["USA", "USA", "Heizung"],
-        "blanks": ["USA", "USA", "Heizung"],
-        "Quizfrage": "TODO",
-        "Antworten": ["TODO"],
-        "solved": false
+        "Text": "BLANK gilt als Erfinderin der BLANK. Ihr Patent von 1893 führte ein System ein, das BLANK unter den Innenraum leitete, um den Fahrgastraum zu beheizen.",
+        "correctAnswers": [
+          "Margaret A. Wilcox  ",
+          "Autoheizung",
+          "warmes Wasser"
+        ],
+        "blanks": [
+          "spezielles Öl",
+          "Sitzheizung",
+          "heiße Luft",
+          "Bertha Benz"
+        ],
+        "Quizfrage": "Welche zusätzliche Sicherheitsfunktion erfüllte die Autoheizung von Margaret A. Wilcox, abgesehen von der Beheizung des Innenraums?",
+        "Antworten": ["Verhinderung Scheibenbeschlag", "Verbesserung Straßenhaftung bei Eis", "Automatische Temperaturregelung", "Verringerung Motorüberhitzung"],
+        "solved": true
       },
       {
-        "ID": 16,
-        "Text": "Mary Anderson, geboren 1866 in BLANK, BLANK, entwickelte den ersten funktionalen BLANK-Wischer.",
-        "correctAnswers": ["Greene County", "Alabama", "Scheiben"],
-        "blanks": ["Greene County", "Alabama", "Scheiben"],
-        "Quizfrage": "TODO",
-        "Antworten": ["TODO"],
-        "solved": false
+      "ID": 16,
+      "Text": "Mary Anderson entwickelte ein BLANK und erhielt 1903 ein Patent. Ihre Erfindung wurde 1920 Serienmässig in BLANK eingebaut. ",
+      "correctAnswers": ["handbetriebenes Scheibenwischersystem", "Autos"],
+      "blanks": ["automatisches Bremssystem", "elektrischer Fensterheber", "Fahrräder", "Flugzeuge"],
+      "Quizfrage": "Was geschah nach dem Ablauf von Mary Andersons Patent im Jahr 1920?",
+      "Antworten": ["serienmäßige Nutzung ihres Designs", "Ihre Erfindung geriet in Vergessenheit", "sie verklagte Unternehmen auf Patentverletun", "jemand stahl ihre Erfindung"],
+      "solved": true
       },
       {
-        "ID": 17,
-        "Text": "Dorothy Hodgkin, geboren 1910 in BLANK, BLANK, erhielt 1964 den Nobelpreis für ihre Arbeit in der BLANK.",
-        "correctAnswers": ["Kairo", "Ägypten", "Chemie"],
-        "blanks": ["Kairo", "Ägypten", "Chemie"],
-        "Quizfrage": "TODO",
-        "Antworten": ["TODO"],
-        "solved": false
+      "ID": 17,
+      "Text": "Dorothy Crowfoot Hodgkin war eine britische BLANK, die mit der Röntgenkristallografie die Strukturen von BLANK, Vitamin B12 und Insulin entschlüsselte.",
+      "correctAnswers": ["Biochemikerin", "Penicillin"],
+      "blanks": ["Medizinerin", " Natrium", "Vitamin D", " Mathematikerin"],
+      "Quizfrage": "Welche chronische Erkrankung beeinträchtigte Dorothy Crowfoot Hodgkin, ohne dass sie ihre wissenschaftliche Arbeit aufgab?",
+      "Antworten": ["Gelenkrheumatismus", "Multiple Sklerose", "Diabetis", "Alzheimer"],
+      "solved": true
       },
       {
-        "ID": 18,
-        "Text": "Sophia Jex-Blake, geboren 1840 in BLANK, BLANK, kämpfte für die Zulassung von Frauen zum BLANK-Studium.",
-        "correctAnswers": ["Hastings", "Großbritannien", "Medizin"],
-        "blanks": ["Hastings", "Großbritannien", "Medizin"],
-        "Quizfrage": "TODO",
-        "Antworten": ["TODO"],
-        "solved": false
+      "ID": 18,
+      "Text": "Sophia Jex-Blake gründete 1874 die BLANK um Frauen den Zugang zur BLANK zu ermöglichen.",
+      "correctAnswers": ["London School of Medicine for Women", "Medizin"],
+      "blanks": ["London School of Modern arts", " Oxford School of Languages and Translation", "Kunstwissenschaft", "Sprachwissenschaft"],
+      "Quizfrage": "Wie hat Sophia Jex-Blake indische Frauen in ihrem Bestreben, Medizin zu studieren, unterstützt?",
+      "Antworten": ["durch Stipendien", "Eröffnung von Schulen", "unterrichtete Medizinkurse", "Gründung eines Krankenhaus"],
+      "solved": true
       },
       {
-        "ID": 19,
-        "Text": "Katherine Johnson, geboren in BLANK, BLANK, war eine wegweisende Mathematikerin bei der BLANK.",
-        "correctAnswers": ["White Sulphur Springs", "West Virginia", "NASA"],
-        "blanks": ["White Sulphur Springs", "West Virginia", "NASA"],
-        "Quizfrage": "TODO",
-        "Antworten": ["TODO"],
-        "solved": false
+      "ID": 19,
+      "Text": "Katherine G. Johnson war eine afroamerikanische BLANK bei der NASA, bekannt für ihre BLANK, die wichtige Raumfahrtmissionen wie John Glenns Erdumrundung und die Apollo-11-Mission ermöglichten.",
+      "correctAnswers": ["Mathematikerin", " Berechnungen"],
+      "blanks": ["Physikerin", "Astronautin", "Schätzmethoden", "Prognosen"],
+      "Quizfrage": "Für welche Mission prüfte Katherine G. Johnson die Umlaufbahnberechnungen, die zum Erfolg von John Glenns Erdumrundung beitrugen?",
+      "Antworten": ["Mercury Atlas 6", "Apollo 11", "Freedom 7", "Apollo 13"],
+      "solved": true
       },
       {
-        "ID": 20,
-        "Text": "Cecilia Payne-Gaposchkin, geboren 1900 in BLANK, BLANK, revolutionierte die Astronomie durch ihre Entdeckung, dass Sterne hauptsächlich aus BLANK bestehen.",
-        "correctAnswers": ["Cambridge", "Massachusetts", "Wasserstoff"],
-        "blanks": ["Cambridge", "Massachusetts", "Wasserstoff"],
-        "Quizfrage": "TODO",
-        "Antworten": ["TODO"],
-        "solved": false
+      "ID": 20,
+      "Text": "Cecilia Payne-Gaposchkin war eine Astrophysikerin, die entdeckte, dass Sterne hauptsächlich aus BLANK und BLANK bestehen, was die Astrophysik revolutionierte.",
+      "correctAnswers": ["Wasserstoff ", "Helium"],
+      "blanks": ["Eisen", "Gold", "Kohlenstoff", "Neon"],
+      "Quizfrage": "Welches Hindernis musste Payne-Gaposchkin überwinden, um Anerkennung für ihre Arbeit zu erhalten?",
+      "Antworten": ["männliche Kollegen die ihre Ergebnisse relativierten", "mangelnde finanzielle Unterstützung", "Widerstand gegen innovative Ideen", "Skeptik männlicher Wissenschaftlicher"],
+      "solved": true
       },
       {
-        "ID": 21,
-        "Text": "Inge Lehmann, geboren 1888 in BLANK, BLANK, entdeckte den festen BLANK im Inneren der Erde.",
-        "correctAnswers": ["Kopenhagen", "Dänemark", "Kern"],
-        "blanks": ["Kopenhagen", "Dänemark", "Kern"],
-        "Quizfrage": "TODO",
-        "Antworten": ["TODO"],
-        "solved": false
+      "ID": 21,
+      "Text": "Inge Lehmann war eine dänische Seismologin, die 1936 entdeckte, dass die Erde einen BLANK inneren Kern hat, was das Verständnis der Geophysik revolutionierte.",
+      "correctAnswers": ["festen"],
+      "blanks": ["flüssigen", "porösen", " gasförmigen ", "instabilen", "kompakten"],
+      "Quizfrage": "Was führte Inge Lehmanns Entdeckung über den inneren Kern der Erde zur Revolutionierung des Verständnisses der Geophysik?",
+      "Antworten": ["stellte das Modell der flüssigen Erde in Frage", "bestätigte Theorie der Plattentektonik", "entdeckte neue seismische Wellenarten", "revelutionierte Messmethoden zur Bestimmung von Erdbeben"],
+      "solved": true
       },
       {
-        "ID": 22,
-        "Text": "Caroline Herschel, geboren 1750 in BLANK, BLANK, war die erste Frau, die einen BLANK entdeckte.",
-        "correctAnswers": ["Hannover", "Deutschland", "Kometen"],
-        "blanks": ["Hannover", "Deutschland", "Kometen"],
-        "Quizfrage": "TODO",
-        "Antworten": ["TODO"],
-        "solved": false
+      "ID": 22,
+      "Text": "Caroline Herschel war die erste Frau, die einen BLANK entdeckte.",
+      "correctAnswers": ["Kometen"],
+      "blanks": ["Planeten", "Sternenhaufen", "Asteroiden", "Satelliten", "Atomkern"],
+      "Quizfrage": "Welchen Katalog erstellte Caroline Herschel, der später als Grundlage für das New General Catalogue diente?",
+      "Antworten": ["Nebel-Katalog", "Herschel-Katalog", "Kometen-Katalog", "Galaxien-Katalog"],
+      "solved": true
       },
       {
-        "ID": 23,
-        "Text": "Valentina Tereshkova, geboren 1937 in BLANK, BLANK, war die erste Frau im BLANK.",
-        "correctAnswers": ["Bol'shoe Maslennikovo", "Russland", "Weltraum"],
-        "blanks": ["Bol'shoe Maslennikovo", "Russland", "Weltraum"],
-        "Quizfrage": "TODO",
-        "Antworten": ["TODO"],
-        "solved": false
+      "ID": 23,
+      "Text": "Valentina Tereshkova war die erste Frau im BLANK, nachdem sie zuvor als leidenschaftliche Sportlerin und BLANK gearbeitet hatte",
+      "correctAnswers": ["Weltraum", "Fallschirmspringerin"],
+      "blanks": ["Unterwasserlabor", "Taucherin", "Lehrerin", "Rettungsdienst"],
+      "Quizfrage": "Wie viele Erdumrundungen absolvierte Tereshkova während ihres Raumflugs?",
+      "Antworten": ["48", "24", "32", "64"],
+      "solved": true
       },
       {
-        "ID": 24,
-        "Text": "Junko Tabei, geboren 1939 in BLANK, BLANK, war die erste Frau, die den BLANK Everest bestieg.",
-        "correctAnswers": ["Miharu", "Fukushima", "Mount"],
-        "blanks": ["Miharu", "Fukushima", "Mount"],
-        "Quizfrage": "TODO",
-        "Antworten": ["TODO"],
-        "solved": false
+      "ID": 24,
+      "Text": "Junko Tabei war eine japanische Bergsteigerin, die als erste Frau den Gipfel des BLANK erreichte und am 16. Mai 1975 Geschichte schrieb.",
+      "correctAnswers": ["Mount Everest"],
+      "blanks": ["K2 ", "Kilimandscharo", " Mont Blanc ", " Denali ", " Aconcagua "],
+      "Quizfrage": "Welchen bedeutenden Beitrag leistete Junko Tabei zur Förderung des Bergsteigens unter Frauen in Japan?",
+      "Antworten": ["Gründung ersten ", "erste Frau, die Mount Fuji bestieg", "erste Frau die alle 7 Kontinente bereiste", "schrieb ein Buch über Bergsteigen"],
+      "solved": true
       },
       {
-        "ID": 25,
-        "Text": "Amelia Earhart, geboren 1897 in BLANK, BLANK, war die erste Frau, die alleine über den BLANK flog.",
-        "correctAnswers": ["Atchison", "Kansas", "Atlantik"],
-        "blanks": ["Atchison", "Kansas", "Atlantik"],
-        "Quizfrage": "TODO",
-        "Antworten": ["TODO"],
-        "solved": false
+      "ID": 25,
+      "Text": " Amelia Earhart war eine amerikanische Pionierin, die als erste Frau mit dem BLANK den Atlantik überquerte. Diese historische Leistung machte sie weltweit berühmt und inspirierte viele Frauen, in die BLANK einzusteigen ",
+      "correctAnswers": ["Flugzeug", " Luftfahrt "],
+      "blanks": ["Segelboot", "Fahrrad", "NASA", "Armee"],
+      "Quizfrage": "Welche Organisation half Amelia Earhart mit zu gründen, um weibliche Pilotinnen zu unterstützen?",
+      "Antworten": ["Ninety-Nines", "Women in Aviation International", "International Society of Women Pilots", "Female Pilots Association"],
+      "solved": true
       },
       {
-        "ID": 26,
-        "Text": "Frida Kahlo, geboren 1907 in BLANK, BLANK, ist bekannt für ihre einzigartigen BLANK.",
-        "correctAnswers": ["Coyoacán", "Mexiko-Stadt", "Selbstporträts"],
-        "blanks": ["Coyoacán", "Mexiko-Stadt", "Selbstporträts"],
-        "Quizfrage": "TODO",
-        "Antworten": ["TODO"],
-        "solved": false
+      "ID": 26,
+      "Text": "Frida Kahlo war eine mexikanische Künstlerin, besonders bekannt für ihre BLANK. ",
+      "correctAnswers": ["Selbstporträts"],
+      "blanks": ["Landschaftsgemälde", "Skulpturen", "Fotografien", "Stillleben", "Wandmalereien"],
+      "Quizfrage": "Welche Themen setzte Frida Kahlo in ihrer Kunst besonders in den Vordergrund?",
+      "Antworten": ["Feministische Themen und mexikanische Kultur", "Politische Revolutionen und Krieg", "Romantische Beziehungen", "Gleichberechtigung und soziale Gerechtigkeit"],
+      "solved": true
       },
       {
-        "ID": 27,
-        "Text": "Artemisia Gentileschi, geboren 1593 in BLANK, BLANK, war eine der ersten weiblichen BLANK-Malerinnen.",
-        "correctAnswers": ["Rom", "Italien", "Barock"],
-        "blanks": ["Rom", "Italien", "Barock"],
-        "Quizfrage": "TODO",
-        "Antworten": ["TODO"],
-        "solved": false
+      "ID": 27,
+      "Text": "Artemisia Gentileschi war eine bedeutende italienische BLANK, bekannt für ihre Darstellungen starker BLANK aus Mythologie und Bibel, wie Judith und Holofernes. ",
+      "correctAnswers": ["Barockmalerin", "Frauen"],
+      "blanks": ["Fotografin", "Stillleben", "Blumen", "Männer"],
+      "Quizfrage": "Was zeichnet die Gemälde von Artemisia Gentileschi besonders aus?",
+      "Antworten": ["Darstellung starker Frauen", "Verwendung von Pastellfarben", "Offene Rebellion gegen etablierte Stile", "Thematisierung kontroverser gesellschaftlicher Themen"],
+      "solved": true
       },
       {
-        "ID": 28,
-        "Text": "Radia Perlman, geboren 1951 in BLANK, BLANK, ist als die „Mutter des BLANK“ bekannt.",
-        "correctAnswers": ["Portsmouth", "Virginia", "Internets"],
-        "blanks": ["Portsmouth", "Virginia", "Internets"],
-        "Quizfrage": "TODO",
-        "Antworten": ["TODO"],
-        "solved": false
+      "ID": 28,
+      "Text": " Radia Perlman entwickelte das BLANK das das BLANK in Netzwerken revolutionierte. ",
+      "correctAnswers": ["Spanning Tree Protocol", "Routing"],
+      "blanks": ["Internet Protocol", "Datenverschlüsseln", "Transmission Control Protocol", "Bandbreitenmanagement"],
+      "Quizfrage": "Radia Perlman hat über 100 Patente auf ihrem Namen. Welche Art von Technologien umfasst ein Großteil dieser Patente?",
+      "Antworten": ["Netzwerktechnologien und -protokolle", "Künstliche Intelligenz", "Alghorithmen für Datenbankmanagement", "Mikroprozessoren"],
+      "solved": true
       },
       {
-        "ID": 29,
-        "Text": "Lise Meitner, geboren 1878 in BLANK, BLANK, spielte eine entscheidende Rolle bei der Entdeckung der BLANK.",
-        "correctAnswers": ["Wien", "Österreich", "Kernspaltung"],
-        "blanks": ["Wien", "Österreich", "Kernspaltung"],
-        "Quizfrage": "TODO",
-        "Antworten": ["TODO"],
-        "solved": false
+      "ID": 29,
+      "Text": "Lise Meitner war die erste Frau, die an der Universität Wien BLANK studierte. Sie war maßgeblich an der Entdeckung der BLANK beteiligt.",
+      "correctAnswers": ["Physik", "Kernspaltung"],
+      "blanks": ["Mathematik", "Radioaktivität", "Magnetfeldtheorie", "Chemie"],
+      "Quizfrage": "Warum wurde Lise Meitner bei der Verleihung des Nobelpreises für Chemie 1944 übersehen?",
+      "Antworten": ["Otto Hahn war alleiniger Autor der Arbeit", "Vorurteile gegenüber Frauen in Wissenschaft", "ihre Forschung wurde als irrelevant geachtet", "sie war nicht anwesend"],
+      "solved": true
       },
       {
-        "ID": 30,
-        "Text": "Gertrude Elion, geboren 1918 in BLANK, BLANK, entwickelte bahnbrechende BLANK zur Behandlung von Krankheiten.",
-        "correctAnswers": ["New York", "New York", "Medikamente"],
-        "blanks": ["New York", "New York", "Medikamente"],
-        "Quizfrage": "TODO",
-        "Antworten": ["TODO"],
-        "solved": false
-      }
+      "ID": 30,
+      "Text": " Gertrude B. Elion war eine amerikanische Biochemikerin, die bedeutende Medikamente gegen Krankheiten wie BLANK und BLANK entwickelte. ",
+      "correctAnswers": ["Leukämie", "AIDS"],
+      "blanks": ["Krebs", "Parkinson", "Multiple Sclerose", "Diabetes"],
+      "Quizfrage": "Welche wissenschaftliche Disziplin hat Gertrude B. Elion maßgeblich beeinflusst?",
+      "Antworten": ["Biochemie und Pharmakologie", "Physik", "Genetik", "Immunbiologie"],
+      "solved": true
+      }    
     ]
   }  
