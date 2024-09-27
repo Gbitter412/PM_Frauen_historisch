@@ -1,11 +1,10 @@
 import { showOverlay, updateTextBubble } from './overlayControl.js';
-import { unknownCompoundText, knownCompoundText, successMessage, thankYouMessage, checkSurprise } from '../assets/data/marieCurieInfoText.js';
+import { unknownCompoundText, knownCompoundText, successMessage, thankYouMessage, checkSurprise } from '../../assets/data/marieCurieInfoText.js';
+
+let isClickEnabled = true; // Track if clicks are allowed
 
 // Function to process the combination of elements from the textBox
 function processCombination(textBox) {
-    const canvas = textBox.material.map.image;
-    const context = canvas.getContext('2d');
-
     // Get the current text from the canvas (the text currently displayed)
     const currentText = textBox.userData.combinationString;
 
@@ -41,15 +40,22 @@ function processCombination(textBox) {
             showOverlay(successMessage);
         }
 
+        // Disable clicks for 5 seconds
+        isClickEnabled = false;
+
         // Set a timeout to wait for 1-2 seconds before showing the compound info
         setTimeout(() => {
             // Now update the overlay with the compound information
             updateTextBubble(compoundInfo);
         }, 2000); // delay
+        // Re-enable clicks and the overlay event listener after 3 seconds
+        setTimeout(() => {
+            isClickEnabled = true;
+        }, 3000);
     } else {
         // Unknown compound, show the unknownCompoundText
         showOverlay(unknownCompoundText);
     }
 }
 
-export { processCombination };
+export { processCombination, isClickEnabled };
